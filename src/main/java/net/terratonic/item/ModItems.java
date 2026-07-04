@@ -42,7 +42,7 @@ public class ModItems {
                     new AttributeModifiersComponent.Entry(EntityAttributes.GENERIC_ATTACK_SPEED, new EntityAttributeModifier(
                             Item.BASE_ATTACK_SPEED_MODIFIER_ID,-2.4F, EntityAttributeModifier.Operation.ADD_VALUE
                     ), AttributeModifierSlot.MAINHAND)),true))));
-    public static final Item IRON_BROADSWORD = registerItem("iron_broadsword", new SwordItem(ToolMaterials.IRON, new Item.Settings()
+    public static final Item IRON_WIDE_SWORD = registerItem("iron_wide_sword", new SwordItem(ToolMaterials.IRON, new Item.Settings()
             .maxCount(1)
             .attributeModifiers(new AttributeModifiersComponent(List.of(
                     new AttributeModifiersComponent.Entry(EntityAttributes.GENERIC_ATTACK_DAMAGE, new EntityAttributeModifier(

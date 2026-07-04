@@ -1,11 +1,14 @@
-// 1.21.1	2026-07-04T00:55:37.1842967	Terratonic/Model Definitions
-c14d93d1c7b49269d2de7f9fe8d9d4b2f56f40f2 assets\terratonic\models\item\copper_sword.json
+// 1.21.1	2026-07-04T02:05:35.6316275	Terratonic/Model Definitions
 d6ab13b54e013544429cfcde22f8f17538936832 assets\terratonic\models\item\copper_helmet.json
-505ca71926c34273db4a8d4f24183d39e2c8ccac assets\terratonic\models\item\copper_pickaxe.json
+f3c81e68fcd1b3e7e3d56634305a4c25f30b5d18 assets\terratonic\models\item\garlic.json
+ec9af2211c1a796577895584f71f7c34681d31c2 assets\terratonic\models\item\iron_short_sword.json
+bf222623f7388fc80d4487b4b145a3ba9c1a759d assets\terratonic\models\item\iron_wide_sword.json
+82f0bbdc523fe99fa9508159e75e86fd6f27a820 assets\terratonic\models\item\copper_sword.json
+609b6ea4b5b56e3a9cb8ca89fd3a3e958ca64d6b assets\terratonic\models\item\copper_pickaxe.json
 32dd9ab0ab20f52c544d7fb0472f666491346ac0 assets\terratonic\models\item\copper_boots.json
 3e435cdd1d63bc51119e1b74e7811cb60a29c223 assets\terratonic\models\item\copper_leggings.json
-f3c81e68fcd1b3e7e3d56634305a4c25f30b5d18 assets\terratonic\models\item\garlic.json
 cefea5d58a0decaa3e610592583ba462b5808b74 assets\terratonic\models\item\copper_chestplate.json
-86d62c99dab62b7869b87e9b74bfbfef29db2ac8 assets\terratonic\models\item\copper_shovel.json
-ab99af3087c12f41a49015df43ceeeadb6c57798 assets\terratonic\models\item\copper_hoe.json
-bdf9e993c383996cc8ab9b8dc6918728fa60ba76 assets\terratonic\models\item\copper_axe.json
+2e4fa817e9ae99d2acfe9e5f870037c260c4b28c assets\terratonic\models\item\iron_dueling_sword.json
+09d2197e221f4c35c883b3df916334bdc1795185 assets\terratonic\models\item\copper_shovel.json
+d38bdec0b7cdf890ac6d0a2877f185d9ea2dc83a assets\terratonic\models\item\copper_axe.json
+e49d98626aa741984ddfd7bde16892c6ab084e0f assets\terratonic\models\item\copper_hoe.json
