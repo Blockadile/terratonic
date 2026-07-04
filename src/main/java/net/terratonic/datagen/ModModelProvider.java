@@ -19,6 +19,7 @@ public class ModModelProvider extends FabricModelProvider {
 
     @Override
     public void generateItemModels(ItemModelGenerator itemModelGenerator) {
+
         itemModelGenerator.register(ModItems.GARLIC, Models.GENERATED);
         itemModelGenerator.register(ModItems.COPPER_HELMET, Models.GENERATED);
         itemModelGenerator.register(ModItems.COPPER_CHESTPLATE, Models.GENERATED);
@@ -29,5 +30,8 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.COPPER_AXE, Models.GENERATED);
         itemModelGenerator.register(ModItems.COPPER_SHOVEL, Models.GENERATED);
         itemModelGenerator.register(ModItems.COPPER_HOE, Models.GENERATED);
+        itemModelGenerator.register(ModItems.IRON_DUELING_SWORD, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.IRON_BROADSWORD, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.IRON_SHORT_SWORD, Models.HANDHELD);
     }
 }
