@@ -6,7 +6,6 @@ import net.minecraft.component.type.AttributeModifierSlot;
 import net.minecraft.component.type.AttributeModifiersComponent;
 import net.minecraft.entity.attribute.EntityAttributeModifier;
 import net.minecraft.entity.attribute.EntityAttributes;
-import net.minecraft.item.*;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
@@ -16,6 +15,22 @@ import net.terratonic.item.components.ModFoodComponents;
 import java.util.List;
 
 public class ModItems {
+
+    // Copper Armor
+    public static final Item COPPER_HELMET = registerItem("copper_helmet", new ArmorItem(ModArmorMaterials.COPPER_ARMOR_MATERIAL,
+            ArmorItem.Type.HELMET, new Item.Settings().maxDamage(ArmorItem.Type.HELMET.getMaxDamage(11))));
+    public static final Item COPPER_CHESTPLATE = registerItem("copper_chestplate", new ArmorItem(ModArmorMaterials.COPPER_ARMOR_MATERIAL,
+            ArmorItem.Type.CHESTPLATE, new Item.Settings().maxDamage(ArmorItem.Type.CHESTPLATE.getMaxDamage(11))));
+    public static final Item COPPER_LEGGINGS = registerItem("copper_leggings", new ArmorItem(ModArmorMaterials.COPPER_ARMOR_MATERIAL,
+            ArmorItem.Type.LEGGINGS, new Item.Settings().maxDamage(ArmorItem.Type.LEGGINGS.getMaxDamage(11))));
+    public static final Item COPPER_BOOTS = registerItem("copper_boots", new ArmorItem(ModArmorMaterials.COPPER_ARMOR_MATERIAL,
+            ArmorItem.Type.BOOTS, new Item.Settings().maxDamage(ArmorItem.Type.BOOTS.getMaxDamage(11))));
+
+        // Weapons
+    // Copper Swords
+    public static final Item COPPER_SWORD = registerItem("copper_sword",
+            new SwordItem(ModToolMaterials.COPPER, new Item.Settings().attributeModifiers(SwordItem.createAttributeModifiers(ModToolMaterials.COPPER,
+                    3, -2.4F))));
 
     // Iron Swords
     public static final Item IRON_DUELING_SWORD = registerItem("iron_dueling_sword", new SwordItem(ToolMaterials.IRON, new Item.Settings()
@@ -52,29 +67,23 @@ public class ModItems {
                             Identifier.of("2906341806710"),-0.25F, EntityAttributeModifier.Operation.ADD_VALUE
                     ), AttributeModifierSlot.MAINHAND)),true))));
 
-    // Copper Armor
-    public static final Item COPPER_HELMET = registerItem("copper_helmet", new ArmorItem(ModArmorMaterials.COPPER_ARMOR_MATERIAL,
-            ArmorItem.Type.HELMET, new Item.Settings().maxDamage(ArmorItem.Type.HELMET.getMaxDamage(11))));
-    public static final Item COPPER_CHESTPLATE = registerItem("copper_chestplate", new ArmorItem(ModArmorMaterials.COPPER_ARMOR_MATERIAL,
-            ArmorItem.Type.CHESTPLATE, new Item.Settings().maxDamage(ArmorItem.Type.CHESTPLATE.getMaxDamage(11))));
-    public static final Item COPPER_LEGGINGS = registerItem("copper_leggings", new ArmorItem(ModArmorMaterials.COPPER_ARMOR_MATERIAL,
-            ArmorItem.Type.LEGGINGS, new Item.Settings().maxDamage(ArmorItem.Type.LEGGINGS.getMaxDamage(11))));
-    public static final Item COPPER_BOOTS = registerItem("copper_boots", new ArmorItem(ModArmorMaterials.COPPER_ARMOR_MATERIAL,
-            ArmorItem.Type.BOOTS, new Item.Settings().maxDamage(ArmorItem.Type.BOOTS.getMaxDamage(11))));
-
-    // Copper Tools
-    public static final Item COPPER_SWORD = registerItem("copper_sword",
-            new SwordItem(ModToolMaterials.COPPER, new Item.Settings().attributeModifiers(SwordItem.createAttributeModifiers(ModToolMaterials.COPPER,
-                    3, -2.4F))));
+        // Tools
+    // Pickaxes
     public static final Item COPPER_PICKAXE = registerItem("copper_pickaxe",
             new PickaxeItem(ModToolMaterials.COPPER, new Item.Settings().attributeModifiers(PickaxeItem.createAttributeModifiers(ModToolMaterials.COPPER,
                     1, -2.8F))));
+
+    // Shovels
     public static final Item COPPER_SHOVEL = registerItem("copper_shovel",
             new ShovelItem(ModToolMaterials.COPPER, new Item.Settings().attributeModifiers(ShovelItem.createAttributeModifiers(ModToolMaterials.COPPER,
                     1.5F, -3.0F))));
+
+    // Axes
     public static final Item COPPER_AXE = registerItem("copper_axe",
             new AxeItem(ModToolMaterials.COPPER, new Item.Settings().attributeModifiers(AxeItem.createAttributeModifiers(ModToolMaterials.COPPER,
                     7, -3.2F))));
+
+    // Hoes
     public static final Item COPPER_HOE = registerItem("copper_hoe",
             new HoeItem(ModToolMaterials.COPPER, new Item.Settings().attributeModifiers(HoeItem.createAttributeModifiers(ModToolMaterials.COPPER,
                     0, -3.0F))));
@@ -82,6 +91,7 @@ public class ModItems {
     // Food
     public static final Item GARLIC = registerItem("garlic", new Item(new Item.Settings()
             .food(ModFoodComponents.GARLIC)));
+
 
     // Methods
     private static Item registerItem(String name, Item item) {
