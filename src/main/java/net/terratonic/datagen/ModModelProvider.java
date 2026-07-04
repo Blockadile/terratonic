@@ -19,6 +19,9 @@ public class ModModelProvider extends FabricModelProvider {
 
     @Override
     public void generateItemModels(ItemModelGenerator itemModelGenerator) {
+        itemModelGenerator.register(ModItems.IRON_DUELING_SWORD, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.IRON_WIDE_SWORD, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.IRON_SHORT_SWORD, Models.HANDHELD);
 
         itemModelGenerator.register(ModItems.GARLIC, Models.GENERATED);
     }
