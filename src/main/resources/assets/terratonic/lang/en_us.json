@@ -1,3 +1,12 @@
 {
-
+  "item.terratonic.garlic": "Garlic",
+  "item.terratonic.copper_helmet": "Copper Helmet",
+  "item.terratonic.copper_chestplate": "Copper Chestplate",
+  "item.terratonic.copper_leggings": "Copper Leggings",
+  "item.terratonic.copper_boots": "Copper Boots",
+  "item.terratonic.copper_sword": "Copper Sword",
+  "item.terratonic.copper_pickaxe": "Copper Pickaxe",
+  "item.terratonic.copper_shovel": "Copper Shovel",
+  "item.terratonic.copper_axe": "Copper Axe",
+  "item.terratonic.copper_hoe": "Copper Hoe"
 }

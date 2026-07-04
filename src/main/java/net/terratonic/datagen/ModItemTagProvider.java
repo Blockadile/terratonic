@@ -2,7 +2,9 @@ package net.terratonic.datagen;
 
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagProvider;
+import net.minecraft.item.Items;
 import net.minecraft.registry.RegistryWrapper;
+import net.terratonic.util.ModTags;
 
 import java.util.concurrent.CompletableFuture;
 
@@ -13,6 +15,7 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
 
     @Override
     protected void configure(RegistryWrapper.WrapperLookup wrapperLookup) {
-
+        getOrCreateTagBuilder(ModTags.Items.COPPER_TOOL_MATERIALS)
+                .add(Items.COPPER_INGOT);
     }
 }
