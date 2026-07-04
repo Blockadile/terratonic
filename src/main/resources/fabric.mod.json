@@ -1,0 +1,37 @@
+{
+	"schemaVersion": 1,
+	"id": "terratonic",
+	"version": "${version}",
+	"name": "Terratonic",
+	"description": "This is an example description! Tell everyone what your mod is about!",
+	"authors": [
+		"Blockadile and Lint/Evan2Awesome"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/terratonic/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.terratonic.Terratonic"
+		],
+		"client": [
+			"net.terratonic.TerratonicClient"
+		],
+		"fabric-datagen": [
+			"net.terratonic.TerratonicDataGenerator"
+		]
+	},
+	"mixins": [
+		"terratonic.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.19.3",
+		"minecraft": "~1.21.1",
+		"java": ">=21",
+		"fabric-api": "*"
+	}
+}
