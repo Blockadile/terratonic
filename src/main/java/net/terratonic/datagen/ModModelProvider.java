@@ -21,10 +21,13 @@ public class ModModelProvider extends FabricModelProvider {
     public void generateItemModels(ItemModelGenerator itemModelGenerator) {
 
         itemModelGenerator.register(ModItems.GARLIC, Models.GENERATED);
+        itemModelGenerator.register(ModItems.ORNATE_OIL_BOTTLE, Models.GENERATED);
+
         itemModelGenerator.register(ModItems.COPPER_HELMET, Models.GENERATED);
         itemModelGenerator.register(ModItems.COPPER_CHESTPLATE, Models.GENERATED);
         itemModelGenerator.register(ModItems.COPPER_LEGGINGS, Models.GENERATED);
         itemModelGenerator.register(ModItems.COPPER_BOOTS, Models.GENERATED);
+
         itemModelGenerator.register(ModItems.COPPER_SWORD, Models.HANDHELD);
         itemModelGenerator.register(ModItems.COPPER_PICKAXE, Models.HANDHELD);
         itemModelGenerator.register(ModItems.COPPER_AXE, Models.HANDHELD);

@@ -322,6 +322,9 @@ public class ModItems {
     public static final Item GARLIC = registerItem("garlic", new AliasedBlockItem(ModBlocks.GARLICS, (new Item.Settings()
             .food(ModFoodComponents.GARLIC))));
 
+    // Misc
+    public static final Item ORNATE_OIL_BOTTLE = registerItem("ornate_oil_bottle", new Item(new Item.Settings()));
+
 
     // Methods
     private static Item registerItem(String name, Item item) {
@@ -380,6 +383,9 @@ public class ModItems {
             fabricItemGroupEntries.addAfter(Items.LEATHER_BOOTS, ModItems.COPPER_LEGGINGS);
             fabricItemGroupEntries.addAfter(Items.LEATHER_BOOTS, ModItems.COPPER_CHESTPLATE);
             fabricItemGroupEntries.addAfter(Items.LEATHER_BOOTS, ModItems.COPPER_HELMET);
+        });
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(fabricItemGroupEntries -> {
+            fabricItemGroupEntries.addAfter(Items.EXPERIENCE_BOTTLE, ModItems.ORNATE_OIL_BOTTLE);
         });
     }
 }
