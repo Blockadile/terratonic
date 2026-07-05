@@ -30,8 +30,35 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.COPPER_AXE, Models.HANDHELD);
         itemModelGenerator.register(ModItems.COPPER_SHOVEL, Models.HANDHELD);
         itemModelGenerator.register(ModItems.COPPER_HOE, Models.HANDHELD);
+
+            // Sword Variants
+        // Wooden Swords
+        itemModelGenerator.register(ModItems.WOODEN_DUELING_SWORD, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.WOODEN_WIDE_SWORD, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.WOODEN_SHORT_SWORD, Models.HANDHELD);
+        // Stone Swords
+        itemModelGenerator.register(ModItems.STONE_DUELING_SWORD, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.STONE_WIDE_SWORD, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.STONE_SHORT_SWORD, Models.HANDHELD);
+        // Copper Swords
+        itemModelGenerator.register(ModItems.COPPER_DUELING_SWORD, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.COPPER_WIDE_SWORD, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.COPPER_SHORT_SWORD, Models.HANDHELD);
+        // Iron Swords
         itemModelGenerator.register(ModItems.IRON_DUELING_SWORD, Models.HANDHELD);
         itemModelGenerator.register(ModItems.IRON_WIDE_SWORD, Models.HANDHELD);
         itemModelGenerator.register(ModItems.IRON_SHORT_SWORD, Models.HANDHELD);
+        // Golden Swords
+        itemModelGenerator.register(ModItems.GOLDEN_DUELING_SWORD, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.GOLDEN_WIDE_SWORD, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.GOLDEN_SHORT_SWORD, Models.HANDHELD);
+        // Diamond Swords
+        itemModelGenerator.register(ModItems.DIAMOND_DUELING_SWORD, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.DIAMOND_WIDE_SWORD, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.DIAMOND_SHORT_SWORD, Models.HANDHELD);
+        // Netherite Swords
+        itemModelGenerator.register(ModItems.NETHERITE_DUELING_SWORD, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.NETHERITE_WIDE_SWORD, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.NETHERITE_SHORT_SWORD, Models.HANDHELD);
     }
 }

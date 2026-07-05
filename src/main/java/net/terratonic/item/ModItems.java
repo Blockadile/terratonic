@@ -28,10 +28,122 @@ public class ModItems {
             ArmorItem.Type.BOOTS, new Item.Settings().maxDamage(ArmorItem.Type.BOOTS.getMaxDamage(11))));
 
         // Weapons
+    // Wooden Swords
+    public static final Item WOODEN_DUELING_SWORD = registerItem("wooden_dueling_sword", new SwordItem(ToolMaterials.WOOD, new Item.Settings()
+            .maxCount(1)
+            .attributeModifiers(new AttributeModifiersComponent(List.of(
+                    new AttributeModifiersComponent.Entry(EntityAttributes.GENERIC_ATTACK_DAMAGE, new EntityAttributeModifier(
+                            Item.BASE_ATTACK_DAMAGE_MODIFIER_ID,3F, EntityAttributeModifier.Operation.ADD_VALUE
+                    ), AttributeModifierSlot.MAINHAND),
+                    new AttributeModifiersComponent.Entry(EntityAttributes.GENERIC_ATTACK_SPEED, new EntityAttributeModifier(
+                            Item.BASE_ATTACK_SPEED_MODIFIER_ID,-2.4F, EntityAttributeModifier.Operation.ADD_VALUE
+                    ), AttributeModifierSlot.MAINHAND)),true))));
+    public static final Item WOODEN_WIDE_SWORD = registerItem("wooden_wide_sword", new SwordItem(ToolMaterials.WOOD, new Item.Settings()
+            .maxCount(1)
+            .attributeModifiers(new AttributeModifiersComponent(List.of(
+                    new AttributeModifiersComponent.Entry(EntityAttributes.GENERIC_ATTACK_DAMAGE, new EntityAttributeModifier(
+                            Item.BASE_ATTACK_DAMAGE_MODIFIER_ID,3F, EntityAttributeModifier.Operation.ADD_VALUE
+                    ), AttributeModifierSlot.MAINHAND),
+                    new AttributeModifiersComponent.Entry(EntityAttributes.GENERIC_ATTACK_SPEED, new EntityAttributeModifier(
+                            Item.BASE_ATTACK_SPEED_MODIFIER_ID,-2.7F, EntityAttributeModifier.Operation.ADD_VALUE
+                    ), AttributeModifierSlot.MAINHAND),
+                    new AttributeModifiersComponent.Entry(EntityAttributes.PLAYER_SWEEPING_DAMAGE_RATIO, new EntityAttributeModifier(
+                            Identifier.of("0123581106710"),0.5F, EntityAttributeModifier.Operation.ADD_VALUE
+                    ), AttributeModifierSlot.MAINHAND)),true))));
+    public static final Item WOODEN_SHORT_SWORD = registerItem("wooden_short_sword", new SwordItem(ToolMaterials.WOOD, new Item.Settings()
+            .maxCount(1)
+            .attributeModifiers(new AttributeModifiersComponent(List.of(
+                    new AttributeModifiersComponent.Entry(EntityAttributes.GENERIC_ATTACK_DAMAGE, new EntityAttributeModifier(
+                            Item.BASE_ATTACK_DAMAGE_MODIFIER_ID,2F, EntityAttributeModifier.Operation.ADD_VALUE
+                    ), AttributeModifierSlot.MAINHAND),
+                    new AttributeModifiersComponent.Entry(EntityAttributes.GENERIC_ATTACK_SPEED, new EntityAttributeModifier(
+                            Item.BASE_ATTACK_SPEED_MODIFIER_ID,-2F, EntityAttributeModifier.Operation.ADD_VALUE
+                    ), AttributeModifierSlot.MAINHAND),
+                    new AttributeModifiersComponent.Entry(EntityAttributes.PLAYER_ENTITY_INTERACTION_RANGE, new EntityAttributeModifier(
+                            Identifier.of("2906341806710"),-0.5F, EntityAttributeModifier.Operation.ADD_VALUE
+                    ), AttributeModifierSlot.MAINHAND),
+                    new AttributeModifiersComponent.Entry(EntityAttributes.PLAYER_BLOCK_INTERACTION_RANGE, new EntityAttributeModifier(
+                            Identifier.of("10157301586103"),-0.5F, EntityAttributeModifier.Operation.ADD_VALUE
+                    ), AttributeModifierSlot.MAINHAND)),true))));
+
+    // Stone Swords
+        public static final Item STONE_DUELING_SWORD = registerItem("stone_dueling_sword", new SwordItem(ToolMaterials.STONE, new Item.Settings()
+                .maxCount(1)
+                .attributeModifiers(new AttributeModifiersComponent(List.of(
+                        new AttributeModifiersComponent.Entry(EntityAttributes.GENERIC_ATTACK_DAMAGE, new EntityAttributeModifier(
+                                Item.BASE_ATTACK_DAMAGE_MODIFIER_ID,4F, EntityAttributeModifier.Operation.ADD_VALUE
+                        ), AttributeModifierSlot.MAINHAND),
+                        new AttributeModifiersComponent.Entry(EntityAttributes.GENERIC_ATTACK_SPEED, new EntityAttributeModifier(
+                                Item.BASE_ATTACK_SPEED_MODIFIER_ID,-2.4F, EntityAttributeModifier.Operation.ADD_VALUE
+                        ), AttributeModifierSlot.MAINHAND)),true))));
+    public static final Item STONE_WIDE_SWORD = registerItem("stone_wide_sword", new SwordItem(ToolMaterials.STONE, new Item.Settings()
+            .maxCount(1)
+            .attributeModifiers(new AttributeModifiersComponent(List.of(
+                    new AttributeModifiersComponent.Entry(EntityAttributes.GENERIC_ATTACK_DAMAGE, new EntityAttributeModifier(
+                            Item.BASE_ATTACK_DAMAGE_MODIFIER_ID,4F, EntityAttributeModifier.Operation.ADD_VALUE
+                    ), AttributeModifierSlot.MAINHAND),
+                    new AttributeModifiersComponent.Entry(EntityAttributes.GENERIC_ATTACK_SPEED, new EntityAttributeModifier(
+                            Item.BASE_ATTACK_SPEED_MODIFIER_ID,-2.7F, EntityAttributeModifier.Operation.ADD_VALUE
+                    ), AttributeModifierSlot.MAINHAND),
+                    new AttributeModifiersComponent.Entry(EntityAttributes.PLAYER_SWEEPING_DAMAGE_RATIO, new EntityAttributeModifier(
+                            Identifier.of("0123581106710"),0.5F, EntityAttributeModifier.Operation.ADD_VALUE
+                    ), AttributeModifierSlot.MAINHAND)),true))));
+    public static final Item STONE_SHORT_SWORD = registerItem("stone_short_sword", new SwordItem(ToolMaterials.STONE, new Item.Settings()
+            .maxCount(1)
+            .attributeModifiers(new AttributeModifiersComponent(List.of(
+                    new AttributeModifiersComponent.Entry(EntityAttributes.GENERIC_ATTACK_DAMAGE, new EntityAttributeModifier(
+                            Item.BASE_ATTACK_DAMAGE_MODIFIER_ID,3F, EntityAttributeModifier.Operation.ADD_VALUE
+                    ), AttributeModifierSlot.MAINHAND),
+                    new AttributeModifiersComponent.Entry(EntityAttributes.GENERIC_ATTACK_SPEED, new EntityAttributeModifier(
+                            Item.BASE_ATTACK_SPEED_MODIFIER_ID,-2F, EntityAttributeModifier.Operation.ADD_VALUE
+                    ), AttributeModifierSlot.MAINHAND),
+                    new AttributeModifiersComponent.Entry(EntityAttributes.PLAYER_ENTITY_INTERACTION_RANGE, new EntityAttributeModifier(
+                            Identifier.of("2906341806710"),-0.5F, EntityAttributeModifier.Operation.ADD_VALUE
+                    ), AttributeModifierSlot.MAINHAND),
+                    new AttributeModifiersComponent.Entry(EntityAttributes.PLAYER_BLOCK_INTERACTION_RANGE, new EntityAttributeModifier(
+                            Identifier.of("10157301586103"),-0.5F, EntityAttributeModifier.Operation.ADD_VALUE
+                    ), AttributeModifierSlot.MAINHAND)),true))));
+
     // Copper Swords
     public static final Item COPPER_SWORD = registerItem("copper_sword",
             new SwordItem(ModToolMaterials.COPPER, new Item.Settings().attributeModifiers(SwordItem.createAttributeModifiers(ModToolMaterials.COPPER,
                     3, -2.4F))));
+    public static final Item COPPER_DUELING_SWORD = registerItem("copper_dueling_sword", new SwordItem(ModToolMaterials.COPPER, new Item.Settings()
+            .maxCount(1)
+            .attributeModifiers(new AttributeModifiersComponent(List.of(
+                    new AttributeModifiersComponent.Entry(EntityAttributes.GENERIC_ATTACK_DAMAGE, new EntityAttributeModifier(
+                            Item.BASE_ATTACK_DAMAGE_MODIFIER_ID,4F, EntityAttributeModifier.Operation.ADD_VALUE
+                    ), AttributeModifierSlot.MAINHAND),
+                    new AttributeModifiersComponent.Entry(EntityAttributes.GENERIC_ATTACK_SPEED, new EntityAttributeModifier(
+                            Item.BASE_ATTACK_SPEED_MODIFIER_ID,-2.4F, EntityAttributeModifier.Operation.ADD_VALUE
+                    ), AttributeModifierSlot.MAINHAND)),true))));
+    public static final Item COPPER_WIDE_SWORD = registerItem("copper_wide_sword", new SwordItem(ModToolMaterials.COPPER, new Item.Settings()
+            .maxCount(1)
+            .attributeModifiers(new AttributeModifiersComponent(List.of(
+                    new AttributeModifiersComponent.Entry(EntityAttributes.GENERIC_ATTACK_DAMAGE, new EntityAttributeModifier(
+                            Item.BASE_ATTACK_DAMAGE_MODIFIER_ID,4F, EntityAttributeModifier.Operation.ADD_VALUE
+                    ), AttributeModifierSlot.MAINHAND),
+                    new AttributeModifiersComponent.Entry(EntityAttributes.GENERIC_ATTACK_SPEED, new EntityAttributeModifier(
+                            Item.BASE_ATTACK_SPEED_MODIFIER_ID,-2.7F, EntityAttributeModifier.Operation.ADD_VALUE
+                    ), AttributeModifierSlot.MAINHAND),
+                    new AttributeModifiersComponent.Entry(EntityAttributes.PLAYER_SWEEPING_DAMAGE_RATIO, new EntityAttributeModifier(
+                            Identifier.of("0123581106710"),0.5F, EntityAttributeModifier.Operation.ADD_VALUE
+                    ), AttributeModifierSlot.MAINHAND)),true))));
+    public static final Item COPPER_SHORT_SWORD = registerItem("copper_short_sword", new SwordItem(ModToolMaterials.COPPER, new Item.Settings()
+            .maxCount(1)
+            .attributeModifiers(new AttributeModifiersComponent(List.of(
+                    new AttributeModifiersComponent.Entry(EntityAttributes.GENERIC_ATTACK_DAMAGE, new EntityAttributeModifier(
+                            Item.BASE_ATTACK_DAMAGE_MODIFIER_ID,3F, EntityAttributeModifier.Operation.ADD_VALUE
+                    ), AttributeModifierSlot.MAINHAND),
+                    new AttributeModifiersComponent.Entry(EntityAttributes.GENERIC_ATTACK_SPEED, new EntityAttributeModifier(
+                            Item.BASE_ATTACK_SPEED_MODIFIER_ID,-2F, EntityAttributeModifier.Operation.ADD_VALUE
+                    ), AttributeModifierSlot.MAINHAND),
+                    new AttributeModifiersComponent.Entry(EntityAttributes.PLAYER_ENTITY_INTERACTION_RANGE, new EntityAttributeModifier(
+                            Identifier.of("2906341806710"),-0.5F, EntityAttributeModifier.Operation.ADD_VALUE
+                    ), AttributeModifierSlot.MAINHAND),
+                    new AttributeModifiersComponent.Entry(EntityAttributes.PLAYER_BLOCK_INTERACTION_RANGE, new EntityAttributeModifier(
+                            Identifier.of("10157301586103"),-0.5F, EntityAttributeModifier.Operation.ADD_VALUE
+                    ), AttributeModifierSlot.MAINHAND)),true))));
 
     // Iron Swords
     public static final Item IRON_DUELING_SWORD = registerItem("iron_dueling_sword", new SwordItem(ToolMaterials.IRON, new Item.Settings()
@@ -53,7 +165,7 @@ public class ModItems {
                             Item.BASE_ATTACK_SPEED_MODIFIER_ID,-2.7F, EntityAttributeModifier.Operation.ADD_VALUE
                     ), AttributeModifierSlot.MAINHAND),
                     new AttributeModifiersComponent.Entry(EntityAttributes.PLAYER_SWEEPING_DAMAGE_RATIO, new EntityAttributeModifier(
-                            Identifier.of("0123581106710"),1F, EntityAttributeModifier.Operation.ADD_VALUE
+                            Identifier.of("0123581106710"),0.5F, EntityAttributeModifier.Operation.ADD_VALUE
                     ), AttributeModifierSlot.MAINHAND)),true))));
     public static final Item IRON_SHORT_SWORD = registerItem("iron_short_sword", new SwordItem(ToolMaterials.IRON, new Item.Settings()
             .maxCount(1)
@@ -65,7 +177,124 @@ public class ModItems {
                             Item.BASE_ATTACK_SPEED_MODIFIER_ID,-2F, EntityAttributeModifier.Operation.ADD_VALUE
                     ), AttributeModifierSlot.MAINHAND),
                     new AttributeModifiersComponent.Entry(EntityAttributes.PLAYER_ENTITY_INTERACTION_RANGE, new EntityAttributeModifier(
-                            Identifier.of("2906341806710"),-0.25F, EntityAttributeModifier.Operation.ADD_VALUE
+                            Identifier.of("2906341806710"),-0.5F, EntityAttributeModifier.Operation.ADD_VALUE
+                    ), AttributeModifierSlot.MAINHAND),
+                    new AttributeModifiersComponent.Entry(EntityAttributes.PLAYER_BLOCK_INTERACTION_RANGE, new EntityAttributeModifier(
+                            Identifier.of("10157301586103"),-0.5F, EntityAttributeModifier.Operation.ADD_VALUE
+                    ), AttributeModifierSlot.MAINHAND)),true))));
+
+    // Golden Swords
+    public static final Item GOLDEN_DUELING_SWORD = registerItem("golden_dueling_sword", new SwordItem(ToolMaterials.GOLD, new Item.Settings()
+            .maxCount(1)
+            .attributeModifiers(new AttributeModifiersComponent(List.of(
+                    new AttributeModifiersComponent.Entry(EntityAttributes.GENERIC_ATTACK_DAMAGE, new EntityAttributeModifier(
+                            Item.BASE_ATTACK_DAMAGE_MODIFIER_ID,3F, EntityAttributeModifier.Operation.ADD_VALUE
+                    ), AttributeModifierSlot.MAINHAND),
+                    new AttributeModifiersComponent.Entry(EntityAttributes.GENERIC_ATTACK_SPEED, new EntityAttributeModifier(
+                            Item.BASE_ATTACK_SPEED_MODIFIER_ID,-2.4F, EntityAttributeModifier.Operation.ADD_VALUE
+                    ), AttributeModifierSlot.MAINHAND)),true))));
+    public static final Item GOLDEN_WIDE_SWORD = registerItem("golden_wide_sword", new SwordItem(ToolMaterials.GOLD, new Item.Settings()
+            .maxCount(1)
+            .attributeModifiers(new AttributeModifiersComponent(List.of(
+                    new AttributeModifiersComponent.Entry(EntityAttributes.GENERIC_ATTACK_DAMAGE, new EntityAttributeModifier(
+                            Item.BASE_ATTACK_DAMAGE_MODIFIER_ID,3F, EntityAttributeModifier.Operation.ADD_VALUE
+                    ), AttributeModifierSlot.MAINHAND),
+                    new AttributeModifiersComponent.Entry(EntityAttributes.GENERIC_ATTACK_SPEED, new EntityAttributeModifier(
+                            Item.BASE_ATTACK_SPEED_MODIFIER_ID,-2.7F, EntityAttributeModifier.Operation.ADD_VALUE
+                    ), AttributeModifierSlot.MAINHAND),
+                    new AttributeModifiersComponent.Entry(EntityAttributes.PLAYER_SWEEPING_DAMAGE_RATIO, new EntityAttributeModifier(
+                            Identifier.of("0123581106710"),0.5F, EntityAttributeModifier.Operation.ADD_VALUE
+                    ), AttributeModifierSlot.MAINHAND)),true))));
+    public static final Item GOLDEN_SHORT_SWORD = registerItem("golden_short_sword", new SwordItem(ToolMaterials.GOLD, new Item.Settings()
+            .maxCount(1)
+            .attributeModifiers(new AttributeModifiersComponent(List.of(
+                    new AttributeModifiersComponent.Entry(EntityAttributes.GENERIC_ATTACK_DAMAGE, new EntityAttributeModifier(
+                            Item.BASE_ATTACK_DAMAGE_MODIFIER_ID,2F, EntityAttributeModifier.Operation.ADD_VALUE
+                    ), AttributeModifierSlot.MAINHAND),
+                    new AttributeModifiersComponent.Entry(EntityAttributes.GENERIC_ATTACK_SPEED, new EntityAttributeModifier(
+                            Item.BASE_ATTACK_SPEED_MODIFIER_ID,-2F, EntityAttributeModifier.Operation.ADD_VALUE
+                    ), AttributeModifierSlot.MAINHAND),
+                    new AttributeModifiersComponent.Entry(EntityAttributes.PLAYER_ENTITY_INTERACTION_RANGE, new EntityAttributeModifier(
+                            Identifier.of("2906341806710"),-0.5F, EntityAttributeModifier.Operation.ADD_VALUE
+                    ), AttributeModifierSlot.MAINHAND),
+                    new AttributeModifiersComponent.Entry(EntityAttributes.PLAYER_BLOCK_INTERACTION_RANGE, new EntityAttributeModifier(
+                            Identifier.of("10157301586103"),-0.5F, EntityAttributeModifier.Operation.ADD_VALUE
+                    ), AttributeModifierSlot.MAINHAND)),true))));
+
+    // Diamond Swords
+    public static final Item DIAMOND_DUELING_SWORD = registerItem("diamond_dueling_sword", new SwordItem(ToolMaterials.DIAMOND, new Item.Settings()
+            .maxCount(1)
+            .attributeModifiers(new AttributeModifiersComponent(List.of(
+                    new AttributeModifiersComponent.Entry(EntityAttributes.GENERIC_ATTACK_DAMAGE, new EntityAttributeModifier(
+                            Item.BASE_ATTACK_DAMAGE_MODIFIER_ID,6F, EntityAttributeModifier.Operation.ADD_VALUE
+                    ), AttributeModifierSlot.MAINHAND),
+                    new AttributeModifiersComponent.Entry(EntityAttributes.GENERIC_ATTACK_SPEED, new EntityAttributeModifier(
+                            Item.BASE_ATTACK_SPEED_MODIFIER_ID,-2.4F, EntityAttributeModifier.Operation.ADD_VALUE
+                    ), AttributeModifierSlot.MAINHAND)),true))));
+    public static final Item DIAMOND_WIDE_SWORD = registerItem("diamond_wide_sword", new SwordItem(ToolMaterials.DIAMOND, new Item.Settings()
+            .maxCount(1)
+            .attributeModifiers(new AttributeModifiersComponent(List.of(
+                    new AttributeModifiersComponent.Entry(EntityAttributes.GENERIC_ATTACK_DAMAGE, new EntityAttributeModifier(
+                            Item.BASE_ATTACK_DAMAGE_MODIFIER_ID,6F, EntityAttributeModifier.Operation.ADD_VALUE
+                    ), AttributeModifierSlot.MAINHAND),
+                    new AttributeModifiersComponent.Entry(EntityAttributes.GENERIC_ATTACK_SPEED, new EntityAttributeModifier(
+                            Item.BASE_ATTACK_SPEED_MODIFIER_ID,-2.7F, EntityAttributeModifier.Operation.ADD_VALUE
+                    ), AttributeModifierSlot.MAINHAND),
+                    new AttributeModifiersComponent.Entry(EntityAttributes.PLAYER_SWEEPING_DAMAGE_RATIO, new EntityAttributeModifier(
+                            Identifier.of("0123581106710"),0.5F, EntityAttributeModifier.Operation.ADD_VALUE
+                    ), AttributeModifierSlot.MAINHAND)),true))));
+    public static final Item DIAMOND_SHORT_SWORD = registerItem("diamond_short_sword", new SwordItem(ToolMaterials.DIAMOND, new Item.Settings()
+            .maxCount(1)
+            .attributeModifiers(new AttributeModifiersComponent(List.of(
+                    new AttributeModifiersComponent.Entry(EntityAttributes.GENERIC_ATTACK_DAMAGE, new EntityAttributeModifier(
+                            Item.BASE_ATTACK_DAMAGE_MODIFIER_ID,5F, EntityAttributeModifier.Operation.ADD_VALUE
+                    ), AttributeModifierSlot.MAINHAND),
+                    new AttributeModifiersComponent.Entry(EntityAttributes.GENERIC_ATTACK_SPEED, new EntityAttributeModifier(
+                            Item.BASE_ATTACK_SPEED_MODIFIER_ID,-2F, EntityAttributeModifier.Operation.ADD_VALUE
+                    ), AttributeModifierSlot.MAINHAND),
+                    new AttributeModifiersComponent.Entry(EntityAttributes.PLAYER_ENTITY_INTERACTION_RANGE, new EntityAttributeModifier(
+                            Identifier.of("2906341806710"),-0.5F, EntityAttributeModifier.Operation.ADD_VALUE
+                    ), AttributeModifierSlot.MAINHAND),
+                    new AttributeModifiersComponent.Entry(EntityAttributes.PLAYER_BLOCK_INTERACTION_RANGE, new EntityAttributeModifier(
+                            Identifier.of("10157301586103"),-0.5F, EntityAttributeModifier.Operation.ADD_VALUE
+                    ), AttributeModifierSlot.MAINHAND)),true))));
+
+    // Netherite Swords
+    public static final Item NETHERITE_DUELING_SWORD = registerItem("netherite_dueling_sword", new SwordItem(ToolMaterials.NETHERITE, new Item.Settings()
+            .maxCount(1)
+            .attributeModifiers(new AttributeModifiersComponent(List.of(
+                    new AttributeModifiersComponent.Entry(EntityAttributes.GENERIC_ATTACK_DAMAGE, new EntityAttributeModifier(
+                            Item.BASE_ATTACK_DAMAGE_MODIFIER_ID,7F, EntityAttributeModifier.Operation.ADD_VALUE
+                    ), AttributeModifierSlot.MAINHAND),
+                    new AttributeModifiersComponent.Entry(EntityAttributes.GENERIC_ATTACK_SPEED, new EntityAttributeModifier(
+                            Item.BASE_ATTACK_SPEED_MODIFIER_ID,-2.4F, EntityAttributeModifier.Operation.ADD_VALUE
+                    ), AttributeModifierSlot.MAINHAND)),true))));
+    public static final Item NETHERITE_WIDE_SWORD = registerItem("netherite_wide_sword", new SwordItem(ToolMaterials.NETHERITE, new Item.Settings()
+            .maxCount(1)
+            .attributeModifiers(new AttributeModifiersComponent(List.of(
+                    new AttributeModifiersComponent.Entry(EntityAttributes.GENERIC_ATTACK_DAMAGE, new EntityAttributeModifier(
+                            Item.BASE_ATTACK_DAMAGE_MODIFIER_ID,7F, EntityAttributeModifier.Operation.ADD_VALUE
+                    ), AttributeModifierSlot.MAINHAND),
+                    new AttributeModifiersComponent.Entry(EntityAttributes.GENERIC_ATTACK_SPEED, new EntityAttributeModifier(
+                            Item.BASE_ATTACK_SPEED_MODIFIER_ID,-2.7F, EntityAttributeModifier.Operation.ADD_VALUE
+                    ), AttributeModifierSlot.MAINHAND),
+                    new AttributeModifiersComponent.Entry(EntityAttributes.PLAYER_SWEEPING_DAMAGE_RATIO, new EntityAttributeModifier(
+                            Identifier.of("0123581106710"),0.5F, EntityAttributeModifier.Operation.ADD_VALUE
+                    ), AttributeModifierSlot.MAINHAND)),true))));
+    public static final Item NETHERITE_SHORT_SWORD = registerItem("netherite_short_sword", new SwordItem(ToolMaterials.NETHERITE, new Item.Settings()
+            .maxCount(1)
+            .attributeModifiers(new AttributeModifiersComponent(List.of(
+                    new AttributeModifiersComponent.Entry(EntityAttributes.GENERIC_ATTACK_DAMAGE, new EntityAttributeModifier(
+                            Item.BASE_ATTACK_DAMAGE_MODIFIER_ID,6F, EntityAttributeModifier.Operation.ADD_VALUE
+                    ), AttributeModifierSlot.MAINHAND),
+                    new AttributeModifiersComponent.Entry(EntityAttributes.GENERIC_ATTACK_SPEED, new EntityAttributeModifier(
+                            Item.BASE_ATTACK_SPEED_MODIFIER_ID,-2F, EntityAttributeModifier.Operation.ADD_VALUE
+                    ), AttributeModifierSlot.MAINHAND),
+                    new AttributeModifiersComponent.Entry(EntityAttributes.PLAYER_ENTITY_INTERACTION_RANGE, new EntityAttributeModifier(
+                            Identifier.of("2906341806710"),-0.5F, EntityAttributeModifier.Operation.ADD_VALUE
+                    ), AttributeModifierSlot.MAINHAND),
+                    new AttributeModifiersComponent.Entry(EntityAttributes.PLAYER_BLOCK_INTERACTION_RANGE, new EntityAttributeModifier(
+                            Identifier.of("10157301586103"),-0.5F, EntityAttributeModifier.Operation.ADD_VALUE
                     ), AttributeModifierSlot.MAINHAND)),true))));
 
         // Tools
@@ -106,13 +335,46 @@ public class ModItems {
             fabricItemGroupEntries.addAfter(Items.BEETROOT, ModItems.GARLIC);
         });
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.TOOLS).register(fabricItemGroupEntries -> {
-            fabricItemGroupEntries.addBefore(Items.IRON_SHOVEL, ModItems.COPPER_HOE);
-            fabricItemGroupEntries.addBefore(Items.IRON_SHOVEL, ModItems.COPPER_AXE);
-            fabricItemGroupEntries.addBefore(Items.IRON_SHOVEL, ModItems.COPPER_PICKAXE);
             fabricItemGroupEntries.addBefore(Items.IRON_SHOVEL, ModItems.COPPER_SHOVEL);
+            fabricItemGroupEntries.addBefore(Items.IRON_SHOVEL, ModItems.COPPER_PICKAXE);
+            fabricItemGroupEntries.addBefore(Items.IRON_SHOVEL, ModItems.COPPER_AXE);
+            fabricItemGroupEntries.addBefore(Items.IRON_SHOVEL, ModItems.COPPER_HOE);
         });
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.COMBAT).register(fabricItemGroupEntries -> {
+
             fabricItemGroupEntries.addBefore(Items.IRON_SWORD, ModItems.COPPER_SWORD);
+
+                // Sword Variants
+            // Wooden Swords
+            fabricItemGroupEntries.addAfter(Items.WOODEN_SWORD, ModItems.WOODEN_DUELING_SWORD);
+            fabricItemGroupEntries.addAfter(ModItems.WOODEN_DUELING_SWORD, ModItems.WOODEN_WIDE_SWORD);
+            fabricItemGroupEntries.addAfter(ModItems.WOODEN_WIDE_SWORD, ModItems.WOODEN_SHORT_SWORD);
+            // Stone Swords
+            fabricItemGroupEntries.addAfter(Items.STONE_SWORD, ModItems.STONE_DUELING_SWORD);
+            fabricItemGroupEntries.addAfter(ModItems.STONE_DUELING_SWORD, ModItems.STONE_WIDE_SWORD);
+            fabricItemGroupEntries.addAfter(ModItems.STONE_WIDE_SWORD, ModItems.STONE_SHORT_SWORD);
+            // Copper Swords
+            fabricItemGroupEntries.addAfter(ModItems.COPPER_SWORD, ModItems.COPPER_DUELING_SWORD);
+            fabricItemGroupEntries.addAfter(ModItems.COPPER_DUELING_SWORD, ModItems.COPPER_WIDE_SWORD);
+            fabricItemGroupEntries.addAfter(ModItems.COPPER_WIDE_SWORD, ModItems.COPPER_SHORT_SWORD);
+            // Iron Swords
+            fabricItemGroupEntries.addAfter(Items.IRON_SWORD, ModItems.IRON_DUELING_SWORD);
+            fabricItemGroupEntries.addAfter(ModItems.IRON_DUELING_SWORD, ModItems.IRON_WIDE_SWORD);
+            fabricItemGroupEntries.addAfter(ModItems.IRON_WIDE_SWORD, ModItems.IRON_SHORT_SWORD);
+            // Golden Swords
+            fabricItemGroupEntries.addAfter(Items.GOLDEN_SWORD, ModItems.GOLDEN_DUELING_SWORD);
+            fabricItemGroupEntries.addAfter(ModItems.GOLDEN_DUELING_SWORD, ModItems.GOLDEN_WIDE_SWORD);
+            fabricItemGroupEntries.addAfter(ModItems.GOLDEN_WIDE_SWORD, ModItems.GOLDEN_SHORT_SWORD);
+            // Diamond Swords
+            fabricItemGroupEntries.addAfter(Items.DIAMOND_SWORD, ModItems.DIAMOND_DUELING_SWORD);
+            fabricItemGroupEntries.addAfter(ModItems.DIAMOND_DUELING_SWORD, ModItems.DIAMOND_WIDE_SWORD);
+            fabricItemGroupEntries.addAfter(ModItems.DIAMOND_WIDE_SWORD, ModItems.DIAMOND_SHORT_SWORD);
+            // Netherite Swords
+            fabricItemGroupEntries.addAfter(Items.NETHERITE_SWORD, ModItems.NETHERITE_DUELING_SWORD);
+            fabricItemGroupEntries.addAfter(ModItems.NETHERITE_DUELING_SWORD, ModItems.NETHERITE_WIDE_SWORD);
+            fabricItemGroupEntries.addAfter(ModItems.NETHERITE_WIDE_SWORD, ModItems.NETHERITE_SHORT_SWORD);
+
+
             fabricItemGroupEntries.addBefore(Items.IRON_AXE, ModItems.COPPER_AXE);
             fabricItemGroupEntries.addAfter(Items.LEATHER_BOOTS, ModItems.COPPER_BOOTS);
             fabricItemGroupEntries.addAfter(Items.LEATHER_BOOTS, ModItems.COPPER_LEGGINGS);

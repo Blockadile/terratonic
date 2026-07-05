@@ -9,9 +9,28 @@
   "item.terratonic.copper_shovel": "Copper Shovel",
   "item.terratonic.copper_axe": "Copper Axe",
   "item.terratonic.copper_hoe": "Copper Hoe",
+
+  "item.terratonic.wooden_dueling_sword": "Wooden Dueling Sword",
+  "item.terratonic.wooden_wide_sword": "Wooden Wide Sword",
+  "item.terratonic.wooden_short_sword": "Wooden Short Sword",
+  "item.terratonic.stone_dueling_sword": "Stone Dueling Sword",
+  "item.terratonic.stone_wide_sword": "Stone Wide Sword",
+  "item.terratonic.stone_short_sword": "Stone Short Sword",
+  "item.terratonic.copper_dueling_sword": "Copper Dueling Sword",
+  "item.terratonic.copper_wide_sword": "Copper Wide Sword",
+  "item.terratonic.copper_short_sword": "Copper Short Sword",
   "item.terratonic.iron_dueling_sword": "Iron Dueling Sword",
   "item.terratonic.iron_wide_sword": "Iron Wide Sword",
   "item.terratonic.iron_short_sword": "Iron Short Sword",
+  "item.terratonic.golden_dueling_sword": "Golden Dueling Sword",
+  "item.terratonic.golden_wide_sword": "Golden Wide Sword",
+  "item.terratonic.golden_short_sword": "Golden Short Sword",
+  "item.terratonic.diamond_dueling_sword": "Diamond Dueling Sword",
+  "item.terratonic.diamond_wide_sword": "Diamond Wide Sword",
+  "item.terratonic.diamond_short_sword": "Diamond Short Sword",
+  "item.terratonic.netherite_dueling_sword": "Netherite Dueling Sword",
+  "item.terratonic.netherite_wide_sword": "Netherite Wide Sword",
+  "item.terratonic.netherite_short_sword": "Netherite Short Sword",
 
   "block.terratonic.garlics": "Garlic"
 }
