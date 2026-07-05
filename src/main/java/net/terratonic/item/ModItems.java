@@ -10,6 +10,7 @@ import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
 import net.terratonic.Terratonic;
+import net.terratonic.block.ModBlocks;
 import net.terratonic.item.components.ModFoodComponents;
 
 import java.util.List;
@@ -89,8 +90,8 @@ public class ModItems {
                     0, -3.0F))));
 
     // Food
-    public static final Item GARLIC = registerItem("garlic", new Item(new Item.Settings()
-            .food(ModFoodComponents.GARLIC)));
+    public static final Item GARLIC = registerItem("garlic", new AliasedBlockItem(ModBlocks.GARLICS, (new Item.Settings()
+            .food(ModFoodComponents.GARLIC))));
 
 
     // Methods
@@ -102,7 +103,7 @@ public class ModItems {
         Terratonic.LOGGER.info("Registering Mod Items for " + Terratonic.MOD_ID);
 
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.FOOD_AND_DRINK).register(fabricItemGroupEntries -> {
-            fabricItemGroupEntries.addAfter(Items.CARROT, ModItems.GARLIC);
+            fabricItemGroupEntries.addAfter(Items.BEETROOT, ModItems.GARLIC);
         });
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.TOOLS).register(fabricItemGroupEntries -> {
             fabricItemGroupEntries.addBefore(Items.IRON_SHOVEL, ModItems.COPPER_HOE);
