@@ -12,6 +12,7 @@ import net.minecraft.util.Identifier;
 import net.terratonic.Terratonic;
 import net.terratonic.block.ModBlocks;
 import net.terratonic.item.components.ModFoodComponents;
+import net.terratonic.item.custom.ScytheItem;
 import net.terratonic.item.custom.SickleItem;
 
 import java.util.List;
