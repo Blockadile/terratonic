@@ -320,7 +320,7 @@ public class ModItems {
             .maxCount(1)
             .attributeModifiers(new AttributeModifiersComponent(List.of(
                     new AttributeModifiersComponent.Entry(EntityAttributes.GENERIC_ATTACK_DAMAGE, new EntityAttributeModifier(
-                            Item.BASE_ATTACK_DAMAGE_MODIFIER_ID,2.5F, EntityAttributeModifier.Operation.ADD_VALUE
+                            Item.BASE_ATTACK_DAMAGE_MODIFIER_ID,1.5F, EntityAttributeModifier.Operation.ADD_VALUE
                     ), AttributeModifierSlot.MAINHAND),
                     new AttributeModifiersComponent.Entry(EntityAttributes.GENERIC_ATTACK_SPEED, new EntityAttributeModifier(
                             Item.BASE_ATTACK_SPEED_MODIFIER_ID,-1.5F, EntityAttributeModifier.Operation.ADD_VALUE
@@ -374,7 +374,7 @@ public class ModItems {
             .maxCount(1)
             .attributeModifiers(new AttributeModifiersComponent(List.of(
                     new AttributeModifiersComponent.Entry(EntityAttributes.GENERIC_ATTACK_DAMAGE, new EntityAttributeModifier(
-                            Item.BASE_ATTACK_DAMAGE_MODIFIER_ID,2.5F, EntityAttributeModifier.Operation.ADD_VALUE
+                            Item.BASE_ATTACK_DAMAGE_MODIFIER_ID,3.5F, EntityAttributeModifier.Operation.ADD_VALUE
                     ), AttributeModifierSlot.MAINHAND),
                     new AttributeModifiersComponent.Entry(EntityAttributes.GENERIC_ATTACK_SPEED, new EntityAttributeModifier(
                             Item.BASE_ATTACK_SPEED_MODIFIER_ID,-1.5F, EntityAttributeModifier.Operation.ADD_VALUE
@@ -391,7 +391,7 @@ public class ModItems {
             .maxCount(1)
             .attributeModifiers(new AttributeModifiersComponent(List.of(
                     new AttributeModifiersComponent.Entry(EntityAttributes.GENERIC_ATTACK_DAMAGE, new EntityAttributeModifier(
-                            Item.BASE_ATTACK_DAMAGE_MODIFIER_ID,2.5F, EntityAttributeModifier.Operation.ADD_VALUE
+                            Item.BASE_ATTACK_DAMAGE_MODIFIER_ID,1.5F, EntityAttributeModifier.Operation.ADD_VALUE
                     ), AttributeModifierSlot.MAINHAND),
                     new AttributeModifiersComponent.Entry(EntityAttributes.GENERIC_ATTACK_SPEED, new EntityAttributeModifier(
                             Item.BASE_ATTACK_SPEED_MODIFIER_ID,-1.5F, EntityAttributeModifier.Operation.ADD_VALUE
@@ -408,7 +408,7 @@ public class ModItems {
             .maxCount(1)
             .attributeModifiers(new AttributeModifiersComponent(List.of(
                     new AttributeModifiersComponent.Entry(EntityAttributes.GENERIC_ATTACK_DAMAGE, new EntityAttributeModifier(
-                            Item.BASE_ATTACK_DAMAGE_MODIFIER_ID,2.5F, EntityAttributeModifier.Operation.ADD_VALUE
+                            Item.BASE_ATTACK_DAMAGE_MODIFIER_ID,4.5F, EntityAttributeModifier.Operation.ADD_VALUE
                     ), AttributeModifierSlot.MAINHAND),
                     new AttributeModifiersComponent.Entry(EntityAttributes.GENERIC_ATTACK_SPEED, new EntityAttributeModifier(
                             Item.BASE_ATTACK_SPEED_MODIFIER_ID,-1.5F, EntityAttributeModifier.Operation.ADD_VALUE
@@ -425,7 +425,7 @@ public class ModItems {
             .maxCount(1)
             .attributeModifiers(new AttributeModifiersComponent(List.of(
                     new AttributeModifiersComponent.Entry(EntityAttributes.GENERIC_ATTACK_DAMAGE, new EntityAttributeModifier(
-                            Item.BASE_ATTACK_DAMAGE_MODIFIER_ID,2.5F, EntityAttributeModifier.Operation.ADD_VALUE
+                            Item.BASE_ATTACK_DAMAGE_MODIFIER_ID,5.5F, EntityAttributeModifier.Operation.ADD_VALUE
                     ), AttributeModifierSlot.MAINHAND),
                     new AttributeModifiersComponent.Entry(EntityAttributes.GENERIC_ATTACK_SPEED, new EntityAttributeModifier(
                             Item.BASE_ATTACK_SPEED_MODIFIER_ID,-1.5F, EntityAttributeModifier.Operation.ADD_VALUE
