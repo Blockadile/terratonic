@@ -314,7 +314,8 @@ public class ModItems {
             new AxeItem(ModToolMaterials.COPPER, new Item.Settings().attributeModifiers(AxeItem.createAttributeModifiers(ModToolMaterials.COPPER,
                     7, -3.2F))));
 
-    // Hoes
+        // Hoes
+    // Wooden Hoes
     public static final Item WOODEN_SICKLE = registerItem("wooden_sickle", new SickleItem(ToolMaterials.WOOD, new Item.Settings()
             .maxCount(1)
             .attributeModifiers(new AttributeModifiersComponent(List.of(
@@ -330,6 +331,8 @@ public class ModItems {
                     new AttributeModifiersComponent.Entry(EntityAttributes.PLAYER_BLOCK_INTERACTION_RANGE, new EntityAttributeModifier(
                             Identifier.of("55069211904233"),-0.5F, EntityAttributeModifier.Operation.ADD_VALUE
                     ), AttributeModifierSlot.MAINHAND)),true))));
+
+    // Stone Hoes
     public static final Item STONE_SICKLE = registerItem("stone_sickle", new SickleItem(ToolMaterials.STONE, new Item.Settings()
             .maxCount(1)
             .attributeModifiers(new AttributeModifiersComponent(List.of(
@@ -340,11 +343,13 @@ public class ModItems {
                             Item.BASE_ATTACK_SPEED_MODIFIER_ID,-1.5F, EntityAttributeModifier.Operation.ADD_VALUE
                     ), AttributeModifierSlot.MAINHAND),
                     new AttributeModifiersComponent.Entry(EntityAttributes.PLAYER_ENTITY_INTERACTION_RANGE, new EntityAttributeModifier(
-                            Identifier.of("12098574092000"),-0.5F, EntityAttributeModifier.Operation.ADD_VALUE
+                            Identifier.of("01928501784928"),-0.5F, EntityAttributeModifier.Operation.ADD_VALUE
                     ), AttributeModifierSlot.MAINHAND),
                     new AttributeModifiersComponent.Entry(EntityAttributes.PLAYER_BLOCK_INTERACTION_RANGE, new EntityAttributeModifier(
-                            Identifier.of("55069211904233"),-0.5F, EntityAttributeModifier.Operation.ADD_VALUE
+                            Identifier.of("67209467596932"),-0.5F, EntityAttributeModifier.Operation.ADD_VALUE
                     ), AttributeModifierSlot.MAINHAND)),true))));
+
+    // Copper Hoes
     public static final Item COPPER_HOE = registerItem("copper_hoe",
             new HoeItem(ModToolMaterials.COPPER, new Item.Settings().attributeModifiers(HoeItem.createAttributeModifiers(ModToolMaterials.COPPER,
                     0, -3.0F))));
@@ -358,11 +363,13 @@ public class ModItems {
                             Item.BASE_ATTACK_SPEED_MODIFIER_ID,-1.5F, EntityAttributeModifier.Operation.ADD_VALUE
                     ), AttributeModifierSlot.MAINHAND),
                     new AttributeModifiersComponent.Entry(EntityAttributes.PLAYER_ENTITY_INTERACTION_RANGE, new EntityAttributeModifier(
-                            Identifier.of("12098574092000"),-0.5F, EntityAttributeModifier.Operation.ADD_VALUE
+                            Identifier.of("29384756102938"),-0.5F, EntityAttributeModifier.Operation.ADD_VALUE
                     ), AttributeModifierSlot.MAINHAND),
                     new AttributeModifiersComponent.Entry(EntityAttributes.PLAYER_BLOCK_INTERACTION_RANGE, new EntityAttributeModifier(
-                            Identifier.of("55069211904233"),-0.5F, EntityAttributeModifier.Operation.ADD_VALUE
+                            Identifier.of("12903478561290"),-0.5F, EntityAttributeModifier.Operation.ADD_VALUE
                     ), AttributeModifierSlot.MAINHAND)),true))));
+
+    // Iron Hoes
     public static final Item IRON_SICKLE = registerItem("iron_sickle", new SickleItem(ToolMaterials.IRON, new Item.Settings()
             .maxCount(1)
             .attributeModifiers(new AttributeModifiersComponent(List.of(
@@ -373,11 +380,13 @@ public class ModItems {
                             Item.BASE_ATTACK_SPEED_MODIFIER_ID,-1.5F, EntityAttributeModifier.Operation.ADD_VALUE
                     ), AttributeModifierSlot.MAINHAND),
                     new AttributeModifiersComponent.Entry(EntityAttributes.PLAYER_ENTITY_INTERACTION_RANGE, new EntityAttributeModifier(
-                            Identifier.of("12098574092000"),-0.5F, EntityAttributeModifier.Operation.ADD_VALUE
+                            Identifier.of("01298347651029"),-0.5F, EntityAttributeModifier.Operation.ADD_VALUE
                     ), AttributeModifierSlot.MAINHAND),
                     new AttributeModifiersComponent.Entry(EntityAttributes.PLAYER_BLOCK_INTERACTION_RANGE, new EntityAttributeModifier(
-                            Identifier.of("55069211904233"),-0.5F, EntityAttributeModifier.Operation.ADD_VALUE
+                            Identifier.of("10101029294757"),-0.5F, EntityAttributeModifier.Operation.ADD_VALUE
                     ), AttributeModifierSlot.MAINHAND)),true))));
+
+    // Golden Hoes
     public static final Item GOLDEN_SICKLE = registerItem("golden_sickle", new SickleItem(ToolMaterials.GOLD, new Item.Settings()
             .maxCount(1)
             .attributeModifiers(new AttributeModifiersComponent(List.of(
@@ -388,11 +397,13 @@ public class ModItems {
                             Item.BASE_ATTACK_SPEED_MODIFIER_ID,-1.5F, EntityAttributeModifier.Operation.ADD_VALUE
                     ), AttributeModifierSlot.MAINHAND),
                     new AttributeModifiersComponent.Entry(EntityAttributes.PLAYER_ENTITY_INTERACTION_RANGE, new EntityAttributeModifier(
-                            Identifier.of("12098574092000"),-0.5F, EntityAttributeModifier.Operation.ADD_VALUE
+                            Identifier.of("69420120929299"),-0.5F, EntityAttributeModifier.Operation.ADD_VALUE
                     ), AttributeModifierSlot.MAINHAND),
                     new AttributeModifiersComponent.Entry(EntityAttributes.PLAYER_BLOCK_INTERACTION_RANGE, new EntityAttributeModifier(
-                            Identifier.of("55069211904233"),-0.5F, EntityAttributeModifier.Operation.ADD_VALUE
+                            Identifier.of("80081928476566"),-0.5F, EntityAttributeModifier.Operation.ADD_VALUE
                     ), AttributeModifierSlot.MAINHAND)),true))));
+
+    // Diamond Hoes
     public static final Item DIAMOND_SICKLE = registerItem("diamond_sickle", new SickleItem(ToolMaterials.DIAMOND, new Item.Settings()
             .maxCount(1)
             .attributeModifiers(new AttributeModifiersComponent(List.of(
@@ -403,11 +414,13 @@ public class ModItems {
                             Item.BASE_ATTACK_SPEED_MODIFIER_ID,-1.5F, EntityAttributeModifier.Operation.ADD_VALUE
                     ), AttributeModifierSlot.MAINHAND),
                     new AttributeModifiersComponent.Entry(EntityAttributes.PLAYER_ENTITY_INTERACTION_RANGE, new EntityAttributeModifier(
-                            Identifier.of("12098574092000"),-0.5F, EntityAttributeModifier.Operation.ADD_VALUE
+                            Identifier.of("01293749845755"),-0.5F, EntityAttributeModifier.Operation.ADD_VALUE
                     ), AttributeModifierSlot.MAINHAND),
                     new AttributeModifiersComponent.Entry(EntityAttributes.PLAYER_BLOCK_INTERACTION_RANGE, new EntityAttributeModifier(
-                            Identifier.of("55069211904233"),-0.5F, EntityAttributeModifier.Operation.ADD_VALUE
+                            Identifier.of("12094767549867"),-0.5F, EntityAttributeModifier.Operation.ADD_VALUE
                     ), AttributeModifierSlot.MAINHAND)),true))));
+
+    // Netherite Hoes
     public static final Item NETHERITE_SICKLE = registerItem("netherite_sickle", new SickleItem(ToolMaterials.NETHERITE, new Item.Settings()
             .maxCount(1)
             .attributeModifiers(new AttributeModifiersComponent(List.of(
@@ -418,10 +431,10 @@ public class ModItems {
                             Item.BASE_ATTACK_SPEED_MODIFIER_ID,-1.5F, EntityAttributeModifier.Operation.ADD_VALUE
                     ), AttributeModifierSlot.MAINHAND),
                     new AttributeModifiersComponent.Entry(EntityAttributes.PLAYER_ENTITY_INTERACTION_RANGE, new EntityAttributeModifier(
-                            Identifier.of("12098574092000"),-0.5F, EntityAttributeModifier.Operation.ADD_VALUE
+                            Identifier.of("09809853487232"),-0.5F, EntityAttributeModifier.Operation.ADD_VALUE
                     ), AttributeModifierSlot.MAINHAND),
                     new AttributeModifiersComponent.Entry(EntityAttributes.PLAYER_BLOCK_INTERACTION_RANGE, new EntityAttributeModifier(
-                            Identifier.of("55069211904233"),-0.5F, EntityAttributeModifier.Operation.ADD_VALUE
+                            Identifier.of("42369864238191"),-0.5F, EntityAttributeModifier.Operation.ADD_VALUE
                     ), AttributeModifierSlot.MAINHAND)),true))));
 
     // Food
