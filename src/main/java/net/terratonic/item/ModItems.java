@@ -12,6 +12,7 @@ import net.minecraft.util.Identifier;
 import net.terratonic.Terratonic;
 import net.terratonic.block.ModBlocks;
 import net.terratonic.item.components.ModFoodComponents;
+import net.terratonic.item.custom.SickleItem;
 
 import java.util.List;
 
@@ -314,9 +315,114 @@ public class ModItems {
                     7, -3.2F))));
 
     // Hoes
+    public static final Item WOODEN_SICKLE = registerItem("wooden_sickle", new SickleItem(ToolMaterials.WOOD, new Item.Settings()
+            .maxCount(1)
+            .attributeModifiers(new AttributeModifiersComponent(List.of(
+                    new AttributeModifiersComponent.Entry(EntityAttributes.GENERIC_ATTACK_DAMAGE, new EntityAttributeModifier(
+                            Item.BASE_ATTACK_DAMAGE_MODIFIER_ID,2.5F, EntityAttributeModifier.Operation.ADD_VALUE
+                    ), AttributeModifierSlot.MAINHAND),
+                    new AttributeModifiersComponent.Entry(EntityAttributes.GENERIC_ATTACK_SPEED, new EntityAttributeModifier(
+                            Item.BASE_ATTACK_SPEED_MODIFIER_ID,-1.5F, EntityAttributeModifier.Operation.ADD_VALUE
+                    ), AttributeModifierSlot.MAINHAND),
+                    new AttributeModifiersComponent.Entry(EntityAttributes.PLAYER_ENTITY_INTERACTION_RANGE, new EntityAttributeModifier(
+                            Identifier.of("12098574092000"),-0.5F, EntityAttributeModifier.Operation.ADD_VALUE
+                    ), AttributeModifierSlot.MAINHAND),
+                    new AttributeModifiersComponent.Entry(EntityAttributes.PLAYER_BLOCK_INTERACTION_RANGE, new EntityAttributeModifier(
+                            Identifier.of("55069211904233"),-0.5F, EntityAttributeModifier.Operation.ADD_VALUE
+                    ), AttributeModifierSlot.MAINHAND)),true))));
+    public static final Item STONE_SICKLE = registerItem("stone_sickle", new SickleItem(ToolMaterials.STONE, new Item.Settings()
+            .maxCount(1)
+            .attributeModifiers(new AttributeModifiersComponent(List.of(
+                    new AttributeModifiersComponent.Entry(EntityAttributes.GENERIC_ATTACK_DAMAGE, new EntityAttributeModifier(
+                            Item.BASE_ATTACK_DAMAGE_MODIFIER_ID,2.5F, EntityAttributeModifier.Operation.ADD_VALUE
+                    ), AttributeModifierSlot.MAINHAND),
+                    new AttributeModifiersComponent.Entry(EntityAttributes.GENERIC_ATTACK_SPEED, new EntityAttributeModifier(
+                            Item.BASE_ATTACK_SPEED_MODIFIER_ID,-1.5F, EntityAttributeModifier.Operation.ADD_VALUE
+                    ), AttributeModifierSlot.MAINHAND),
+                    new AttributeModifiersComponent.Entry(EntityAttributes.PLAYER_ENTITY_INTERACTION_RANGE, new EntityAttributeModifier(
+                            Identifier.of("12098574092000"),-0.5F, EntityAttributeModifier.Operation.ADD_VALUE
+                    ), AttributeModifierSlot.MAINHAND),
+                    new AttributeModifiersComponent.Entry(EntityAttributes.PLAYER_BLOCK_INTERACTION_RANGE, new EntityAttributeModifier(
+                            Identifier.of("55069211904233"),-0.5F, EntityAttributeModifier.Operation.ADD_VALUE
+                    ), AttributeModifierSlot.MAINHAND)),true))));
     public static final Item COPPER_HOE = registerItem("copper_hoe",
             new HoeItem(ModToolMaterials.COPPER, new Item.Settings().attributeModifiers(HoeItem.createAttributeModifiers(ModToolMaterials.COPPER,
                     0, -3.0F))));
+    public static final Item COPPER_SICKLE = registerItem("copper_sickle", new SickleItem(ModToolMaterials.COPPER, new Item.Settings()
+            .maxCount(1)
+            .attributeModifiers(new AttributeModifiersComponent(List.of(
+                    new AttributeModifiersComponent.Entry(EntityAttributes.GENERIC_ATTACK_DAMAGE, new EntityAttributeModifier(
+                            Item.BASE_ATTACK_DAMAGE_MODIFIER_ID,2.5F, EntityAttributeModifier.Operation.ADD_VALUE
+                    ), AttributeModifierSlot.MAINHAND),
+                    new AttributeModifiersComponent.Entry(EntityAttributes.GENERIC_ATTACK_SPEED, new EntityAttributeModifier(
+                            Item.BASE_ATTACK_SPEED_MODIFIER_ID,-1.5F, EntityAttributeModifier.Operation.ADD_VALUE
+                    ), AttributeModifierSlot.MAINHAND),
+                    new AttributeModifiersComponent.Entry(EntityAttributes.PLAYER_ENTITY_INTERACTION_RANGE, new EntityAttributeModifier(
+                            Identifier.of("12098574092000"),-0.5F, EntityAttributeModifier.Operation.ADD_VALUE
+                    ), AttributeModifierSlot.MAINHAND),
+                    new AttributeModifiersComponent.Entry(EntityAttributes.PLAYER_BLOCK_INTERACTION_RANGE, new EntityAttributeModifier(
+                            Identifier.of("55069211904233"),-0.5F, EntityAttributeModifier.Operation.ADD_VALUE
+                    ), AttributeModifierSlot.MAINHAND)),true))));
+    public static final Item IRON_SICKLE = registerItem("iron_sickle", new SickleItem(ToolMaterials.IRON, new Item.Settings()
+            .maxCount(1)
+            .attributeModifiers(new AttributeModifiersComponent(List.of(
+                    new AttributeModifiersComponent.Entry(EntityAttributes.GENERIC_ATTACK_DAMAGE, new EntityAttributeModifier(
+                            Item.BASE_ATTACK_DAMAGE_MODIFIER_ID,2.5F, EntityAttributeModifier.Operation.ADD_VALUE
+                    ), AttributeModifierSlot.MAINHAND),
+                    new AttributeModifiersComponent.Entry(EntityAttributes.GENERIC_ATTACK_SPEED, new EntityAttributeModifier(
+                            Item.BASE_ATTACK_SPEED_MODIFIER_ID,-1.5F, EntityAttributeModifier.Operation.ADD_VALUE
+                    ), AttributeModifierSlot.MAINHAND),
+                    new AttributeModifiersComponent.Entry(EntityAttributes.PLAYER_ENTITY_INTERACTION_RANGE, new EntityAttributeModifier(
+                            Identifier.of("12098574092000"),-0.5F, EntityAttributeModifier.Operation.ADD_VALUE
+                    ), AttributeModifierSlot.MAINHAND),
+                    new AttributeModifiersComponent.Entry(EntityAttributes.PLAYER_BLOCK_INTERACTION_RANGE, new EntityAttributeModifier(
+                            Identifier.of("55069211904233"),-0.5F, EntityAttributeModifier.Operation.ADD_VALUE
+                    ), AttributeModifierSlot.MAINHAND)),true))));
+    public static final Item GOLDEN_SICKLE = registerItem("golden_sickle", new SickleItem(ToolMaterials.GOLD, new Item.Settings()
+            .maxCount(1)
+            .attributeModifiers(new AttributeModifiersComponent(List.of(
+                    new AttributeModifiersComponent.Entry(EntityAttributes.GENERIC_ATTACK_DAMAGE, new EntityAttributeModifier(
+                            Item.BASE_ATTACK_DAMAGE_MODIFIER_ID,2.5F, EntityAttributeModifier.Operation.ADD_VALUE
+                    ), AttributeModifierSlot.MAINHAND),
+                    new AttributeModifiersComponent.Entry(EntityAttributes.GENERIC_ATTACK_SPEED, new EntityAttributeModifier(
+                            Item.BASE_ATTACK_SPEED_MODIFIER_ID,-1.5F, EntityAttributeModifier.Operation.ADD_VALUE
+                    ), AttributeModifierSlot.MAINHAND),
+                    new AttributeModifiersComponent.Entry(EntityAttributes.PLAYER_ENTITY_INTERACTION_RANGE, new EntityAttributeModifier(
+                            Identifier.of("12098574092000"),-0.5F, EntityAttributeModifier.Operation.ADD_VALUE
+                    ), AttributeModifierSlot.MAINHAND),
+                    new AttributeModifiersComponent.Entry(EntityAttributes.PLAYER_BLOCK_INTERACTION_RANGE, new EntityAttributeModifier(
+                            Identifier.of("55069211904233"),-0.5F, EntityAttributeModifier.Operation.ADD_VALUE
+                    ), AttributeModifierSlot.MAINHAND)),true))));
+    public static final Item DIAMOND_SICKLE = registerItem("diamond_sickle", new SickleItem(ToolMaterials.DIAMOND, new Item.Settings()
+            .maxCount(1)
+            .attributeModifiers(new AttributeModifiersComponent(List.of(
+                    new AttributeModifiersComponent.Entry(EntityAttributes.GENERIC_ATTACK_DAMAGE, new EntityAttributeModifier(
+                            Item.BASE_ATTACK_DAMAGE_MODIFIER_ID,2.5F, EntityAttributeModifier.Operation.ADD_VALUE
+                    ), AttributeModifierSlot.MAINHAND),
+                    new AttributeModifiersComponent.Entry(EntityAttributes.GENERIC_ATTACK_SPEED, new EntityAttributeModifier(
+                            Item.BASE_ATTACK_SPEED_MODIFIER_ID,-1.5F, EntityAttributeModifier.Operation.ADD_VALUE
+                    ), AttributeModifierSlot.MAINHAND),
+                    new AttributeModifiersComponent.Entry(EntityAttributes.PLAYER_ENTITY_INTERACTION_RANGE, new EntityAttributeModifier(
+                            Identifier.of("12098574092000"),-0.5F, EntityAttributeModifier.Operation.ADD_VALUE
+                    ), AttributeModifierSlot.MAINHAND),
+                    new AttributeModifiersComponent.Entry(EntityAttributes.PLAYER_BLOCK_INTERACTION_RANGE, new EntityAttributeModifier(
+                            Identifier.of("55069211904233"),-0.5F, EntityAttributeModifier.Operation.ADD_VALUE
+                    ), AttributeModifierSlot.MAINHAND)),true))));
+    public static final Item NETHERITE_SICKLE = registerItem("netherite_sickle", new SickleItem(ToolMaterials.NETHERITE, new Item.Settings()
+            .maxCount(1)
+            .attributeModifiers(new AttributeModifiersComponent(List.of(
+                    new AttributeModifiersComponent.Entry(EntityAttributes.GENERIC_ATTACK_DAMAGE, new EntityAttributeModifier(
+                            Item.BASE_ATTACK_DAMAGE_MODIFIER_ID,2.5F, EntityAttributeModifier.Operation.ADD_VALUE
+                    ), AttributeModifierSlot.MAINHAND),
+                    new AttributeModifiersComponent.Entry(EntityAttributes.GENERIC_ATTACK_SPEED, new EntityAttributeModifier(
+                            Item.BASE_ATTACK_SPEED_MODIFIER_ID,-1.5F, EntityAttributeModifier.Operation.ADD_VALUE
+                    ), AttributeModifierSlot.MAINHAND),
+                    new AttributeModifiersComponent.Entry(EntityAttributes.PLAYER_ENTITY_INTERACTION_RANGE, new EntityAttributeModifier(
+                            Identifier.of("12098574092000"),-0.5F, EntityAttributeModifier.Operation.ADD_VALUE
+                    ), AttributeModifierSlot.MAINHAND),
+                    new AttributeModifiersComponent.Entry(EntityAttributes.PLAYER_BLOCK_INTERACTION_RANGE, new EntityAttributeModifier(
+                            Identifier.of("55069211904233"),-0.5F, EntityAttributeModifier.Operation.ADD_VALUE
+                    ), AttributeModifierSlot.MAINHAND)),true))));
 
     // Food
     public static final Item GARLIC = registerItem("garlic", new AliasedBlockItem(ModBlocks.GARLICS, (new Item.Settings()
@@ -324,6 +430,7 @@ public class ModItems {
 
     // Misc
     public static final Item ORNATE_OIL_BOTTLE = registerItem("ornate_oil_bottle", new Item(new Item.Settings()));
+    public static final Item COPPER_NUGGET = registerItem("copper_nugget", new Item(new Item.Settings()));
 
 
     // Methods
@@ -342,6 +449,14 @@ public class ModItems {
             fabricItemGroupEntries.addBefore(Items.IRON_SHOVEL, ModItems.COPPER_PICKAXE);
             fabricItemGroupEntries.addBefore(Items.IRON_SHOVEL, ModItems.COPPER_AXE);
             fabricItemGroupEntries.addBefore(Items.IRON_SHOVEL, ModItems.COPPER_HOE);
+
+            fabricItemGroupEntries.addAfter(Items.WOODEN_HOE, ModItems.WOODEN_SICKLE);
+            fabricItemGroupEntries.addAfter(Items.STONE_HOE, ModItems.STONE_SICKLE);
+            fabricItemGroupEntries.addAfter(ModItems.COPPER_HOE, ModItems.COPPER_SICKLE);
+            fabricItemGroupEntries.addAfter(Items.IRON_HOE, ModItems.IRON_SICKLE);
+            fabricItemGroupEntries.addAfter(Items.GOLDEN_HOE, ModItems.GOLDEN_SICKLE);
+            fabricItemGroupEntries.addAfter(Items.DIAMOND_HOE, ModItems.DIAMOND_SICKLE);
+            fabricItemGroupEntries.addAfter(Items.NETHERITE_HOE, ModItems.NETHERITE_SICKLE);
         });
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.COMBAT).register(fabricItemGroupEntries -> {
 
@@ -385,6 +500,7 @@ public class ModItems {
             fabricItemGroupEntries.addAfter(Items.LEATHER_BOOTS, ModItems.COPPER_HELMET);
         });
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(fabricItemGroupEntries -> {
+            fabricItemGroupEntries.addAfter(Items.GOLD_NUGGET, ModItems.COPPER_NUGGET);
             fabricItemGroupEntries.addAfter(Items.EXPERIENCE_BOTTLE, ModItems.ORNATE_OIL_BOTTLE);
         });
     }

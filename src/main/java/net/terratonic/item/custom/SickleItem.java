@@ -1,15 +1,18 @@
-package net.terratonic.mixin;
+package net.terratonic.item.custom;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.CropBlock;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.player.PlayerEntity;
-import net.minecraft.item.HoeItem;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.ItemUsageContext;
+import net.minecraft.item.MiningToolItem;
+import net.minecraft.item.ToolMaterial;
 import net.minecraft.loot.context.LootContextParameterSet;
 import net.minecraft.loot.context.LootContextParameters;
+import net.minecraft.registry.tag.BlockTags;
+import net.minecraft.registry.tag.TagKey;
 import net.minecraft.server.network.ServerPlayerEntity;
 import net.minecraft.server.world.ServerWorld;
 import net.minecraft.sound.SoundCategory;
@@ -18,17 +21,16 @@ import net.minecraft.util.ActionResult;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Vec3d;
 import net.minecraft.world.World;
-import org.spongepowered.asm.mixin.Mixin;
-import org.spongepowered.asm.mixin.injection.At;
-import org.spongepowered.asm.mixin.injection.Inject;
-import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 
 import java.util.List;
 
-@Mixin(HoeItem.class)
-public class HoeItemMixin {
-    @Inject(method = "useOnBlock", at = @At("HEAD"), cancellable = true)
-    private void onUseBlock(ItemUsageContext context, CallbackInfoReturnable<ActionResult> callbackInfoReturnable) {
+public class SickleItem extends MiningToolItem {
+    public SickleItem(ToolMaterial material, Settings settings) {
+        super(material, BlockTags.HOE_MINEABLE, settings);
+    }
+
+    @Override
+    public ActionResult useOnBlock(ItemUsageContext context) {
         World world = context.getWorld();
         BlockPos pos = context.getBlockPos();
 
@@ -36,8 +38,6 @@ public class HoeItemMixin {
         BlockPos end = pos.add(1, 0, 1);
         boolean harvest = false;
 
-        // Iterates through all blocks in a 3x3 square around where the player right clicks
-        // If tryHarvest succeeds, set harvest to true
         for (BlockPos currentPos : BlockPos.iterate(start, end)) {
             BlockState state = world.getBlockState(currentPos);
 
@@ -46,7 +46,6 @@ public class HoeItemMixin {
             }
         }
 
-        // If harvest is true: play sound, damage tool, and swing player's hand
         if (harvest) {
             world.playSound(
                     (double)pos.getX() + 0.5, (double)pos.getY() + 0.5, (double)pos.getZ() + 0.5,
@@ -57,36 +56,34 @@ public class HoeItemMixin {
                     false
             );
             if (!world.isClient && context.getPlayer() instanceof ServerPlayerEntity serverPlayer) {
-                ItemStack itemStack = context.getStack();
-                itemStack.damage(1, (ServerWorld) world, serverPlayer, (item) -> {
+                ItemStack hoeStack = context.getStack();
+                hoeStack.damage(1, (ServerWorld) world, serverPlayer, (item) -> {
                     serverPlayer.sendEquipmentBreakStatus(item, LivingEntity.getSlotForHand(context.getHand()));
                 });
             }
-            callbackInfoReturnable.setReturnValue(ActionResult.success(world.isClient));
+            return ActionResult.success(world.isClient);
         }
+
+        return ActionResult.PASS;
     }
 
     private boolean tryHarvest(World world, BlockPos pos, BlockState state, PlayerEntity player) {
-        // Check if any of the crops in that square are fully grown
-        // Run harvesting on them if there are
         if (state.getBlock() instanceof CropBlock crop && crop.isMature(state)) {
             if (!world.isClient) {
                 ServerWorld serverWorld = (ServerWorld) world;
 
-                // Grab loot
                 LootContextParameterSet.Builder builder = new LootContextParameterSet.Builder(serverWorld)
                         .add(LootContextParameters.ORIGIN, Vec3d.ofCenter(pos))
                         .add(LootContextParameters.TOOL, player.getStackInHand(player.getActiveHand()));
 
                 List<ItemStack> drops = state.getDroppedStacks(builder);
 
-                // Drop loot
                 for (ItemStack drop : drops) {
                     Block.dropStack(world, pos, drop);
                 }
 
-                // Reset crop age
                 world.setBlockState(pos, crop.withAge(0), 2);
+
             }
             return true;
         }

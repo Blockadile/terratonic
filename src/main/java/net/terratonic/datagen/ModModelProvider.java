@@ -20,14 +20,20 @@ public class ModModelProvider extends FabricModelProvider {
     @Override
     public void generateItemModels(ItemModelGenerator itemModelGenerator) {
 
+        // Foods
         itemModelGenerator.register(ModItems.GARLIC, Models.GENERATED);
-        itemModelGenerator.register(ModItems.ORNATE_OIL_BOTTLE, Models.GENERATED);
 
+        // Misc
+        itemModelGenerator.register(ModItems.ORNATE_OIL_BOTTLE, Models.GENERATED);
+        itemModelGenerator.register(ModItems.COPPER_NUGGET, Models.GENERATED);
+
+        // Copper Armor
         itemModelGenerator.register(ModItems.COPPER_HELMET, Models.GENERATED);
         itemModelGenerator.register(ModItems.COPPER_CHESTPLATE, Models.GENERATED);
         itemModelGenerator.register(ModItems.COPPER_LEGGINGS, Models.GENERATED);
         itemModelGenerator.register(ModItems.COPPER_BOOTS, Models.GENERATED);
 
+        // Copper Tools
         itemModelGenerator.register(ModItems.COPPER_SWORD, Models.HANDHELD);
         itemModelGenerator.register(ModItems.COPPER_PICKAXE, Models.HANDHELD);
         itemModelGenerator.register(ModItems.COPPER_AXE, Models.HANDHELD);
@@ -63,5 +69,17 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.NETHERITE_DUELING_SWORD, Models.HANDHELD);
         itemModelGenerator.register(ModItems.NETHERITE_WIDE_SWORD, Models.HANDHELD);
         itemModelGenerator.register(ModItems.NETHERITE_SHORT_SWORD, Models.HANDHELD);
+
+            // Hoe Variants
+        // Scythes
+
+        // Sickles
+        itemModelGenerator.register(ModItems.WOODEN_SICKLE, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.STONE_SICKLE, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.COPPER_SICKLE, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.IRON_SICKLE, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.GOLDEN_SICKLE, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.DIAMOND_SICKLE, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.NETHERITE_SICKLE, Models.HANDHELD);
     }
 }

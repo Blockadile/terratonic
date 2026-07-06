@@ -1,6 +1,7 @@
 {
   "item.terratonic.garlic": "Garlic",
   "item.terratonic.ornate_oil_bottle": "Ornate Oil Bottle",
+  "item.terratonic.copper_nugget": "Copper Nugget",
   "item.terratonic.copper_helmet": "Copper Helmet",
   "item.terratonic.copper_chestplate": "Copper Chestplate",
   "item.terratonic.copper_leggings": "Copper Leggings",
@@ -31,6 +32,13 @@
   "item.terratonic.netherite_dueling_sword": "Netherite Dueling Sword",
   "item.terratonic.netherite_wide_sword": "Netherite Wide Sword",
   "item.terratonic.netherite_short_sword": "Netherite Short Sword",
+  "item.terratonic.wooden_sickle": "Wooden Sickle",
+  "item.terratonic.stone_sickle": "Stone Sickle",
+  "item.terratonic.copper_sickle": "Copper Sickle",
+  "item.terratonic.iron_sickle": "Iron Sickle",
+  "item.terratonic.golden_sickle": "Golden Sickle",
+  "item.terratonic.diamond_sickle": "Diamond Sickle",
+  "item.terratonic.netherite_sickle": "Netherite Sickle",
 
   "block.terratonic.garlics": "Garlic"
 }
