@@ -514,7 +514,7 @@ public class ModItems {
             fabricItemGroupEntries.addAfter(Items.LEATHER_BOOTS, ModItems.COPPER_HELMET);
         });
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(fabricItemGroupEntries -> {
-            fabricItemGroupEntries.addAfter(Items.GOLD_NUGGET, ModItems.COPPER_NUGGET);
+            fabricItemGroupEntries.addAfter(Items.IRON_NUGGET, ModItems.COPPER_NUGGET);
             fabricItemGroupEntries.addAfter(Items.EXPERIENCE_BOTTLE, ModItems.ORNATE_OIL_BOTTLE);
         });
     }
