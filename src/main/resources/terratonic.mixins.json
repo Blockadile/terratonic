@@ -3,9 +3,9 @@
 	"package": "net.terratonic.mixin",
 	"compatibilityLevel": "JAVA_21",
 	"mixins": [
-		"ExampleMixin",
 		"HoeItemMixin",
-		"PlayerEntityMixin"
+		"PlayerEntityMixin",
+		"SwordItemMixin"
 	],
 	"injectors": {
 		"defaultRequire": 1
