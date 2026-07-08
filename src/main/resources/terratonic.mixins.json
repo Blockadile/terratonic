@@ -3,6 +3,7 @@
 	"package": "net.terratonic.mixin",
 	"compatibilityLevel": "JAVA_21",
 	"mixins": [
+		"HeldItemRendererMixin",
 		"HoeItemMixin",
 		"PlayerEntityMixin",
 		"SwordItemMixin"
