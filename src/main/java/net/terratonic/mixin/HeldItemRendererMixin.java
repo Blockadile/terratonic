@@ -21,7 +21,7 @@ public class HeldItemRendererMixin {
     @Inject(method = "renderFirstPersonItem",
             at = @At(value = "INVOKE",
                     target = "Lnet/minecraft/client/render/item/HeldItemRenderer;applyEquipOffset(Lnet/minecraft/client/util/math/MatrixStack;Lnet/minecraft/util/Arm;F)V",
-                    ordinal = 4, shift = At.Shift.AFTER))
+                    ordinal = 2, shift = At.Shift.AFTER))
     private void swordBlockAnimation(AbstractClientPlayerEntity player, float tickDelta, float pitch, Hand hand,
                                      float swingProgress, ItemStack item, float equipProgress, MatrixStack matrices,
                                      VertexConsumerProvider vertexConsumers, int light, CallbackInfo callbackInfo) {

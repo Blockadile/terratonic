@@ -21,6 +21,7 @@ public class ModTags {
     public static class Items {
 
         public static final TagKey<Item> COPPER_TOOL_MATERIALS = createTag("copper_tool_materials");
+        public static final TagKey<Item> TWO_HANDED_HANDHELD = createTag("two_handed_handheld");
 
         private static TagKey<Item> createTag(String name) {
             return TagKey.of(RegistryKeys.ITEM, Identifier.of(Terratonic.MOD_ID, name));
