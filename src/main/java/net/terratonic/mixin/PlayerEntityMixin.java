@@ -21,7 +21,7 @@ public abstract class PlayerEntityMixin extends LivingEntity{
     private float halveDamage(float amount) {
         if (this.activeItemStack != null && activeItemStack.getItem() instanceof SwordItem) {
             amount *= 0.5f;
-            activeItemStack.damage(10, this, getSlotForHand(Hand.MAIN_HAND));
+            activeItemStack.damage(3, this, getSlotForHand(Hand.MAIN_HAND));
         }
         return amount;
     }
