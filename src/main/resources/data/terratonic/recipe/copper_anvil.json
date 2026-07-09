@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "X": {
+      "item": "minecraft:copper_block"
+    },
+    "Y": {
+      "item": "minecraft:copper_ingot"
+    }
+  },
+  "pattern": [
+    "XXX",
+    " Y ",
+    "YYY"
+  ],
+  "result": {
+    "count": 1,
+    "id": "terratonic:copper_anvil"
+  }
+}

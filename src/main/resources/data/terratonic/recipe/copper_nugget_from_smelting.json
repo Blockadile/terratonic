@@ -1,0 +1,38 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 200,
+  "experience": 0.1,
+  "ingredient": [
+    {
+      "item": "terratonic:copper_pickaxe"
+    },
+    {
+      "item": "terratonic:copper_shovel"
+    },
+    {
+      "item": "terratonic:copper_axe"
+    },
+    {
+      "item": "terratonic:copper_hoe"
+    },
+    {
+      "item": "terratonic:copper_sword"
+    },
+    {
+      "item": "terratonic:copper_helmet"
+    },
+    {
+      "item": "terratonic:copper_chestplate"
+    },
+    {
+      "item": "terratonic:copper_leggings"
+    },
+    {
+      "item": "terratonic:copper_boots"
+    }
+  ],
+  "result": {
+    "id": "terratonic:copper_nugget"
+  }
+}
