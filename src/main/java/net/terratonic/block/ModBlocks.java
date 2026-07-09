@@ -7,17 +7,25 @@ import net.minecraft.block.Blocks;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroups;
+import net.minecraft.item.Items;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
 import net.terratonic.Terratonic;
+import net.terratonic.block.custom.CopperAnvilBlock;
 import net.terratonic.block.custom.GarlicsBlock;
+import net.terratonic.item.ModItems;
 
 public class ModBlocks {
 
     // Crops
     public static final Block GARLICS = registerUnobtainableBlock("garlics",
             new GarlicsBlock(AbstractBlock.Settings.copy(Blocks.CARROTS))
+    );
+
+    // Misc
+    public static final Block COPPER_ANVIL = registerBlock("copper_anvil",
+            new CopperAnvilBlock(AbstractBlock.Settings.copy(Blocks.ANVIL))
     );
 
 
@@ -38,8 +46,8 @@ public class ModBlocks {
     public static void registerModBlocks() {
         Terratonic.LOGGER.info("Registering Mod Blocks for " + Terratonic.MOD_ID);
 
-        ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS).register(fabricItemGroupEntries -> {
-
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.FUNCTIONAL).register(fabricItemGroupEntries -> {
+            fabricItemGroupEntries.addAfter(Blocks.DAMAGED_ANVIL, ModBlocks.COPPER_ANVIL);
         });
     }
 }

@@ -1,0 +1,6 @@
+{
+  "parent": "terratonic:block/template_copper_anvil",
+  "textures": {
+    "top": "terratonic:block/copper_anvil_top"
+  }
+}
