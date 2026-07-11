@@ -1,0 +1,62 @@
+{
+  "variants": {
+    "axis=x": [
+      {
+        "model": "terratonic:block/slate",
+        "x": 90,
+        "y": 90
+      },
+      {
+        "model": "terratonic:block/slate_mirrored",
+        "x": 90,
+        "y": 90
+      },
+      {
+        "model": "terratonic:block/slate",
+        "x": 90,
+        "y": 90
+      },
+      {
+        "model": "terratonic:block/slate_mirrored",
+        "x": 90,
+        "y": 90
+      }
+    ],
+    "axis=y": [
+      {
+        "model": "terratonic:block/slate"
+      },
+      {
+        "model": "terratonic:block/slate_mirrored"
+      },
+      {
+        "model": "terratonic:block/slate",
+        "y": 180
+      },
+      {
+        "model": "terratonic:block/slate_mirrored",
+        "y": 180
+      }
+    ],
+    "axis=z": [
+      {
+        "model": "terratonic:block/slate",
+        "x": 90
+      },
+      {
+        "model": "terratonic:block/slate_mirrored",
+        "x": 90
+      },
+      {
+        "model": "terratonic:block/slate",
+        "x": 90,
+        "y": 180
+      },
+      {
+        "model": "terratonic:block/slate_mirrored",
+        "x": 90,
+        "y": 180
+      }
+    ]
+  }
+}

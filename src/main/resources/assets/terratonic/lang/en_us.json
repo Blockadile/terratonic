@@ -41,5 +41,7 @@
   "item.terratonic.netherite_sickle": "Netherite Sickle",
 
   "block.terratonic.copper_anvil": "Smithing Anvil",
-  "block.terratonic.garlics": "Garlic"
+  "block.terratonic.garlics": "Garlic",
+  "block.terratonic.slate": "Topslate",
+  "block.terratonic.shale": "Shale"
 }

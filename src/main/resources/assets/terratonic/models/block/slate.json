@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "terratonic:block/slate_top",
+    "side": "terratonic:block/slate"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "variants": {
+    "": [
+      {
+        "model": "terratonic:block/shale"
+      },
+      {
+        "model": "terratonic:block/shale_mirrored"
+      },
+      {
+        "model": "terratonic:block/shale",
+        "y": 180
+      },
+      {
+        "model": "terratonic:block/shale_mirrored",
+        "y": 180
+      }
+    ]
+  }
+}

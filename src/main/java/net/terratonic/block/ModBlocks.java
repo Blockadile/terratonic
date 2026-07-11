@@ -4,19 +4,27 @@ import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
+import net.minecraft.block.PillarBlock;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroups;
-import net.minecraft.item.Items;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
+import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Identifier;
 import net.terratonic.Terratonic;
 import net.terratonic.block.custom.CopperAnvilBlock;
 import net.terratonic.block.custom.GarlicsBlock;
-import net.terratonic.item.ModItems;
 
 public class ModBlocks {
+
+    // Rocks/Minerals
+    public static final Block SLATE = registerBlock("slate",
+            new PillarBlock(AbstractBlock.Settings.copy(Blocks.STONE).sounds(BlockSoundGroup.DEEPSLATE))
+    );
+    public static final Block SHALE = registerBlock("shale",
+            new Block(AbstractBlock.Settings.copy(Blocks.STONE).sounds(BlockSoundGroup.TUFF))
+    );
 
     // Crops
     public static final Block GARLICS = registerUnobtainableBlock("garlics",
@@ -46,6 +54,10 @@ public class ModBlocks {
     public static void registerModBlocks() {
         Terratonic.LOGGER.info("Registering Mod Blocks for " + Terratonic.MOD_ID);
 
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.NATURAL).register(fabricItemGroupEntries -> {
+            fabricItemGroupEntries.addAfter(Blocks.STONE, ModBlocks.SHALE);
+            fabricItemGroupEntries.addAfter(Blocks.STONE, ModBlocks.SLATE);
+        });
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.FUNCTIONAL).register(fabricItemGroupEntries -> {
             fabricItemGroupEntries.addAfter(Blocks.DAMAGED_ANVIL, ModBlocks.COPPER_ANVIL);
         });
