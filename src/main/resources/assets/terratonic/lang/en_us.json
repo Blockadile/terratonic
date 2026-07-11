@@ -43,5 +43,9 @@
   "block.terratonic.copper_anvil": "Smithing Anvil",
   "block.terratonic.garlics": "Garlic",
   "block.terratonic.slate": "Topslate",
+  "block.terratonic.slate_bricks": "Topslate Bricks",
+  "block.terratonic.slate_brick_stairs": "Topslate Brick Stairs",
+  "block.terratonic.slate_brick_slab": "Topslate Brick Slab",
+  "block.terratonic.slate_brick_wall": "Topslate Brick Wall",
   "block.terratonic.shale": "Shale"
 }
