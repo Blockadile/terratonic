@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "terratonic:block/slate_brick_slab"
+    },
+    "type=double": {
+      "model": "terratonic:block/slate_bricks"
+    },
+    "type=top": {
+      "model": "terratonic:block/slate_brick_slab_top"
+    }
+  }
+}

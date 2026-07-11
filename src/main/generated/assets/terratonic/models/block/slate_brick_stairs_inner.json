@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/inner_stairs",
+  "textures": {
+    "bottom": "terratonic:block/slate_bricks",
+    "side": "terratonic:block/slate_bricks",
+    "top": "terratonic:block/slate_bricks"
+  }
+}
