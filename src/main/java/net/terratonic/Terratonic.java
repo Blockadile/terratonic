@@ -5,7 +5,9 @@ import net.fabricmc.api.ModInitializer;
 import net.minecraft.util.Identifier;
 
 import net.terratonic.block.ModBlocks;
+import net.terratonic.entity.ModEntities;
 import net.terratonic.item.ModItems;
+import net.terratonic.sounds.ModSounds;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -15,9 +17,10 @@ public class Terratonic implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
-
 		ModBlocks.registerModBlocks();
+		ModEntities.registerModEntities();
 		ModItems.registerModItems();
+		ModSounds.registerModSounds();
 	}
 
 	public static Identifier id(String path) {

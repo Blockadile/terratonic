@@ -1,6 +1,7 @@
 package net.terratonic.item;
 
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
+import net.minecraft.block.Blocks;
 import net.minecraft.item.*;
 import net.minecraft.component.type.AttributeModifierSlot;
 import net.minecraft.component.type.AttributeModifiersComponent;
@@ -8,10 +9,13 @@ import net.minecraft.entity.attribute.EntityAttributeModifier;
 import net.minecraft.entity.attribute.EntityAttributes;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
+import net.minecraft.util.DyeColor;
 import net.minecraft.util.Identifier;
 import net.terratonic.Terratonic;
 import net.terratonic.block.ModBlocks;
+import net.terratonic.entity.ModEntities;
 import net.terratonic.item.components.ModFoodComponents;
+import net.terratonic.item.custom.CushionItem;
 import net.terratonic.item.custom.ScytheItem;
 import net.terratonic.item.custom.SickleItem;
 
@@ -438,6 +442,40 @@ public class ModItems {
                             Identifier.of("42369864238191"),-0.5F, EntityAttributeModifier.Operation.ADD_VALUE
                     ), AttributeModifierSlot.MAINHAND)),true))));
 
+    // Colored Items
+    public static final Item WHITE_CUSHION = registerItem("white_cushion",
+            new CushionItem(ModEntities.CUSHION, DyeColor.WHITE, new Item.Settings()));
+    public static final Item LIGHT_GRAY_CUSHION = registerItem("light_gray_cushion",
+            new CushionItem(ModEntities.CUSHION, DyeColor.LIGHT_GRAY, new Item.Settings()));
+    public static final Item GRAY_CUSHION = registerItem("gray_cushion",
+            new CushionItem(ModEntities.CUSHION, DyeColor.GRAY, new Item.Settings()));
+    public static final Item BLACK_CUSHION = registerItem("black_cushion",
+            new CushionItem(ModEntities.CUSHION, DyeColor.BLACK, new Item.Settings()));
+    public static final Item BROWN_CUSHION = registerItem("brown_cushion",
+            new CushionItem(ModEntities.CUSHION, DyeColor.BROWN, new Item.Settings()));
+    public static final Item RED_CUSHION = registerItem("red_cushion",
+            new CushionItem(ModEntities.CUSHION, DyeColor.RED, new Item.Settings()));
+    public static final Item ORANGE_CUSHION = registerItem("orange_cushion",
+            new CushionItem(ModEntities.CUSHION, DyeColor.ORANGE, new Item.Settings()));
+    public static final Item YELLOW_CUSHION = registerItem("yellow_cushion",
+            new CushionItem(ModEntities.CUSHION, DyeColor.YELLOW, new Item.Settings()));
+    public static final Item LIME_CUSHION = registerItem("lime_cushion",
+            new CushionItem(ModEntities.CUSHION, DyeColor.LIME, new Item.Settings()));
+    public static final Item GREEN_CUSHION = registerItem("green_cushion",
+            new CushionItem(ModEntities.CUSHION, DyeColor.GREEN, new Item.Settings()));
+    public static final Item CYAN_CUSHION = registerItem("cyan_cushion",
+            new CushionItem(ModEntities.CUSHION, DyeColor.CYAN, new Item.Settings()));
+    public static final Item LIGHT_BLUE_CUSHION = registerItem("light_blue_cushion",
+            new CushionItem(ModEntities.CUSHION, DyeColor.LIGHT_BLUE, new Item.Settings()));
+    public static final Item BLUE_CUSHION = registerItem("blue_cushion",
+            new CushionItem(ModEntities.CUSHION, DyeColor.BLUE, new Item.Settings()));
+    public static final Item PURPLE_CUSHION = registerItem("purple_cushion",
+            new CushionItem(ModEntities.CUSHION, DyeColor.PURPLE, new Item.Settings()));
+    public static final Item MAGENTA_CUSHION = registerItem("magenta_cushion",
+            new CushionItem(ModEntities.CUSHION, DyeColor.MAGENTA, new Item.Settings()));
+    public static final Item PINK_CUSHION = registerItem("pink_cushion",
+            new CushionItem(ModEntities.CUSHION, DyeColor.PINK, new Item.Settings()));
+
     // Food
     public static final Item GARLIC = registerItem("garlic", new AliasedBlockItem(ModBlocks.GARLICS, (new Item.Settings()
             .food(ModFoodComponents.GARLIC))));
@@ -455,6 +493,24 @@ public class ModItems {
     public static void registerModItems() {
         Terratonic.LOGGER.info("Registering Mod Items for " + Terratonic.MOD_ID);
 
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.COLORED_BLOCKS).register(fabricItemGroupEntries -> {
+            fabricItemGroupEntries.addAfter(Blocks.PINK_BED, ModItems.WHITE_CUSHION);
+            fabricItemGroupEntries.addAfter(ModItems.WHITE_CUSHION, ModItems.LIGHT_GRAY_CUSHION);
+            fabricItemGroupEntries.addAfter(ModItems.LIGHT_GRAY_CUSHION, ModItems.GRAY_CUSHION);
+            fabricItemGroupEntries.addAfter(ModItems.GRAY_CUSHION, ModItems.BLACK_CUSHION);
+            fabricItemGroupEntries.addAfter(ModItems.BLACK_CUSHION, ModItems.BROWN_CUSHION);
+            fabricItemGroupEntries.addAfter(ModItems.BROWN_CUSHION, ModItems.RED_CUSHION);
+            fabricItemGroupEntries.addAfter(ModItems.RED_CUSHION, ModItems.ORANGE_CUSHION);
+            fabricItemGroupEntries.addAfter(ModItems.ORANGE_CUSHION, ModItems.YELLOW_CUSHION);
+            fabricItemGroupEntries.addAfter(ModItems.YELLOW_CUSHION, ModItems.LIME_CUSHION);
+            fabricItemGroupEntries.addAfter(ModItems.LIME_CUSHION, ModItems.GREEN_CUSHION);
+            fabricItemGroupEntries.addAfter(ModItems.GREEN_CUSHION, ModItems.CYAN_CUSHION);
+            fabricItemGroupEntries.addAfter(ModItems.CYAN_CUSHION, ModItems.LIGHT_BLUE_CUSHION);
+            fabricItemGroupEntries.addAfter(ModItems.LIGHT_BLUE_CUSHION, ModItems.BLUE_CUSHION);
+            fabricItemGroupEntries.addAfter(ModItems.BLUE_CUSHION, ModItems.PURPLE_CUSHION);
+            fabricItemGroupEntries.addAfter(ModItems.PURPLE_CUSHION, ModItems.MAGENTA_CUSHION);
+            fabricItemGroupEntries.addAfter(ModItems.MAGENTA_CUSHION, ModItems.PINK_CUSHION);
+        });
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.FOOD_AND_DRINK).register(fabricItemGroupEntries -> {
             fabricItemGroupEntries.addAfter(Items.BEETROOT, ModItems.GARLIC);
         });

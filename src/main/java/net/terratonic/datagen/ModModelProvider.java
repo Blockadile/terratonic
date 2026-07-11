@@ -24,7 +24,6 @@ public class ModModelProvider extends FabricModelProvider {
 
     @Override
     public void generateItemModels(ItemModelGenerator itemModelGenerator) {
-
         // Foods
         itemModelGenerator.register(ModItems.GARLIC, Models.GENERATED);
 
@@ -86,5 +85,23 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.GOLDEN_SICKLE, Models.HANDHELD);
         itemModelGenerator.register(ModItems.DIAMOND_SICKLE, Models.HANDHELD);
         itemModelGenerator.register(ModItems.NETHERITE_SICKLE, Models.HANDHELD);
+
+        // Colored Items
+        itemModelGenerator.register(ModItems.WHITE_CUSHION, Models.GENERATED);
+        itemModelGenerator.register(ModItems.LIGHT_GRAY_CUSHION, Models.GENERATED);
+        itemModelGenerator.register(ModItems.GRAY_CUSHION, Models.GENERATED);
+        itemModelGenerator.register(ModItems.BLACK_CUSHION, Models.GENERATED);
+        itemModelGenerator.register(ModItems.BROWN_CUSHION, Models.GENERATED);
+        itemModelGenerator.register(ModItems.RED_CUSHION, Models.GENERATED);
+        itemModelGenerator.register(ModItems.ORANGE_CUSHION, Models.GENERATED);
+        itemModelGenerator.register(ModItems.YELLOW_CUSHION, Models.GENERATED);
+        itemModelGenerator.register(ModItems.LIME_CUSHION, Models.GENERATED);
+        itemModelGenerator.register(ModItems.GREEN_CUSHION, Models.GENERATED);
+        itemModelGenerator.register(ModItems.CYAN_CUSHION, Models.GENERATED);
+        itemModelGenerator.register(ModItems.LIGHT_BLUE_CUSHION, Models.GENERATED);
+        itemModelGenerator.register(ModItems.BLUE_CUSHION, Models.GENERATED);
+        itemModelGenerator.register(ModItems.PURPLE_CUSHION, Models.GENERATED);
+        itemModelGenerator.register(ModItems.MAGENTA_CUSHION, Models.GENERATED);
+        itemModelGenerator.register(ModItems.PINK_CUSHION, Models.GENERATED);
     }
 }

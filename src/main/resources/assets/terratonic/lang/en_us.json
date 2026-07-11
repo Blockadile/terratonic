@@ -1,4 +1,15 @@
 {
+  "block.terratonic.copper_anvil": "Smithing Anvil",
+  "block.terratonic.garlics": "Garlic",
+  "block.terratonic.slate": "Topslate",
+  "block.terratonic.slate_bricks": "Topslate Bricks",
+  "block.terratonic.slate_brick_stairs": "Topslate Brick Stairs",
+  "block.terratonic.slate_brick_slab": "Topslate Brick Slab",
+  "block.terratonic.slate_brick_wall": "Topslate Brick Wall",
+  "block.terratonic.shale": "Shale",
+
+  "entity.terratonic.cushion": "Cushion",
+
   "item.terratonic.garlic": "Garlic",
   "item.terratonic.ornate_oil_bottle": "Ornate Oil Bottle",
   "item.terratonic.copper_nugget": "Copper Nugget",
@@ -39,13 +50,22 @@
   "item.terratonic.golden_sickle": "Golden Sickle",
   "item.terratonic.diamond_sickle": "Diamond Sickle",
   "item.terratonic.netherite_sickle": "Netherite Sickle",
+  "item.terratonic.white_cushion": "White Cushion",
+  "item.terratonic.light_gray_cushion": "Light Gray Cushion",
+  "item.terratonic.gray_cushion": "Gray Cushion",
+  "item.terratonic.black_cushion": "Black Cushion",
+  "item.terratonic.brown_cushion": "Brown Cushion",
+  "item.terratonic.red_cushion": "Red Cushion",
+  "item.terratonic.orange_cushion": "Orange Cushion",
+  "item.terratonic.yellow_cushion": "Yellow Cushion",
+  "item.terratonic.lime_cushion": "Lime Cushion",
+  "item.terratonic.green_cushion": "Green Cushion",
+  "item.terratonic.cyan_cushion": "Cyan Cushion",
+  "item.terratonic.light_blue_cushion": "Light Blue Cushion",
+  "item.terratonic.blue_cushion": "Blue Cushion",
+  "item.terratonic.purple_cushion": "Purple Cushion",
+  "item.terratonic.magenta_cushion": "Magenta Cushion",
+  "item.terratonic.pink_cushion": "Pink Cushion",
 
-  "block.terratonic.copper_anvil": "Smithing Anvil",
-  "block.terratonic.garlics": "Garlic",
-  "block.terratonic.slate": "Topslate",
-  "block.terratonic.slate_bricks": "Topslate Bricks",
-  "block.terratonic.slate_brick_stairs": "Topslate Brick Stairs",
-  "block.terratonic.slate_brick_slab": "Topslate Brick Slab",
-  "block.terratonic.slate_brick_wall": "Topslate Brick Wall",
-  "block.terratonic.shale": "Shale"
+  "subtitles.entity.cushion.break": "Cushion Breaks"
 }
