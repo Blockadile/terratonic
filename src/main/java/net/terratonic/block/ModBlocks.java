@@ -26,8 +26,8 @@ public class ModBlocks {
             new PillarBlock(AbstractBlock.Settings.copy(Blocks.STONE_BRICKS).sounds(BlockSoundGroup.DEEPSLATE_BRICKS))
     );
     public static final Block SLATE_BRICK_STAIRS = registerBlock("slate_brick_stairs",
-            new StairsBlock(ModBlocks.SLATE_BRICKS.getDefaultState()
-                    , AbstractBlock.Settings.copy(Blocks.STONE_BRICK_STAIRS).sounds(BlockSoundGroup.DEEPSLATE_BRICKS))
+            new StairsBlock(ModBlocks.SLATE_BRICKS.getDefaultState(),
+                    AbstractBlock.Settings.copy(Blocks.STONE_BRICK_STAIRS).sounds(BlockSoundGroup.DEEPSLATE_BRICKS))
     );
     public static final Block SLATE_BRICK_SLAB = registerBlock("slate_brick_slab",
             new SlabBlock(AbstractBlock.Settings.copy(Blocks.STONE_BRICK_SLAB).sounds(BlockSoundGroup.DEEPSLATE_BRICKS))
