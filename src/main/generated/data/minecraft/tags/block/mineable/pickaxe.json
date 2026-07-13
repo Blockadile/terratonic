@@ -2,9 +2,14 @@
   "values": [
     "terratonic:slate",
     "terratonic:slate_bricks",
+    "terratonic:cracked_slate_bricks",
     "terratonic:slate_brick_stairs",
     "terratonic:slate_brick_slab",
     "terratonic:slate_brick_wall",
+    "terratonic:mossy_slate_bricks",
+    "terratonic:mossy_slate_brick_stairs",
+    "terratonic:mossy_slate_brick_slab",
+    "terratonic:mossy_slate_brick_wall",
     "terratonic:shale"
   ]
 }
