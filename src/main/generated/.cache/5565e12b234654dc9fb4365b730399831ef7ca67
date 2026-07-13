@@ -1,4 +1,4 @@
-// 1.21.1	2026-07-11T15:10:30.2532888	Terratonic/Model Definitions
+// 1.21.1	2026-07-12T21:11:08.4731919	Terratonic/Model Definitions
 f6a98d938025e9e06c3dd8a1282eca0bd40877b0 assets\terratonic\models\item\ornate_oil_bottle.json
 0e8917d5a47e9c28c8b126d6ea91a1fdb37e182c assets\terratonic\models\item\netherite_wide_sword.json
 c10b4e66c2e51505b81f489e5c7492ebca430959 assets\terratonic\models\block\slate_bricks.json
@@ -30,6 +30,7 @@ d6ab13b54e013544429cfcde22f8f17538936832 assets\terratonic\models\item\copper_he
 81b38516329c2d8e63ecb3c2f8f49c4d1ec72295 assets\terratonic\models\item\golden_sickle.json
 f3c81e68fcd1b3e7e3d56634305a4c25f30b5d18 assets\terratonic\models\item\garlic.json
 925d31b2a94a4a48ae853dd3c294b098cfb4d867 assets\terratonic\models\item\slate_bricks.json
+accc72ba0d31c0bcdf5ed40811ecb289f85a9039 assets\terratonic\blockstates\tangled_roots.json
 d9e8c0a05b7734b2a45bba172985786aec90fc9b assets\terratonic\models\item\copper_sickle.json
 1465b9f28aa21d786da34673ad19d86ce48ed091 assets\terratonic\models\item\slate_brick_wall.json
 609b6ea4b5b56e3a9cb8ca89fd3a3e958ca64d6b assets\terratonic\models\item\copper_pickaxe.json
@@ -58,6 +59,7 @@ a4fc365aa3b3a946e0b260ecaa50652b2a9e6d6d assets\terratonic\models\item\light_blu
 95de4406e71df5c700dcd466c24a045b02ad212c assets\terratonic\models\item\copper_short_sword.json
 4263a053607aee32499b36edc04cf5b3f436d67f assets\terratonic\models\item\netherite_dueling_sword.json
 46d4332ac2c74722c02398321c66b061106ee394 assets\terratonic\models\item\wooden_sickle.json
+c2aaf7e7c45548cc354857d897b2bb074bd1bbef assets\terratonic\models\item\tangled_roots.json
 2e4fa817e9ae99d2acfe9e5f870037c260c4b28c assets\terratonic\models\item\iron_dueling_sword.json
 7038490b9679ee01731a9e02af21de76a0f82892 assets\terratonic\models\item\netherite_sickle.json
 e49d98626aa741984ddfd7bde16892c6ab084e0f assets\terratonic\models\item\copper_hoe.json
@@ -65,6 +67,7 @@ e49d98626aa741984ddfd7bde16892c6ab084e0f assets\terratonic\models\item\copper_ho
 58d7dc51cac7d99dbb86a9801c393b1422321058 assets\terratonic\models\item\cyan_cushion.json
 7ad6c9f4f80dd764b442beeb7ab15ae99a182700 assets\terratonic\models\item\light_gray_cushion.json
 0564ea90d5c3ac69241df46c508a451aa30feb1e assets\terratonic\models\item\golden_short_sword.json
+e8ce08b4a24390c343a1e804969e66ba3f98eba0 assets\terratonic\models\block\tangled_roots.json
 5df11997f1b4e4c267fc6cbe89afb1d8799c9b7d assets\terratonic\models\item\pink_cushion.json
 82f0bbdc523fe99fa9508159e75e86fd6f27a820 assets\terratonic\models\item\copper_sword.json
 113e1dcd3676d75f97a61ef4d44534266fb4ca25 assets\terratonic\models\item\diamond_short_sword.json

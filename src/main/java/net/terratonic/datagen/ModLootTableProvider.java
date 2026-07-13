@@ -21,5 +21,7 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.SLATE_BRICK_WALL);
 
         addDrop(ModBlocks.SHALE);
+
+        addDrop(ModBlocks.TANGLED_ROOTS);
     }
 }

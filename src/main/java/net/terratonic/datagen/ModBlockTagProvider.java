@@ -22,6 +22,8 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.SLATE_BRICK_SLAB)
                 .add(ModBlocks.SLATE_BRICK_WALL)
                 .add(ModBlocks.SHALE);
+        getOrCreateTagBuilder(BlockTags.HOE_MINEABLE)
+                .add(ModBlocks.TANGLED_ROOTS);
         getOrCreateTagBuilder(BlockTags.WALLS)
                 .add(ModBlocks.SLATE_BRICK_WALL);
     }

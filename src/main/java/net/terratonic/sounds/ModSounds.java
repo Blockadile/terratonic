@@ -8,6 +8,7 @@ import net.terratonic.Terratonic;
 
 public class ModSounds {
 
+    public static final SoundEvent CUSHION_BREAK = registerSound("cushion_break");
 
     private static SoundEvent registerSound(String name) {
         Identifier id = Identifier.of(Terratonic.MOD_ID, name);

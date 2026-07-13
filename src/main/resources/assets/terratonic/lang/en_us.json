@@ -7,6 +7,9 @@
   "block.terratonic.slate_brick_slab": "Topslate Brick Slab",
   "block.terratonic.slate_brick_wall": "Topslate Brick Wall",
   "block.terratonic.shale": "Shale",
+  "block.terratonic.hanging_cave_roots": "Hanging Cave Roots",
+  "block.terratonic.hanging_cave_roots_plant": "Hanging Cave Roots Plant",
+  "block.terratonic.tangled_roots": "Tangled Roots",
 
   "entity.terratonic.cushion": "Cushion",
 
@@ -67,5 +70,5 @@
   "item.terratonic.magenta_cushion": "Magenta Cushion",
   "item.terratonic.pink_cushion": "Pink Cushion",
 
-  "subtitles.entity.cushion.break": "Cushion Breaks"
+  "subtitles.entity.cushion.break": "Cushion breaks"
 }

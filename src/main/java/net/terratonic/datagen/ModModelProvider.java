@@ -15,11 +15,12 @@ public class ModModelProvider extends FabricModelProvider {
 
     @Override
     public void generateBlockStateModels(BlockStateModelGenerator blockStateModelGenerator) {
-        // blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.SHALE);
         BlockStateModelGenerator.BlockTexturePool slate_brick_pool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.SLATE_BRICKS);
         slate_brick_pool.stairs(ModBlocks.SLATE_BRICK_STAIRS);
         slate_brick_pool.slab(ModBlocks.SLATE_BRICK_SLAB);
         slate_brick_pool.wall(ModBlocks.SLATE_BRICK_WALL);
+
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.TANGLED_ROOTS);
     }
 
     @Override

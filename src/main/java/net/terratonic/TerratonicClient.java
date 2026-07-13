@@ -15,6 +15,8 @@ public class TerratonicClient implements ClientModInitializer {
     @Override
     public void onInitializeClient() {
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.GARLICS, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.HANGING_CAVE_ROOTS, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.HANGING_CAVE_ROOTS_PLANT, RenderLayer.getCutout());
 
         EntityRendererRegistry.register(ModEntities.CUSHION, CushionRenderer::new);
         EntityModelLayerRegistry.registerModelLayer(ModModelLayers.CUSHION, CushionModel::getTexturedModelData);

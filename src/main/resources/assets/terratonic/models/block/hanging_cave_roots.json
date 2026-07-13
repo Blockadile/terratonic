@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cross",
+  "textures": {
+    "cross": "terratonic:block/hanging_cave_roots"
+  }
+}
