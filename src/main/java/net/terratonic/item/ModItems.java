@@ -16,6 +16,7 @@ import net.terratonic.block.ModBlocks;
 import net.terratonic.entity.ModEntities;
 import net.terratonic.item.components.ModFoodComponents;
 import net.terratonic.item.custom.CushionItem;
+import net.terratonic.item.custom.DuelingSwordItem;
 import net.terratonic.item.custom.ScytheItem;
 import net.terratonic.item.custom.SickleItem;
 
@@ -35,7 +36,7 @@ public class ModItems {
 
         // Weapons
     // Wooden Swords
-    public static final Item WOODEN_DUELING_SWORD = registerItem("wooden_dueling_sword", new SwordItem(ToolMaterials.WOOD, new Item.Settings()
+    public static final Item WOODEN_DUELING_SWORD = registerItem("wooden_dueling_sword", new DuelingSwordItem(ToolMaterials.WOOD, new Item.Settings()
             .maxCount(1)
             .attributeModifiers(new AttributeModifiersComponent(List.of(
                     new AttributeModifiersComponent.Entry(EntityAttributes.GENERIC_ATTACK_DAMAGE, new EntityAttributeModifier(
@@ -73,7 +74,7 @@ public class ModItems {
                     ), AttributeModifierSlot.MAINHAND)),true))));
 
     // Stone Swords
-        public static final Item STONE_DUELING_SWORD = registerItem("stone_dueling_sword", new SwordItem(ToolMaterials.STONE, new Item.Settings()
+        public static final Item STONE_DUELING_SWORD = registerItem("stone_dueling_sword", new DuelingSwordItem(ToolMaterials.STONE, new Item.Settings()
                 .maxCount(1)
                 .attributeModifiers(new AttributeModifiersComponent(List.of(
                         new AttributeModifiersComponent.Entry(EntityAttributes.GENERIC_ATTACK_DAMAGE, new EntityAttributeModifier(
@@ -112,7 +113,7 @@ public class ModItems {
 
     // Copper Swords
     public static final Item COPPER_SWORD = registerItem("copper_sword",
-            new SwordItem(ModToolMaterials.COPPER, new Item.Settings().attributeModifiers(SwordItem.createAttributeModifiers(ModToolMaterials.COPPER,
+            new DuelingSwordItem(ModToolMaterials.COPPER, new Item.Settings().attributeModifiers(SwordItem.createAttributeModifiers(ModToolMaterials.COPPER,
                     3, -2.4F))));
     public static final Item COPPER_DUELING_SWORD = registerItem("copper_dueling_sword", new SwordItem(ModToolMaterials.COPPER, new Item.Settings()
             .maxCount(1)
@@ -152,7 +153,7 @@ public class ModItems {
                     ), AttributeModifierSlot.MAINHAND)),true))));
 
     // Iron Swords
-    public static final Item IRON_DUELING_SWORD = registerItem("iron_dueling_sword", new SwordItem(ToolMaterials.IRON, new Item.Settings()
+    public static final Item IRON_DUELING_SWORD = registerItem("iron_dueling_sword", new DuelingSwordItem(ToolMaterials.IRON, new Item.Settings()
             .maxCount(1)
             .attributeModifiers(new AttributeModifiersComponent(List.of(
                     new AttributeModifiersComponent.Entry(EntityAttributes.GENERIC_ATTACK_DAMAGE, new EntityAttributeModifier(
@@ -190,7 +191,7 @@ public class ModItems {
                     ), AttributeModifierSlot.MAINHAND)),true))));
 
     // Golden Swords
-    public static final Item GOLDEN_DUELING_SWORD = registerItem("golden_dueling_sword", new SwordItem(ToolMaterials.GOLD, new Item.Settings()
+    public static final Item GOLDEN_DUELING_SWORD = registerItem("golden_dueling_sword", new DuelingSwordItem(ToolMaterials.GOLD, new Item.Settings()
             .maxCount(1)
             .attributeModifiers(new AttributeModifiersComponent(List.of(
                     new AttributeModifiersComponent.Entry(EntityAttributes.GENERIC_ATTACK_DAMAGE, new EntityAttributeModifier(
@@ -228,7 +229,7 @@ public class ModItems {
                     ), AttributeModifierSlot.MAINHAND)),true))));
 
     // Diamond Swords
-    public static final Item DIAMOND_DUELING_SWORD = registerItem("diamond_dueling_sword", new SwordItem(ToolMaterials.DIAMOND, new Item.Settings()
+    public static final Item DIAMOND_DUELING_SWORD = registerItem("diamond_dueling_sword", new DuelingSwordItem(ToolMaterials.DIAMOND, new Item.Settings()
             .maxCount(1)
             .attributeModifiers(new AttributeModifiersComponent(List.of(
                     new AttributeModifiersComponent.Entry(EntityAttributes.GENERIC_ATTACK_DAMAGE, new EntityAttributeModifier(
@@ -266,7 +267,7 @@ public class ModItems {
                     ), AttributeModifierSlot.MAINHAND)),true))));
 
     // Netherite Swords
-    public static final Item NETHERITE_DUELING_SWORD = registerItem("netherite_dueling_sword", new SwordItem(ToolMaterials.NETHERITE, new Item.Settings()
+    public static final Item NETHERITE_DUELING_SWORD = registerItem("netherite_dueling_sword", new DuelingSwordItem(ToolMaterials.NETHERITE, new Item.Settings()
             .maxCount(1)
             .attributeModifiers(new AttributeModifiersComponent(List.of(
                     new AttributeModifiersComponent.Entry(EntityAttributes.GENERIC_ATTACK_DAMAGE, new EntityAttributeModifier(

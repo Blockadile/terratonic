@@ -13,6 +13,7 @@ import net.minecraft.item.SwordItem;
 import net.minecraft.util.Arm;
 import net.minecraft.util.Hand;
 import net.minecraft.util.math.MathHelper;
+import net.terratonic.item.custom.DuelingSwordItem;
 import net.terratonic.util.ModTags;
 import org.spongepowered.asm.mixin.Final;
 import org.spongepowered.asm.mixin.Mixin;
@@ -78,12 +79,24 @@ public abstract class BipedEntityModelMixin<T extends LivingEntity> extends Anim
                     boolean prefersRightArm = livingEntity.getMainArm() == Arm.RIGHT;
                     if (livingEntity.isUsingItem()) {
                         boolean usingMainHand = livingEntity.getActiveHand() == Hand.MAIN_HAND;
-                        if (usingMainHand == prefersRightArm) {
-                            this.rightArmPose = BipedEntityModel.ArmPose.BLOCK;
-                            this.positionRightArm(livingEntity);
-                        } else {
-                            this.leftArmPose = BipedEntityModel.ArmPose.BLOCK;
-                            this.positionLeftArm(livingEntity);
+                        if (livingEntity.getActiveItem().getItem() instanceof DuelingSwordItem) {
+                            if (usingMainHand == prefersRightArm) {
+                                rightArm.yaw = 0.2f + (head.pitch * -1f);
+                                rightArm.pitch = (float) (-Math.PI / 2f) + head.yaw / 2.5f;
+                                rightArm.roll = 1.5f;
+                            } else {
+                                leftArm.yaw = -(0.2f + (head.pitch * -1f));
+                                leftArm.pitch = (float) (-Math.PI / 2f) + head.yaw / -2.5f;
+                                leftArm.roll = -1.5f;
+                            }
+                        }else {
+                            if (usingMainHand == prefersRightArm) {
+                                this.rightArmPose = BipedEntityModel.ArmPose.BLOCK;
+                                this.positionRightArm(livingEntity);
+                            } else {
+                                this.leftArmPose = BipedEntityModel.ArmPose.BLOCK;
+                                this.positionLeftArm(livingEntity);
+                            }
                         }
                     }
                 }
