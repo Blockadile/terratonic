@@ -1,6 +1,14 @@
 {
   "values": [
     "terratonic:slate",
+    "terratonic:cobbled_slate",
+    "terratonic:cobbled_slate_stairs",
+    "terratonic:cobbled_slate_slab",
+    "terratonic:cobbled_slate_wall",
+    "terratonic:mossy_cobbled_slate",
+    "terratonic:mossy_cobbled_slate_stairs",
+    "terratonic:mossy_cobbled_slate_slab",
+    "terratonic:mossy_cobbled_slate_wall",
     "terratonic:slate_bricks",
     "terratonic:cracked_slate_bricks",
     "terratonic:slate_brick_stairs",

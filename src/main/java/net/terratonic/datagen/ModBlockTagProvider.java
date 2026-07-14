@@ -17,6 +17,14 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
     protected void configure(RegistryWrapper.WrapperLookup lookup) {
         getOrCreateTagBuilder(BlockTags.PICKAXE_MINEABLE)
                 .add(ModBlocks.SLATE)
+                .add(ModBlocks.COBBLED_SLATE)
+                .add(ModBlocks.COBBLED_SLATE_STAIRS)
+                .add(ModBlocks.COBBLED_SLATE_SLAB)
+                .add(ModBlocks.COBBLED_SLATE_WALL)
+                .add(ModBlocks.MOSSY_COBBLED_SLATE)
+                .add(ModBlocks.MOSSY_COBBLED_SLATE_STAIRS)
+                .add(ModBlocks.MOSSY_COBBLED_SLATE_SLAB)
+                .add(ModBlocks.MOSSY_COBBLED_SLATE_WALL)
                 .add(ModBlocks.SLATE_BRICKS)
                 .add(ModBlocks.CRACKED_SLATE_BRICKS)
                 .add(ModBlocks.SLATE_BRICK_STAIRS)
@@ -30,6 +38,8 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
         getOrCreateTagBuilder(BlockTags.HOE_MINEABLE)
                 .add(ModBlocks.TANGLED_ROOTS);
         getOrCreateTagBuilder(BlockTags.WALLS)
+                .add(ModBlocks.COBBLED_SLATE_WALL)
+                .add(ModBlocks.MOSSY_COBBLED_SLATE_WALL)
                 .add(ModBlocks.SLATE_BRICK_WALL)
                 .add(ModBlocks.MOSSY_SLATE_BRICK_WALL);
     }

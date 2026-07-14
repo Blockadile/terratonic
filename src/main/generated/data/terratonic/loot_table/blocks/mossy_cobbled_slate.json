@@ -11,7 +11,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "terratonic:slate"
+          "name": "terratonic:mossy_cobbled_slate"
         }
       ],
       "rolls": 1.0

@@ -21,6 +21,32 @@ public class ModBlocks {
     public static final Block SLATE = registerBlock("slate",
             new PillarBlock(AbstractBlock.Settings.copy(Blocks.STONE).sounds(BlockSoundGroup.DEEPSLATE))
     );
+    public static final Block COBBLED_SLATE = registerBlock("cobbled_slate",
+            new PillarBlock(AbstractBlock.Settings.copy(Blocks.COBBLESTONE).sounds(BlockSoundGroup.DEEPSLATE))
+    );
+    public static final Block COBBLED_SLATE_STAIRS = registerBlock("cobbled_slate_stairs",
+            new StairsBlock(ModBlocks.COBBLED_SLATE.getDefaultState(),
+                    AbstractBlock.Settings.copy(Blocks.COBBLESTONE_STAIRS).sounds(BlockSoundGroup.DEEPSLATE))
+    );
+    public static final Block COBBLED_SLATE_SLAB = registerBlock("cobbled_slate_slab",
+            new SlabBlock(AbstractBlock.Settings.copy(Blocks.COBBLESTONE_SLAB).sounds(BlockSoundGroup.DEEPSLATE))
+    );
+    public static final Block COBBLED_SLATE_WALL = registerBlock("cobbled_slate_wall",
+            new WallBlock(AbstractBlock.Settings.copy(Blocks.COBBLESTONE_WALL).sounds(BlockSoundGroup.DEEPSLATE))
+    );
+    public static final Block MOSSY_COBBLED_SLATE = registerBlock("mossy_cobbled_slate",
+            new PillarBlock(AbstractBlock.Settings.copy(Blocks.MOSSY_COBBLESTONE).sounds(BlockSoundGroup.DEEPSLATE))
+    );
+    public static final Block MOSSY_COBBLED_SLATE_STAIRS = registerBlock("mossy_cobbled_slate_stairs",
+            new StairsBlock(ModBlocks.MOSSY_COBBLED_SLATE.getDefaultState(),
+                    AbstractBlock.Settings.copy(Blocks.MOSSY_COBBLESTONE_STAIRS).sounds(BlockSoundGroup.DEEPSLATE))
+    );
+    public static final Block MOSSY_COBBLED_SLATE_SLAB = registerBlock("mossy_cobbled_slate_slab",
+            new SlabBlock(AbstractBlock.Settings.copy(Blocks.MOSSY_COBBLESTONE_SLAB).sounds(BlockSoundGroup.DEEPSLATE))
+    );
+    public static final Block MOSSY_COBBLED_SLATE_WALL = registerBlock("mossy_cobbled_slate_wall",
+            new WallBlock(AbstractBlock.Settings.copy(Blocks.MOSSY_COBBLESTONE_WALL).sounds(BlockSoundGroup.DEEPSLATE))
+    );
     public static final Block SLATE_BRICKS = registerBlock("slate_bricks",
             new PillarBlock(AbstractBlock.Settings.copy(Blocks.STONE_BRICKS).sounds(BlockSoundGroup.DEEPSLATE_BRICKS))
     );
@@ -62,6 +88,10 @@ public class ModBlocks {
     public static final Block HANGING_CAVE_ROOTS_PLANT = registerUnobtainableBlock("hanging_cave_roots_plant",
             new HangingCaveRootsPlantBlock(FabricBlockSettings.copy(Blocks.WEEPING_VINES_PLANT).sounds(BlockSoundGroup.CROP))
     );
+        // Tangled Roots
+    public static final Block TANGLED_ROOTS = registerBlock("tangled_roots",
+            new Block(AbstractBlock.Settings.copy(Blocks.DIRT).sounds(ModSoundGroups.TANGLED_ROOTS))
+    );
         // Crops
     public static final Block GARLICS = registerUnobtainableBlock("garlics",
             new GarlicsBlock(AbstractBlock.Settings.copy(Blocks.CARROTS))
@@ -70,9 +100,6 @@ public class ModBlocks {
     // Misc
     public static final Block COPPER_ANVIL = registerBlock("copper_anvil",
             new CopperAnvilBlock(AbstractBlock.Settings.copy(Blocks.ANVIL))
-    );
-    public static final Block TANGLED_ROOTS = registerBlock("tangled_roots",
-            new Block(AbstractBlock.Settings.copy(Blocks.DIRT).sounds(ModSoundGroups.TANGLED_ROOTS))
     );
 
 
@@ -96,7 +123,15 @@ public class ModBlocks {
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS).register(fabricItemGroupEntries -> {
             fabricItemGroupEntries.addAfter(Blocks.MOSSY_STONE_BRICK_WALL, ModBlocks.SLATE_BRICK_WALL);
             fabricItemGroupEntries.addAfter(Blocks.MOSSY_STONE_BRICK_WALL, ModBlocks.SLATE);
-            fabricItemGroupEntries.addAfter(ModBlocks.SLATE, ModBlocks.SLATE_BRICKS);
+            fabricItemGroupEntries.addAfter(ModBlocks.SLATE, ModBlocks.COBBLED_SLATE);
+            fabricItemGroupEntries.addAfter(ModBlocks.COBBLED_SLATE, ModBlocks.COBBLED_SLATE_STAIRS);
+            fabricItemGroupEntries.addAfter(ModBlocks.COBBLED_SLATE_STAIRS, ModBlocks.COBBLED_SLATE_SLAB);
+            fabricItemGroupEntries.addAfter(ModBlocks.COBBLED_SLATE_SLAB, ModBlocks.COBBLED_SLATE_WALL);
+            fabricItemGroupEntries.addAfter(ModBlocks.COBBLED_SLATE_WALL, ModBlocks.MOSSY_COBBLED_SLATE);
+            fabricItemGroupEntries.addAfter(ModBlocks.MOSSY_COBBLED_SLATE, ModBlocks.MOSSY_COBBLED_SLATE_STAIRS);
+            fabricItemGroupEntries.addAfter(ModBlocks.MOSSY_COBBLED_SLATE_STAIRS, ModBlocks.MOSSY_COBBLED_SLATE_SLAB);
+            fabricItemGroupEntries.addAfter(ModBlocks.MOSSY_COBBLED_SLATE_SLAB, ModBlocks.MOSSY_COBBLED_SLATE_WALL);
+            fabricItemGroupEntries.addAfter(ModBlocks.MOSSY_COBBLED_SLATE_WALL, ModBlocks.SLATE_BRICKS);
             fabricItemGroupEntries.addAfter(ModBlocks.SLATE_BRICKS, ModBlocks.CRACKED_SLATE_BRICKS);
             fabricItemGroupEntries.addAfter(ModBlocks.CRACKED_SLATE_BRICKS, ModBlocks.SLATE_BRICK_STAIRS);
             fabricItemGroupEntries.addAfter(ModBlocks.SLATE_BRICK_STAIRS, ModBlocks.SLATE_BRICK_SLAB);

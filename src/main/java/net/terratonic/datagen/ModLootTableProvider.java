@@ -14,11 +14,23 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
 
     @Override
     public void generate() {
-        addDrop(ModBlocks.SLATE);
+        addDrop(ModBlocks.COBBLED_SLATE);
+        addDrop(ModBlocks.COBBLED_SLATE_STAIRS);
+        addDrop(ModBlocks.COBBLED_SLATE_SLAB, slabDrops(ModBlocks.COBBLED_SLATE_SLAB));
+        addDrop(ModBlocks.COBBLED_SLATE_WALL);
+        addDrop(ModBlocks.MOSSY_COBBLED_SLATE);
+        addDrop(ModBlocks.MOSSY_COBBLED_SLATE_STAIRS);
+        addDrop(ModBlocks.MOSSY_COBBLED_SLATE_SLAB, slabDrops(ModBlocks.MOSSY_COBBLED_SLATE_SLAB));
+        addDrop(ModBlocks.MOSSY_COBBLED_SLATE_WALL);
         addDrop(ModBlocks.SLATE_BRICKS);
+        addDrop(ModBlocks.CRACKED_SLATE_BRICKS);
         addDrop(ModBlocks.SLATE_BRICK_STAIRS);
         addDrop(ModBlocks.SLATE_BRICK_SLAB, slabDrops(ModBlocks.SLATE_BRICK_SLAB));
         addDrop(ModBlocks.SLATE_BRICK_WALL);
+        addDrop(ModBlocks.MOSSY_SLATE_BRICKS);
+        addDrop(ModBlocks.MOSSY_SLATE_BRICK_STAIRS);
+        addDrop(ModBlocks.MOSSY_SLATE_BRICK_SLAB, slabDrops(ModBlocks.MOSSY_SLATE_BRICK_SLAB));
+        addDrop(ModBlocks.MOSSY_SLATE_BRICK_WALL);
 
         addDrop(ModBlocks.SHALE);
 

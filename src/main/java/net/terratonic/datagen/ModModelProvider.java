@@ -15,6 +15,14 @@ public class ModModelProvider extends FabricModelProvider {
 
     @Override
     public void generateBlockStateModels(BlockStateModelGenerator blockStateModelGenerator) {
+        BlockStateModelGenerator.BlockTexturePool cobbled_slate_pool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.COBBLED_SLATE);
+        cobbled_slate_pool.stairs(ModBlocks.COBBLED_SLATE_STAIRS);
+        cobbled_slate_pool.slab(ModBlocks.COBBLED_SLATE_SLAB);
+        cobbled_slate_pool.wall(ModBlocks.COBBLED_SLATE_WALL);
+        BlockStateModelGenerator.BlockTexturePool mossy_cobbled_slate_pool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.MOSSY_COBBLED_SLATE);
+        mossy_cobbled_slate_pool.stairs(ModBlocks.MOSSY_COBBLED_SLATE_STAIRS);
+        mossy_cobbled_slate_pool.slab(ModBlocks.MOSSY_COBBLED_SLATE_SLAB);
+        mossy_cobbled_slate_pool.wall(ModBlocks.MOSSY_COBBLED_SLATE_WALL);
         BlockStateModelGenerator.BlockTexturePool slate_brick_pool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.SLATE_BRICKS);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.CRACKED_SLATE_BRICKS);
         slate_brick_pool.stairs(ModBlocks.SLATE_BRICK_STAIRS);
