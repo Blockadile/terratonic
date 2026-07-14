@@ -18,13 +18,19 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
         getOrCreateTagBuilder(BlockTags.PICKAXE_MINEABLE)
                 .add(ModBlocks.SLATE)
                 .add(ModBlocks.SLATE_BRICKS)
+                .add(ModBlocks.CRACKED_SLATE_BRICKS)
                 .add(ModBlocks.SLATE_BRICK_STAIRS)
                 .add(ModBlocks.SLATE_BRICK_SLAB)
                 .add(ModBlocks.SLATE_BRICK_WALL)
+                .add(ModBlocks.MOSSY_SLATE_BRICKS)
+                .add(ModBlocks.MOSSY_SLATE_BRICK_STAIRS)
+                .add(ModBlocks.MOSSY_SLATE_BRICK_SLAB)
+                .add(ModBlocks.MOSSY_SLATE_BRICK_WALL)
                 .add(ModBlocks.SHALE);
         getOrCreateTagBuilder(BlockTags.HOE_MINEABLE)
                 .add(ModBlocks.TANGLED_ROOTS);
         getOrCreateTagBuilder(BlockTags.WALLS)
-                .add(ModBlocks.SLATE_BRICK_WALL);
+                .add(ModBlocks.SLATE_BRICK_WALL)
+                .add(ModBlocks.MOSSY_SLATE_BRICK_WALL);
     }
 }
