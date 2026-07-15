@@ -1,8 +1,8 @@
-// 1.21.1	2026-07-13T17:55:54.8608504	Terratonic/Block Loot Tables
+// 1.21.1	2026-07-14T17:45:38.4607981	Terratonic/Block Loot Tables
 871b2123daca942bb103935cbec579f944763f4e data\terratonic\loot_table\blocks\slate_brick_slab.json
-d2819001a7267f8e0053816e3a81857e136a88e3 data\terratonic\loot_table\blocks\slate.json
-ac4350b261eb58aedc3e58950db1ba231e637fec data\terratonic\loot_table\blocks\slate_brick_wall.json
-57591cbe1e4ec81c17b89e81b44c1fe3af21b616 data\terratonic\loot_table\blocks\slate_bricks.json
-a45e8653c9ae2c80b44c18911b419724e25271c7 data\terratonic\loot_table\blocks\shale.json
-d9778c97b660ef8182ab78f3ed35faf1f0af042e data\terratonic\loot_table\blocks\slate_brick_stairs.json
 2078ff80611011d5bc97bffba24ea5b63a13a020 data\terratonic\loot_table\blocks\tangled_roots.json
+d2819001a7267f8e0053816e3a81857e136a88e3 data\terratonic\loot_table\blocks\slate.json
+d9778c97b660ef8182ab78f3ed35faf1f0af042e data\terratonic\loot_table\blocks\slate_brick_stairs.json
+ac4350b261eb58aedc3e58950db1ba231e637fec data\terratonic\loot_table\blocks\slate_brick_wall.json
+a45e8653c9ae2c80b44c18911b419724e25271c7 data\terratonic\loot_table\blocks\shale.json
+57591cbe1e4ec81c17b89e81b44c1fe3af21b616 data\terratonic\loot_table\blocks\slate_bricks.json

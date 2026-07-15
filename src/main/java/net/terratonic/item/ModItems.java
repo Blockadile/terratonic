@@ -304,6 +304,114 @@ public class ModItems {
                             Identifier.of("10157301586103"),-0.5F, EntityAttributeModifier.Operation.ADD_VALUE
                     ), AttributeModifierSlot.MAINHAND)),true))));
 
+    //Scythes
+    public static final Item WOODEN_SCYTHE = registerItem("wooden_scythe", new ScytheItem(ToolMaterials.WOOD, new Item.Settings()
+            .maxCount(1)
+            .attributeModifiers(new AttributeModifiersComponent(List.of(
+                    new AttributeModifiersComponent.Entry(EntityAttributes.GENERIC_ATTACK_DAMAGE, new EntityAttributeModifier(
+                            Item.BASE_ATTACK_DAMAGE_MODIFIER_ID,3F, EntityAttributeModifier.Operation.ADD_VALUE
+                    ), AttributeModifierSlot.MAINHAND),
+                    new AttributeModifiersComponent.Entry(EntityAttributes.GENERIC_ATTACK_SPEED, new EntityAttributeModifier(
+                            Item.BASE_ATTACK_SPEED_MODIFIER_ID,-3F, EntityAttributeModifier.Operation.ADD_VALUE
+                    ), AttributeModifierSlot.MAINHAND),
+                    new AttributeModifiersComponent.Entry(EntityAttributes.PLAYER_SWEEPING_DAMAGE_RATIO, new EntityAttributeModifier(
+                            Identifier.of("10573015730125"),0.75F, EntityAttributeModifier.Operation.ADD_VALUE
+                    ), AttributeModifierSlot.MAINHAND),
+                    new AttributeModifiersComponent.Entry(EntityAttributes.PLAYER_BLOCK_INTERACTION_RANGE, new EntityAttributeModifier(
+                            Identifier.of("55069211904233"),1F, EntityAttributeModifier.Operation.ADD_VALUE
+                    ), AttributeModifierSlot.MAINHAND)),true))));
+    public static final Item STONE_SCYTHE = registerItem("stone_scythe", new ScytheItem(ToolMaterials.STONE, new Item.Settings()
+            .maxCount(1)
+            .attributeModifiers(new AttributeModifiersComponent(List.of(
+                    new AttributeModifiersComponent.Entry(EntityAttributes.GENERIC_ATTACK_DAMAGE, new EntityAttributeModifier(
+                            Item.BASE_ATTACK_DAMAGE_MODIFIER_ID,4F, EntityAttributeModifier.Operation.ADD_VALUE
+                    ), AttributeModifierSlot.MAINHAND),
+                    new AttributeModifiersComponent.Entry(EntityAttributes.GENERIC_ATTACK_SPEED, new EntityAttributeModifier(
+                            Item.BASE_ATTACK_SPEED_MODIFIER_ID,-3F, EntityAttributeModifier.Operation.ADD_VALUE
+                    ), AttributeModifierSlot.MAINHAND),
+                    new AttributeModifiersComponent.Entry(EntityAttributes.PLAYER_SWEEPING_DAMAGE_RATIO, new EntityAttributeModifier(
+                            Identifier.of("10573015730125"),0.75F, EntityAttributeModifier.Operation.ADD_VALUE
+                    ), AttributeModifierSlot.MAINHAND),
+                    new AttributeModifiersComponent.Entry(EntityAttributes.PLAYER_BLOCK_INTERACTION_RANGE, new EntityAttributeModifier(
+                            Identifier.of("55069211904233"),1F, EntityAttributeModifier.Operation.ADD_VALUE
+                    ), AttributeModifierSlot.MAINHAND)),true))));
+    public static final Item COPPER_SCYTHE = registerItem("copper_scythe", new ScytheItem(ModToolMaterials.COPPER, new Item.Settings()
+            .maxCount(1)
+            .attributeModifiers(new AttributeModifiersComponent(List.of(
+                    new AttributeModifiersComponent.Entry(EntityAttributes.GENERIC_ATTACK_DAMAGE, new EntityAttributeModifier(
+                            Item.BASE_ATTACK_DAMAGE_MODIFIER_ID,4F, EntityAttributeModifier.Operation.ADD_VALUE
+                    ), AttributeModifierSlot.MAINHAND),
+                    new AttributeModifiersComponent.Entry(EntityAttributes.GENERIC_ATTACK_SPEED, new EntityAttributeModifier(
+                            Item.BASE_ATTACK_SPEED_MODIFIER_ID,-3F, EntityAttributeModifier.Operation.ADD_VALUE
+                    ), AttributeModifierSlot.MAINHAND),
+                    new AttributeModifiersComponent.Entry(EntityAttributes.PLAYER_SWEEPING_DAMAGE_RATIO, new EntityAttributeModifier(
+                            Identifier.of("10573015730125"),0.75F, EntityAttributeModifier.Operation.ADD_VALUE
+                    ), AttributeModifierSlot.MAINHAND),
+                    new AttributeModifiersComponent.Entry(EntityAttributes.PLAYER_BLOCK_INTERACTION_RANGE, new EntityAttributeModifier(
+                            Identifier.of("55069211904233"),1F, EntityAttributeModifier.Operation.ADD_VALUE
+                    ), AttributeModifierSlot.MAINHAND)),true))));
+    public static final Item IRON_SCYTHE = registerItem("iron_scythe", new ScytheItem(ToolMaterials.IRON, new Item.Settings()
+            .maxCount(1)
+            .attributeModifiers(new AttributeModifiersComponent(List.of(
+                    new AttributeModifiersComponent.Entry(EntityAttributes.GENERIC_ATTACK_DAMAGE, new EntityAttributeModifier(
+                            Item.BASE_ATTACK_DAMAGE_MODIFIER_ID,5F, EntityAttributeModifier.Operation.ADD_VALUE
+                    ), AttributeModifierSlot.MAINHAND),
+                    new AttributeModifiersComponent.Entry(EntityAttributes.GENERIC_ATTACK_SPEED, new EntityAttributeModifier(
+                            Item.BASE_ATTACK_SPEED_MODIFIER_ID,-3F, EntityAttributeModifier.Operation.ADD_VALUE
+                    ), AttributeModifierSlot.MAINHAND),
+                    new AttributeModifiersComponent.Entry(EntityAttributes.PLAYER_SWEEPING_DAMAGE_RATIO, new EntityAttributeModifier(
+                            Identifier.of("10573015730125"),0.75F, EntityAttributeModifier.Operation.ADD_VALUE
+                    ), AttributeModifierSlot.MAINHAND),
+                    new AttributeModifiersComponent.Entry(EntityAttributes.PLAYER_BLOCK_INTERACTION_RANGE, new EntityAttributeModifier(
+                            Identifier.of("55069211904233"),1F, EntityAttributeModifier.Operation.ADD_VALUE
+                    ), AttributeModifierSlot.MAINHAND)),true))));
+    public static final Item GOLDEN_SCYTHE = registerItem("golden_scythe", new ScytheItem(ToolMaterials.GOLD, new Item.Settings()
+            .maxCount(1)
+            .attributeModifiers(new AttributeModifiersComponent(List.of(
+                    new AttributeModifiersComponent.Entry(EntityAttributes.GENERIC_ATTACK_DAMAGE, new EntityAttributeModifier(
+                            Item.BASE_ATTACK_DAMAGE_MODIFIER_ID,5F, EntityAttributeModifier.Operation.ADD_VALUE
+                    ), AttributeModifierSlot.MAINHAND),
+                    new AttributeModifiersComponent.Entry(EntityAttributes.GENERIC_ATTACK_SPEED, new EntityAttributeModifier(
+                            Item.BASE_ATTACK_SPEED_MODIFIER_ID,-3F, EntityAttributeModifier.Operation.ADD_VALUE
+                    ), AttributeModifierSlot.MAINHAND),
+                    new AttributeModifiersComponent.Entry(EntityAttributes.PLAYER_SWEEPING_DAMAGE_RATIO, new EntityAttributeModifier(
+                            Identifier.of("10573015730125"),0.75F, EntityAttributeModifier.Operation.ADD_VALUE
+                    ), AttributeModifierSlot.MAINHAND),
+                    new AttributeModifiersComponent.Entry(EntityAttributes.PLAYER_BLOCK_INTERACTION_RANGE, new EntityAttributeModifier(
+                            Identifier.of("55069211904233"),1F, EntityAttributeModifier.Operation.ADD_VALUE
+                    ), AttributeModifierSlot.MAINHAND)),true))));
+    public static final Item DIAMOND_SCYTHE = registerItem("diamond_scythe", new ScytheItem(ToolMaterials.DIAMOND, new Item.Settings()
+            .maxCount(1)
+            .attributeModifiers(new AttributeModifiersComponent(List.of(
+                    new AttributeModifiersComponent.Entry(EntityAttributes.GENERIC_ATTACK_DAMAGE, new EntityAttributeModifier(
+                            Item.BASE_ATTACK_DAMAGE_MODIFIER_ID,6F, EntityAttributeModifier.Operation.ADD_VALUE
+                    ), AttributeModifierSlot.MAINHAND),
+                    new AttributeModifiersComponent.Entry(EntityAttributes.GENERIC_ATTACK_SPEED, new EntityAttributeModifier(
+                            Item.BASE_ATTACK_SPEED_MODIFIER_ID,-3F, EntityAttributeModifier.Operation.ADD_VALUE
+                    ), AttributeModifierSlot.MAINHAND),
+                    new AttributeModifiersComponent.Entry(EntityAttributes.PLAYER_SWEEPING_DAMAGE_RATIO, new EntityAttributeModifier(
+                            Identifier.of("10573015730125"),0.75F, EntityAttributeModifier.Operation.ADD_VALUE
+                    ), AttributeModifierSlot.MAINHAND),
+                    new AttributeModifiersComponent.Entry(EntityAttributes.PLAYER_BLOCK_INTERACTION_RANGE, new EntityAttributeModifier(
+                            Identifier.of("55069211904233"),1F, EntityAttributeModifier.Operation.ADD_VALUE
+                    ), AttributeModifierSlot.MAINHAND)),true))));
+    public static final Item NETHERITE_SCYTHE = registerItem("netherite_scythe", new ScytheItem(ToolMaterials.NETHERITE, new Item.Settings()
+            .maxCount(1)
+            .attributeModifiers(new AttributeModifiersComponent(List.of(
+                    new AttributeModifiersComponent.Entry(EntityAttributes.GENERIC_ATTACK_DAMAGE, new EntityAttributeModifier(
+                            Item.BASE_ATTACK_DAMAGE_MODIFIER_ID,7F, EntityAttributeModifier.Operation.ADD_VALUE
+                    ), AttributeModifierSlot.MAINHAND),
+                    new AttributeModifiersComponent.Entry(EntityAttributes.GENERIC_ATTACK_SPEED, new EntityAttributeModifier(
+                            Item.BASE_ATTACK_SPEED_MODIFIER_ID,-3F, EntityAttributeModifier.Operation.ADD_VALUE
+                    ), AttributeModifierSlot.MAINHAND),
+                    new AttributeModifiersComponent.Entry(EntityAttributes.PLAYER_SWEEPING_DAMAGE_RATIO, new EntityAttributeModifier(
+                            Identifier.of("10573015730125"),0.75F, EntityAttributeModifier.Operation.ADD_VALUE
+                    ), AttributeModifierSlot.MAINHAND),
+                    new AttributeModifiersComponent.Entry(EntityAttributes.PLAYER_BLOCK_INTERACTION_RANGE, new EntityAttributeModifier(
+                            Identifier.of("55069211904233"),1F, EntityAttributeModifier.Operation.ADD_VALUE
+                    ), AttributeModifierSlot.MAINHAND)),true))));
+
+
         // Tools
     // Pickaxes
     public static final Item COPPER_PICKAXE = registerItem("copper_pickaxe",
@@ -562,6 +670,15 @@ public class ModItems {
             fabricItemGroupEntries.addAfter(Items.NETHERITE_SWORD, ModItems.NETHERITE_DUELING_SWORD);
             fabricItemGroupEntries.addAfter(ModItems.NETHERITE_DUELING_SWORD, ModItems.NETHERITE_WIDE_SWORD);
             fabricItemGroupEntries.addAfter(ModItems.NETHERITE_WIDE_SWORD, ModItems.NETHERITE_SHORT_SWORD);
+
+                //Scythes
+            fabricItemGroupEntries.addAfter(Items.NETHERITE_AXE, ModItems.WOODEN_SCYTHE);
+            fabricItemGroupEntries.addAfter(ModItems.WOODEN_SCYTHE, ModItems.STONE_SCYTHE);
+            fabricItemGroupEntries.addAfter(ModItems.STONE_SCYTHE, ModItems.COPPER_SCYTHE);
+            fabricItemGroupEntries.addAfter(ModItems.COPPER_SCYTHE, ModItems.IRON_SCYTHE);
+            fabricItemGroupEntries.addAfter(ModItems.IRON_SCYTHE, ModItems.GOLDEN_SCYTHE);
+            fabricItemGroupEntries.addAfter(ModItems.GOLDEN_SCYTHE, ModItems.DIAMOND_SCYTHE);
+            fabricItemGroupEntries.addAfter(ModItems.DIAMOND_SCYTHE, ModItems.NETHERITE_SCYTHE);
 
 
             fabricItemGroupEntries.addBefore(Items.IRON_AXE, ModItems.COPPER_AXE);

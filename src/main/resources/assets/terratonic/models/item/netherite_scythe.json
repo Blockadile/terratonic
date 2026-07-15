@@ -1,0 +1,67 @@
+{
+  "parent": "minecraft:item/handheld",
+  "textures": {
+    "layer0": "terratonic:item/netherite_scythe"
+  },
+  "elements": [],
+  "display": {
+    "firstperson_righthand": {
+      "rotation": [
+        -15,
+        -90,
+        25
+      ],
+      "scale": [
+        1.5,
+        1.5,
+        1.5
+      ]
+    },
+    "firstperson_lefthand": {
+      "rotation": [
+        -15,
+        90,
+        -25
+      ],
+      "scale": [
+        1.5,
+        1.5,
+        1.5
+      ]
+    },
+    "thirdperson_righthand": {
+      "rotation": [
+        -45,
+        -90,
+        0
+      ],
+      "translation": [
+        0,
+        6.5,
+        1.5
+      ],
+      "scale": [
+        1.7,
+        1.7,
+        1.7
+      ]
+    },
+    "thirdperson_lefthand": {
+      "rotation": [
+        -45,
+        90,
+        0
+      ],
+      "translation": [
+        0,
+        6.5,
+        1.5
+      ],
+      "scale": [
+        1.7,
+        1.7,
+        1.7
+      ]
+    }
+  }
+}
