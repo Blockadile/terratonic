@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "terratonic:block/mossy_cobbled_slate_slab"
+    },
+    "type=double": {
+      "model": "terratonic:block/mossy_cobbled_slate"
+    },
+    "type=top": {
+      "model": "terratonic:block/mossy_cobbled_slate_slab_top"
+    }
+  }
+}

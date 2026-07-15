@@ -1,5 +1,7 @@
 {
   "values": [
+    "terratonic:cobbled_slate_wall",
+    "terratonic:mossy_cobbled_slate_wall",
     "terratonic:slate_brick_wall",
     "terratonic:mossy_slate_brick_wall"
   ]
