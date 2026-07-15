@@ -22,5 +22,7 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 .add(Items.COPPER_INGOT);
         getOrCreateTagBuilder(ItemTags.STONE_CRAFTING_MATERIALS)
                 .add(ModBlocks.COBBLED_SLATE.asItem());
+        getOrCreateTagBuilder(ItemTags.STONE_TOOL_MATERIALS)
+                .add(ModBlocks.COBBLED_SLATE.asItem());
     }
 }

@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/handheld",
+  "textures": {
+    "layer0": "terratonic:item/wooden_prospecting_pickaxe"
+  }
+}

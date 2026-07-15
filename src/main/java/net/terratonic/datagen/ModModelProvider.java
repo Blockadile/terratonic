@@ -100,6 +100,16 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.DIAMOND_SICKLE, Models.HANDHELD);
         itemModelGenerator.register(ModItems.NETHERITE_SICKLE, Models.HANDHELD);
 
+            // Pickaxe Variants
+        // Prospecting Pickaxes
+        itemModelGenerator.register(ModItems.WOODEN_PROSPECTING_PICKAXE, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.STONE_PROSPECTING_PICKAXE, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.COPPER_PROSPECTING_PICKAXE, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.IRON_PROSPECTING_PICKAXE, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.GOLDEN_PROSPECTING_PICKAXE, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.DIAMOND_PROSPECTING_PICKAXE, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.NETHERITE_PROSPECTING_PICKAXE, Models.HANDHELD);
+
         // Colored Items
         itemModelGenerator.register(ModItems.WHITE_CUSHION, Models.GENERATED);
         itemModelGenerator.register(ModItems.LIGHT_GRAY_CUSHION, Models.GENERATED);

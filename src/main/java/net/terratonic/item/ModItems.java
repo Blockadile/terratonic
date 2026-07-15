@@ -15,10 +15,7 @@ import net.terratonic.Terratonic;
 import net.terratonic.block.ModBlocks;
 import net.terratonic.entity.ModEntities;
 import net.terratonic.item.components.ModFoodComponents;
-import net.terratonic.item.custom.CushionItem;
-import net.terratonic.item.custom.DuelingSwordItem;
-import net.terratonic.item.custom.ScytheItem;
-import net.terratonic.item.custom.SickleItem;
+import net.terratonic.item.custom.*;
 
 import java.util.List;
 
@@ -34,7 +31,9 @@ public class ModItems {
     public static final Item COPPER_BOOTS = registerItem("copper_boots", new ArmorItem(ModArmorMaterials.COPPER_ARMOR_MATERIAL,
             ArmorItem.Type.BOOTS, new Item.Settings().maxDamage(ArmorItem.Type.BOOTS.getMaxDamage(11))));
 
-        // Weapons
+    // Weapons
+
+        // Swords
     // Wooden Swords
     public static final Item WOODEN_DUELING_SWORD = registerItem("wooden_dueling_sword", new DuelingSwordItem(ToolMaterials.WOOD, new Item.Settings()
             .maxCount(1)
@@ -304,11 +303,47 @@ public class ModItems {
                             Identifier.of("10157301586103"),-0.5F, EntityAttributeModifier.Operation.ADD_VALUE
                     ), AttributeModifierSlot.MAINHAND)),true))));
 
-        // Tools
-    // Pickaxes
+    // Tools
+
+        // Pickaxes
+    // Wooden Pickaxes
+    public static final Item WOODEN_PROSPECTING_PICKAXE = registerItem("wooden_prospecting_pickaxe",
+            new ProspectingPickaxeItem(ToolMaterials.WOOD, (new Item.Settings())
+                    .attributeModifiers(PickaxeItem.createAttributeModifiers(ToolMaterials.WOOD,
+                            1.0F, -2.8F))));
+    // Stone Pickaxes
+    public static final Item STONE_PROSPECTING_PICKAXE = registerItem("stone_prospecting_pickaxe",
+            new ProspectingPickaxeItem(ToolMaterials.STONE, (new Item.Settings())
+                    .attributeModifiers(PickaxeItem.createAttributeModifiers(ToolMaterials.STONE,
+                            1.0F, -2.8F))));
+    // Copper Pickaxes
     public static final Item COPPER_PICKAXE = registerItem("copper_pickaxe",
             new PickaxeItem(ModToolMaterials.COPPER, new Item.Settings().attributeModifiers(PickaxeItem.createAttributeModifiers(ModToolMaterials.COPPER,
                     1, -2.8F))));
+    public static final Item COPPER_PROSPECTING_PICKAXE = registerItem("copper_prospecting_pickaxe",
+            new ProspectingPickaxeItem(ModToolMaterials.COPPER, (new Item.Settings())
+                    .attributeModifiers(PickaxeItem.createAttributeModifiers(ModToolMaterials.COPPER,
+                            1.0F, -2.8F))));
+    // Iron Pickaxes
+    public static final Item IRON_PROSPECTING_PICKAXE = registerItem("iron_prospecting_pickaxe",
+            new ProspectingPickaxeItem(ToolMaterials.IRON, (new Item.Settings())
+                    .attributeModifiers(PickaxeItem.createAttributeModifiers(ToolMaterials.IRON,
+                            1.0F, -2.8F))));
+    // Gold Pickaxes
+    public static final Item GOLDEN_PROSPECTING_PICKAXE = registerItem("golden_prospecting_pickaxe",
+            new ProspectingPickaxeItem(ToolMaterials.GOLD, (new Item.Settings())
+                    .attributeModifiers(PickaxeItem.createAttributeModifiers(ToolMaterials.GOLD,
+                            1.0F, -2.8F))));
+    // Diamond Pickaxes
+    public static final Item DIAMOND_PROSPECTING_PICKAXE = registerItem("diamond_prospecting_pickaxe",
+            new ProspectingPickaxeItem(ToolMaterials.DIAMOND, (new Item.Settings())
+                    .attributeModifiers(PickaxeItem.createAttributeModifiers(ToolMaterials.DIAMOND,
+                            1.0F, -2.8F))));
+    // Netherite Pickaxes
+    public static final Item NETHERITE_PROSPECTING_PICKAXE = registerItem("netherite_prospecting_pickaxe",
+            new ProspectingPickaxeItem(ToolMaterials.NETHERITE, (new Item.Settings())
+                    .attributeModifiers(PickaxeItem.createAttributeModifiers(ToolMaterials.NETHERITE,
+                            1.0F, -2.8F))));
 
     // Shovels
     public static final Item COPPER_SHOVEL = registerItem("copper_shovel",
@@ -520,6 +555,14 @@ public class ModItems {
             fabricItemGroupEntries.addBefore(Items.IRON_SHOVEL, ModItems.COPPER_PICKAXE);
             fabricItemGroupEntries.addBefore(Items.IRON_SHOVEL, ModItems.COPPER_AXE);
             fabricItemGroupEntries.addBefore(Items.IRON_SHOVEL, ModItems.COPPER_HOE);
+
+            fabricItemGroupEntries.addAfter(Items.WOODEN_PICKAXE, ModItems.WOODEN_PROSPECTING_PICKAXE);
+            fabricItemGroupEntries.addAfter(Items.STONE_PICKAXE, ModItems.STONE_PROSPECTING_PICKAXE);
+            fabricItemGroupEntries.addAfter(ModItems.COPPER_PICKAXE, ModItems.COPPER_PROSPECTING_PICKAXE);
+            fabricItemGroupEntries.addAfter(Items.IRON_PICKAXE, ModItems.IRON_PROSPECTING_PICKAXE);
+            fabricItemGroupEntries.addAfter(Items.GOLDEN_PICKAXE, ModItems.GOLDEN_PROSPECTING_PICKAXE);
+            fabricItemGroupEntries.addAfter(Items.DIAMOND_PICKAXE, ModItems.DIAMOND_PROSPECTING_PICKAXE);
+            fabricItemGroupEntries.addAfter(Items.NETHERITE_PICKAXE, ModItems.NETHERITE_PROSPECTING_PICKAXE);
 
             fabricItemGroupEntries.addAfter(Items.WOODEN_HOE, ModItems.WOODEN_SICKLE);
             fabricItemGroupEntries.addAfter(Items.STONE_HOE, ModItems.STONE_SICKLE);
