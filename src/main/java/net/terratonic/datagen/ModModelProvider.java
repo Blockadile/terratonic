@@ -89,8 +89,6 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.NETHERITE_SHORT_SWORD, Models.HANDHELD);
 
             // Hoe Variants
-        // Scythes
-
         // Sickles
         itemModelGenerator.register(ModItems.WOODEN_SICKLE, Models.HANDHELD);
         itemModelGenerator.register(ModItems.STONE_SICKLE, Models.HANDHELD);
