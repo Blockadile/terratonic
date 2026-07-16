@@ -13,6 +13,13 @@ public class ModSounds {
     public static final SoundEvent LEAF_LITTER_PLACE = registerSound("leaf_litter_place");
     public static final SoundEvent LEAF_LITTER_STEP = registerSound("leaf_litter_step");
 
+    public static final SoundEvent STRAW_BED_BREAK_LEAVE = registerSound("straw_bed_break_leave");
+
+    public static final SoundEvent THATCH_BREAK = registerSound("thatch_break");
+    public static final SoundEvent THATCH_HIT = registerSound("thatch_hit");
+    public static final SoundEvent THATCH_PLACE = registerSound("thatch_place");
+    public static final SoundEvent THATCH_STEP = registerSound("thatch_step");
+
     private static SoundEvent registerSound(String name) {
         Identifier id = Identifier.of(Terratonic.MOD_ID, name);
         return Registry.register(Registries.SOUND_EVENT, id, SoundEvent.of(id));

@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "terratonic:block/thatch_slab"
+    },
+    "type=double": {
+      "model": "terratonic:block/thatch"
+    },
+    "type=top": {
+      "model": "terratonic:block/thatch_slab_top"
+    }
+  }
+}

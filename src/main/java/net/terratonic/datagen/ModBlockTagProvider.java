@@ -36,7 +36,10 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.MOSSY_SLATE_BRICK_WALL)
                 .add(ModBlocks.SHALE);
         getOrCreateTagBuilder(BlockTags.HOE_MINEABLE)
-                .add(ModBlocks.TANGLED_ROOTS);
+                .add(ModBlocks.TANGLED_ROOTS)
+                .add(ModBlocks.THATCH)
+                .add(ModBlocks.THATCH_STAIRS)
+                .add(ModBlocks.THATCH_SLAB);
         getOrCreateTagBuilder(BlockTags.WALLS)
                 .add(ModBlocks.COBBLED_SLATE_WALL)
                 .add(ModBlocks.MOSSY_COBBLED_SLATE_WALL)

@@ -97,7 +97,7 @@ public class ModBlocks {
     public static final Block GARLICS = registerUnobtainableBlock("garlics",
             new GarlicsBlock(AbstractBlock.Settings.copy(Blocks.CARROTS))
     );
-        // Dry Grss
+        // Dry Grass
     public static final Block SHORT_DRY_GRASS = registerBlock("short_dry_grass",
             new ShortDryGrassBlock(AbstractBlock.Settings.copy(Blocks.SHORT_GRASS)));
     public static final Block TALL_DRY_GRASS = registerBlock("tall_dry_grass",
@@ -110,7 +110,7 @@ public class ModBlocks {
                     .sounds(BlockSoundGroup.PINK_PETALS)
                     .pistonBehavior(PistonBehavior.DESTROY))
     );
-    // Misc Plants
+        // Misc Plants
     public static final Block LEAF_LITTER = registerBlock("leaf_litter",
             new LeafLitterBlock(AbstractBlock.Settings.create()
                     .mapColor(MapColor.BROWN)
@@ -121,6 +121,15 @@ public class ModBlocks {
             new TallDryGrassBlock(AbstractBlock.Settings.copy(Blocks.SHORT_GRASS)));
 
     // Misc
+    public static final Block THATCH = registerBlock("thatch",
+            new Block(AbstractBlock.Settings.copy(Blocks.HAY_BLOCK).sounds(ModSoundGroups.THATCH))
+    );
+    public static final Block THATCH_STAIRS = registerBlock("thatch_stairs",
+            new StairsBlock(ModBlocks.THATCH.getDefaultState(), AbstractBlock.Settings.copy(Blocks.HAY_BLOCK).sounds(ModSoundGroups.THATCH))
+    );
+    public static final Block THATCH_SLAB = registerBlock("thatch_slab",
+            new SlabBlock(AbstractBlock.Settings.copy(Blocks.HAY_BLOCK).sounds(ModSoundGroups.THATCH))
+    );
     public static final Block COPPER_ANVIL = registerBlock("copper_anvil",
             new CopperAnvilBlock(AbstractBlock.Settings.copy(Blocks.ANVIL))
     );
@@ -163,6 +172,9 @@ public class ModBlocks {
             fabricItemGroupEntries.addAfter(ModBlocks.MOSSY_SLATE_BRICKS, ModBlocks.MOSSY_SLATE_BRICK_STAIRS);
             fabricItemGroupEntries.addAfter(ModBlocks.MOSSY_SLATE_BRICK_STAIRS, ModBlocks.MOSSY_SLATE_BRICK_SLAB);
             fabricItemGroupEntries.addAfter(ModBlocks.MOSSY_SLATE_BRICK_SLAB, ModBlocks.MOSSY_SLATE_BRICK_WALL);
+            fabricItemGroupEntries.addAfter(Blocks.PURPUR_SLAB, ModBlocks.THATCH);
+            fabricItemGroupEntries.addAfter(ModBlocks.THATCH, ModBlocks.THATCH_STAIRS);
+            fabricItemGroupEntries.addAfter(ModBlocks.THATCH_STAIRS, ModBlocks.THATCH_SLAB);
         });
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.NATURAL).register(fabricItemGroupEntries -> {
             fabricItemGroupEntries.addAfter(Blocks.STONE, ModBlocks.SHALE);

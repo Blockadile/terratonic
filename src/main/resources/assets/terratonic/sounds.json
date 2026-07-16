@@ -7,6 +7,7 @@
       "terratonic:entity/cushion/cushion_break3"
     ]
   },
+
   "leaf_litter_break": {
     "subtitles": "subtitles.block.generic.break",
     "sounds": [
@@ -18,7 +19,7 @@
     ]
   },
   "leaf_litter_place": {
-    "subtitles": "subtitles.block.generic.break",
+    "subtitles": "subtitles.block.generic.place",
     "sounds": [
       "terratonic:block/leaf_litter/leaf_litter_place1",
       "terratonic:block/leaf_litter/leaf_litter_place2",
@@ -28,13 +29,61 @@
     ]
   },
   "leaf_litter_step": {
-    "subtitles": "subtitles.block.generic.break",
+    "subtitles": "subtitles.block.generic.footsteps",
     "sounds": [
       "terratonic:block/leaf_litter/leaf_litter_step1",
       "terratonic:block/leaf_litter/leaf_litter_step2",
       "terratonic:block/leaf_litter/leaf_litter_step3",
       "terratonic:block/leaf_litter/leaf_litter_step4",
       "terratonic:block/leaf_litter/leaf_litter_step5"
+    ]
+  },
+
+  "straw_bed_break_leave": {
+    "subtitles": "subtitles.block.straw_bed_break_leave",
+    "sounds": [
+      "terratonic:block/straw_bed/straw_bed_break_leave"
+    ]
+  },
+
+  "thatch_break": {
+    "subtitles": "subtitles.block.generic.break",
+    "sounds": [
+      "terratonic:block/thatch/thatch_break1",
+      "terratonic:block/thatch/thatch_break2",
+      "terratonic:block/thatch/thatch_break3",
+      "terratonic:block/thatch/thatch_break4"
+    ]
+  },
+  "thatch_hit": {
+    "subtitles": "subtitles.block.generic.hit",
+    "sounds": [
+      "terratonic:block/thatch/thatch_hit1",
+      "terratonic:block/thatch/thatch_hit2",
+      "terratonic:block/thatch/thatch_hit3",
+      "terratonic:block/thatch/thatch_hit4",
+      "terratonic:block/thatch/thatch_hit5",
+      "terratonic:block/thatch/thatch_hit6"
+    ]
+  },
+  "thatch_place": {
+    "subtitles": "subtitles.block.generic.place",
+    "sounds": [
+      "terratonic:block/thatch/thatch_place1",
+      "terratonic:block/thatch/thatch_place2",
+      "terratonic:block/thatch/thatch_place3",
+      "terratonic:block/thatch/thatch_place4"
+    ]
+  },
+  "thatch_step": {
+    "subtitles": "subtitles.block.generic.step",
+    "sounds": [
+      "terratonic:block/thatch/thatch_step1",
+      "terratonic:block/thatch/thatch_step2",
+      "terratonic:block/thatch/thatch_step3",
+      "terratonic:block/thatch/thatch_step4",
+      "terratonic:block/thatch/thatch_step5",
+      "terratonic:block/thatch/thatch_step6"
     ]
   }
 }

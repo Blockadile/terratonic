@@ -23,4 +23,13 @@ public class ModSoundGroups {
             ModSounds.LEAF_LITTER_STEP,
             ModSounds.LEAF_LITTER_STEP
     );
+    public static final BlockSoundGroup THATCH = new BlockSoundGroup(
+            1.0F, // volume
+            1.0F, // pitch
+            ModSounds.THATCH_BREAK,
+            ModSounds.THATCH_STEP,
+            ModSounds.THATCH_PLACE,
+            ModSounds.THATCH_HIT,
+            ModSounds.THATCH_STEP
+    );
 }

@@ -1,5 +1,8 @@
 {
   "values": [
-    "terratonic:tangled_roots"
+    "terratonic:tangled_roots",
+    "terratonic:thatch",
+    "terratonic:thatch_stairs",
+    "terratonic:thatch_slab"
   ]
 }

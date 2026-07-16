@@ -35,5 +35,9 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.SHALE);
 
         addDrop(ModBlocks.TANGLED_ROOTS);
+
+        addDrop(ModBlocks.THATCH);
+        addDrop(ModBlocks.THATCH_STAIRS);
+        addDrop(ModBlocks.THATCH_SLAB, slabDrops(ModBlocks.THATCH_SLAB));
     }
 }

@@ -39,6 +39,10 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerTintableCrossBlockState(ModBlocks.TALL_DRY_GRASS, BlockStateModelGenerator.TintType.NOT_TINTED);
 
         blockStateModelGenerator.registerTintableCrossBlockState(ModBlocks.BUSH, BlockStateModelGenerator.TintType.TINTED);
+
+        BlockStateModelGenerator.BlockTexturePool thatch_pool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.THATCH);
+        thatch_pool.stairs(ModBlocks.THATCH_STAIRS);
+        thatch_pool.slab(ModBlocks.THATCH_SLAB);
     }
 
     @Override
