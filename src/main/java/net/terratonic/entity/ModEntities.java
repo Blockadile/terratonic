@@ -14,7 +14,7 @@ public class ModEntities {
             Registries.ENTITY_TYPE,
             Identifier.of(Terratonic.MOD_ID, "cushion"),
             EntityType.Builder.<CushionEntity>create(CushionEntity::new, SpawnGroup.MISC)
-                    .dimensions(0.999f, 0.25f)
+                    .dimensions(1.001f, 0.251f)
                     .build()
     );
 

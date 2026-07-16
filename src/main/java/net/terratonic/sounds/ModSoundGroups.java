@@ -14,4 +14,13 @@ public class ModSoundGroups {
             SoundEvents.BLOCK_GRASS_HIT,
             SoundEvents.BLOCK_MANGROVE_ROOTS_FALL
     );
+    public static final BlockSoundGroup LEAF_LITTER = new BlockSoundGroup(
+            1.0F, // volume
+            1.0F, // pitch
+            ModSounds.LEAF_LITTER_BREAK,
+            ModSounds.LEAF_LITTER_STEP,
+            ModSounds.LEAF_LITTER_PLACE,
+            ModSounds.LEAF_LITTER_STEP,
+            ModSounds.LEAF_LITTER_STEP
+    );
 }

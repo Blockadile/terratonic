@@ -3,6 +3,7 @@ package net.terratonic.block;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.minecraft.block.*;
+import net.minecraft.block.piston.PistonBehavior;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroups;
@@ -96,6 +97,28 @@ public class ModBlocks {
     public static final Block GARLICS = registerUnobtainableBlock("garlics",
             new GarlicsBlock(AbstractBlock.Settings.copy(Blocks.CARROTS))
     );
+        // Dry Grss
+    public static final Block SHORT_DRY_GRASS = registerBlock("short_dry_grass",
+            new ShortDryGrassBlock(AbstractBlock.Settings.copy(Blocks.SHORT_GRASS)));
+    public static final Block TALL_DRY_GRASS = registerBlock("tall_dry_grass",
+            new TallDryGrassBlock(AbstractBlock.Settings.copy(Blocks.SHORT_GRASS)));
+        // Flowers
+    public static final Block WILDFLOWERS = registerBlock("wildflowers",
+            new FlowerbedBlock(AbstractBlock.Settings.create()
+                    .mapColor(MapColor.DARK_GREEN)
+                    .noCollision()
+                    .sounds(BlockSoundGroup.PINK_PETALS)
+                    .pistonBehavior(PistonBehavior.DESTROY))
+    );
+    // Misc Plants
+    public static final Block LEAF_LITTER = registerBlock("leaf_litter",
+            new LeafLitterBlock(AbstractBlock.Settings.create()
+                    .mapColor(MapColor.BROWN)
+                    .noCollision()
+                    .sounds(ModSoundGroups.LEAF_LITTER)
+                    .pistonBehavior(PistonBehavior.DESTROY)));
+    public static final Block BUSH = registerBlock("bush",
+            new TallDryGrassBlock(AbstractBlock.Settings.copy(Blocks.SHORT_GRASS)));
 
     // Misc
     public static final Block COPPER_ANVIL = registerBlock("copper_anvil",
@@ -144,6 +167,11 @@ public class ModBlocks {
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.NATURAL).register(fabricItemGroupEntries -> {
             fabricItemGroupEntries.addAfter(Blocks.STONE, ModBlocks.SHALE);
             fabricItemGroupEntries.addAfter(Blocks.STONE, ModBlocks.SLATE);
+            fabricItemGroupEntries.addAfter(Blocks.FERN, ModBlocks.SHORT_DRY_GRASS);
+            fabricItemGroupEntries.addAfter(ModBlocks.SHORT_DRY_GRASS, ModBlocks.BUSH);
+            fabricItemGroupEntries.addAfter(Blocks.LARGE_FERN, ModBlocks.TALL_DRY_GRASS);
+            fabricItemGroupEntries.addAfter(Blocks.PINK_PETALS, ModBlocks.WILDFLOWERS);
+            fabricItemGroupEntries.addAfter(ModBlocks.WILDFLOWERS, ModBlocks.LEAF_LITTER);
             fabricItemGroupEntries.addBefore(Blocks.VINE, ModBlocks.HANGING_CAVE_ROOTS);
         });
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.FUNCTIONAL).register(fabricItemGroupEntries -> {

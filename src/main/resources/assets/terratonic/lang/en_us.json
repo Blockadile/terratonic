@@ -1,6 +1,4 @@
 {
-  "block.terratonic.copper_anvil": "Smithing Anvil",
-  "block.terratonic.garlics": "Garlic",
   "block.terratonic.slate": "Topslate",
   "block.terratonic.cobbled_slate": "Cobbled Topslate",
   "block.terratonic.cobbled_slate_stairs": "Cobbled Topslate Stairs",
@@ -23,6 +21,13 @@
   "block.terratonic.hanging_cave_roots": "Hanging Cave Roots",
   "block.terratonic.hanging_cave_roots_plant": "Hanging Cave Roots Plant",
   "block.terratonic.tangled_roots": "Tangled Roots",
+  "block.terratonic.garlics": "Garlic",
+  "block.terratonic.short_dry_grass": "Short Dry Grass",
+  "block.terratonic.tall_dry_grass": "Tall Dry Grass",
+  "block.terratonic.wildflowers": "Wildflowers",
+  "block.terratonic.leaf_litter": "Leaf Litter",
+  "block.terratonic.bush": "Bush",
+  "block.terratonic.copper_anvil": "Smithing Anvil",
 
   "entity.terratonic.cushion": "Cushion",
 

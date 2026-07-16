@@ -2,9 +2,39 @@
   "cushion_break": {
     "subtitles": "",
     "sounds": [
-      "terratonic:cushion_break1",
-      "terratonic:cushion_break2",
-      "terratonic:cushion_break3"
+      "terratonic:entity/cushion/cushion_break1",
+      "terratonic:entity/cushion/cushion_break2",
+      "terratonic:entity/cushion/cushion_break3"
+    ]
+  },
+  "leaf_litter_break": {
+    "subtitles": "subtitles.block.generic.break",
+    "sounds": [
+      "terratonic:block/leaf_litter/leaf_litter_break1",
+      "terratonic:block/leaf_litter/leaf_litter_break2",
+      "terratonic:block/leaf_litter/leaf_litter_break3",
+      "terratonic:block/leaf_litter/leaf_litter_break4",
+      "terratonic:block/leaf_litter/leaf_litter_break5"
+    ]
+  },
+  "leaf_litter_place": {
+    "subtitles": "subtitles.block.generic.break",
+    "sounds": [
+      "terratonic:block/leaf_litter/leaf_litter_place1",
+      "terratonic:block/leaf_litter/leaf_litter_place2",
+      "terratonic:block/leaf_litter/leaf_litter_place3",
+      "terratonic:block/leaf_litter/leaf_litter_place4",
+      "terratonic:block/leaf_litter/leaf_litter_place5"
+    ]
+  },
+  "leaf_litter_step": {
+    "subtitles": "subtitles.block.generic.break",
+    "sounds": [
+      "terratonic:block/leaf_litter/leaf_litter_step1",
+      "terratonic:block/leaf_litter/leaf_litter_step2",
+      "terratonic:block/leaf_litter/leaf_litter_step3",
+      "terratonic:block/leaf_litter/leaf_litter_step4",
+      "terratonic:block/leaf_litter/leaf_litter_step5"
     ]
   }
 }

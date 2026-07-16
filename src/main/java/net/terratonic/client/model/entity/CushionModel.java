@@ -18,7 +18,7 @@ public class CushionModel extends EntityModel<Entity> {
         ModelPartData modelPartData = modelData.getRoot();
         ModelPartData bb_main = modelPartData.addChild("CUSHION", ModelPartBuilder.create()
                 .uv(0, 0)
-                .cuboid(-7.999F, 0.0F, -7.999F, 15.998F, 3.999F, 15.998F, new Dilation(0.0F)),
+                .cuboid(-7.998F, 0.0F, -7.998F, 15.996F, 3.998F, 15.996F, new Dilation(0.0F)),
                 ModelTransform.pivot(0.0F, 24.0F, 0.0F));
         return TexturedModelData.of(modelData, 64, 64);
     }

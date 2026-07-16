@@ -34,12 +34,24 @@ public class ModModelProvider extends FabricModelProvider {
         mossy_slate_brick_pool.wall(ModBlocks.MOSSY_SLATE_BRICK_WALL);
 
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.TANGLED_ROOTS);
+
+        blockStateModelGenerator.registerTintableCrossBlockState(ModBlocks.SHORT_DRY_GRASS, BlockStateModelGenerator.TintType.NOT_TINTED);
+        blockStateModelGenerator.registerTintableCrossBlockState(ModBlocks.TALL_DRY_GRASS, BlockStateModelGenerator.TintType.NOT_TINTED);
+
+        blockStateModelGenerator.registerTintableCrossBlockState(ModBlocks.BUSH, BlockStateModelGenerator.TintType.TINTED);
     }
 
     @Override
     public void generateItemModels(ItemModelGenerator itemModelGenerator) {
         // Foods
         itemModelGenerator.register(ModItems.GARLIC, Models.GENERATED);
+
+        // Plants
+        itemModelGenerator.register(ModBlocks.SHORT_DRY_GRASS.asItem(), Models.GENERATED);
+        itemModelGenerator.register(ModBlocks.TALL_DRY_GRASS.asItem(), Models.GENERATED);
+        itemModelGenerator.register(ModBlocks.WILDFLOWERS.asItem(), Models.GENERATED);
+        itemModelGenerator.register(ModBlocks.LEAF_LITTER.asItem(), Models.GENERATED);
+        itemModelGenerator.register(ModBlocks.BUSH.asItem(), Models.GENERATED);
 
         // Misc
         itemModelGenerator.register(ModItems.ORNATE_OIL_BOTTLE, Models.GENERATED);

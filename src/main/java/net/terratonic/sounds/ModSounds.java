@@ -9,6 +9,9 @@ import net.terratonic.Terratonic;
 public class ModSounds {
 
     public static final SoundEvent CUSHION_BREAK = registerSound("cushion_break");
+    public static final SoundEvent LEAF_LITTER_BREAK = registerSound("leaf_litter_break");
+    public static final SoundEvent LEAF_LITTER_PLACE = registerSound("leaf_litter_place");
+    public static final SoundEvent LEAF_LITTER_STEP = registerSound("leaf_litter_step");
 
     private static SoundEvent registerSound(String name) {
         Identifier id = Identifier.of(Terratonic.MOD_ID, name);
