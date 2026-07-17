@@ -130,10 +130,9 @@ public class ModBlocks {
     public static final Block THATCH_SLAB = registerBlock("thatch_slab",
             new SlabBlock(AbstractBlock.Settings.copy(Blocks.HAY_BLOCK).sounds(ModSoundGroups.THATCH))
     );
-    public static final Block COPPER_ANVIL = registerBlock("copper_anvil",
-            new CopperAnvilBlock(AbstractBlock.Settings.copy(Blocks.ANVIL))
+    public static final Block FORGE = registerBlock("forge",
+            new ForgeBlock(AbstractBlock.Settings.copy(Blocks.BLAST_FURNACE))
     );
-
 
     // Methods
     private static Block registerUnobtainableBlock(String name, Block block) {
@@ -187,7 +186,7 @@ public class ModBlocks {
             fabricItemGroupEntries.addBefore(Blocks.VINE, ModBlocks.HANGING_CAVE_ROOTS);
         });
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.FUNCTIONAL).register(fabricItemGroupEntries -> {
-            fabricItemGroupEntries.addAfter(Blocks.DAMAGED_ANVIL, ModBlocks.COPPER_ANVIL);
+            fabricItemGroupEntries.addAfter(Blocks.BLAST_FURNACE, ModBlocks.FORGE);
         });
     }
 }

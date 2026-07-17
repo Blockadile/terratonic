@@ -1,0 +1,9 @@
+{
+  "parent": "minecraft:block/orientable_with_bottom",
+  "textures": {
+    "bottom": "minecraft:block/blast_furnace_top",
+    "front": "terratonic:block/forge_front_on",
+    "side": "terratonic:block/forge_side",
+    "top": "terratonic:block/forge_top"
+  }
+}

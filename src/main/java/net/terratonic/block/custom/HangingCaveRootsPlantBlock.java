@@ -10,7 +10,7 @@ import net.minecraft.util.shape.VoxelShape;
 
 public class HangingCaveRootsPlantBlock extends AbstractPlantBlock {
     public static final MapCodec<HangingCaveRootsPlantBlock> CODEC = HangingCaveRootsPlantBlock.createCodec(HangingCaveRootsPlantBlock::new);
-    public static final VoxelShape SHAPE = Block.createCuboidShape((double)1.0F, (double)0.0F, (double)1.0F, (double)15.0F, (double)16.0F, (double)15.0F);
+    public static final VoxelShape SHAPE = Block.createCuboidShape(1.0F, 0.0F, 1.0F, 15.0F, 16.0F, 15.0F);
 
     public HangingCaveRootsPlantBlock(Settings settings) {
         super(settings, Direction.DOWN, SHAPE, false);
