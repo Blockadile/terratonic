@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "terratonic:block/palm_slab"
+    },
+    "type=double": {
+      "model": "terratonic:block/palm_planks"
+    },
+    "type=top": {
+      "model": "terratonic:block/palm_slab_top"
+    }
+  }
+}

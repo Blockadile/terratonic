@@ -1,0 +1,7 @@
+{
+  "parent": "terratonic:block/tinted_flowerbed_1",
+  "textures": {
+    "flowerbed": "terratonic:block/clovers",
+    "stem": "minecraft:block/pink_petals_stem"
+  }
+}

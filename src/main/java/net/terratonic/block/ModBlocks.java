@@ -18,6 +18,61 @@ import net.terratonic.sounds.ModSoundGroups;
 
 public class ModBlocks {
 
+    // Wood
+        // Palm
+    public static final Block PALM_LEAVES = registerBlock("palm_leaves",
+            new LeavesBlock(AbstractBlock.Settings.copy(Blocks.OAK_LEAVES)));
+    // Log
+    public static final Block PALM_LOG = registerBlock("palm_log",
+            new PillarBlock(AbstractBlock.Settings.copy(Blocks.OAK_LOG)));
+    // Wood
+    public static final Block PALM_WOOD = registerBlock("palm_wood",
+            new PillarBlock(AbstractBlock.Settings.copy(Blocks.OAK_WOOD)));
+    // Stripped Log
+    public static final Block STRIPPED_PALM_LOG = registerBlock("stripped_palm_log",
+            new PillarBlock(AbstractBlock.Settings.copy(Blocks.STRIPPED_OAK_LOG)));
+    // Stripped Wood
+    public static final Block STRIPPED_PALM_WOOD = registerBlock("stripped_palm_wood",
+            new PillarBlock(AbstractBlock.Settings.copy(Blocks.STRIPPED_OAK_LOG)));
+    // Planks
+    public static final Block PALM_PLANKS = registerBlock("palm_planks",
+            new Block(AbstractBlock.Settings.copy(Blocks.OAK_PLANKS)));
+    // Stairs
+    public static final Block PALM_STAIRS = registerBlock("palm_stairs",
+            new StairsBlock(ModBlocks.PALM_PLANKS.getDefaultState(), AbstractBlock.Settings.copy(Blocks.OAK_STAIRS)));
+    // Slab
+    public static final Block PALM_SLAB = registerBlock("palm_slab",
+            new SlabBlock(AbstractBlock.Settings.copy(Blocks.OAK_SLAB)));
+    // Fence
+    public static final Block PALM_FENCE = registerBlock("palm_fence",
+            new FenceBlock(AbstractBlock.Settings.copy(Blocks.OAK_FENCE)));
+    // Fence Gate
+    public static final Block PALM_FENCE_GATE = registerBlock("palm_fence_gate",
+            new FenceGateBlock(WoodType.OAK, AbstractBlock.Settings.copy(Blocks.OAK_FENCE_GATE)));
+    // Door
+    // public static final Block PALM_DOOR = registerBlock("palm_citrus_door",
+    //         new DoorBlock(BlockSetType.OAK, AbstractBlock.Settings.create()
+    //                 .strength(3f, 3f)
+    //                 .requiresTool()
+    //                 .sounds(BlockSoundGroup.WOOD)
+    //                 .nonOpaque()
+    //         ));
+    // Trapdoor
+    // public static final Block PALM_TRAPDOOR = registerBlock("palm_trapdoor",
+    //         new TrapdoorBlock(BlockSetType.OAK, AbstractBlock.Settings.create()
+    //                 .strength(3f, 3f)
+    //                 .requiresTool()
+    //                 .sounds(BlockSoundGroup.WOOD)
+    //                 .nonOpaque()
+    //         ));
+    // Pressure Plate
+    public static final Block PALM_PRESSURE_PLATE = registerBlock("palm_pressure_plate",
+            new PressurePlateBlock(BlockSetType.OAK, AbstractBlock.Settings.copy(Blocks.OAK_PRESSURE_PLATE)));
+    // Button
+    public static final Block PALM_BUTTON = registerBlock("palm_button",
+            new ButtonBlock(BlockSetType.OAK, 30, AbstractBlock.Settings.copy(Blocks.OAK_BUTTON).noCollision()));
+
+
     // Rocks/Minerals
     public static final Block SLATE = registerBlock("slate",
             new PillarBlock(AbstractBlock.Settings.copy(Blocks.STONE).sounds(BlockSoundGroup.DEEPSLATE))
@@ -81,6 +136,7 @@ public class ModBlocks {
             new Block(AbstractBlock.Settings.copy(Blocks.STONE).sounds(BlockSoundGroup.TUFF))
     );
 
+
     // Plants
         // Hanging Cave Roots
     public static final Block HANGING_CAVE_ROOTS = registerBlock("hanging_cave_roots",
@@ -110,15 +166,40 @@ public class ModBlocks {
                     .sounds(BlockSoundGroup.PINK_PETALS)
                     .pistonBehavior(PistonBehavior.DESTROY))
     );
+    public static final Block PURPLE_WILDFLOWERS = registerBlock("purple_wildflowers",
+            new FlowerbedBlock(AbstractBlock.Settings.create()
+                    .mapColor(MapColor.DARK_GREEN)
+                    .noCollision()
+                    .sounds(BlockSoundGroup.PINK_PETALS)
+                    .pistonBehavior(PistonBehavior.DESTROY))
+    );
         // Misc Plants
+    public static final Block CLOVERS = registerBlock("clovers",
+            new FlowerbedBlock(AbstractBlock.Settings.create()
+                    .mapColor(MapColor.DARK_GREEN)
+                    .noCollision()
+                    .sounds(BlockSoundGroup.PINK_PETALS)
+                    .pistonBehavior(PistonBehavior.DESTROY)
+                    .replaceable().
+                    requiresTool())
+    );
     public static final Block LEAF_LITTER = registerBlock("leaf_litter",
             new LeafLitterBlock(AbstractBlock.Settings.create()
                     .mapColor(MapColor.BROWN)
                     .noCollision()
                     .sounds(ModSoundGroups.LEAF_LITTER)
-                    .pistonBehavior(PistonBehavior.DESTROY)));
+                    .pistonBehavior(PistonBehavior.DESTROY)
+                    .replaceable()
+                    .requiresTool())
+    );
+    public static final Block SHELF_MUSHROOM = registerBlock("shelf_mushroom",
+            new ShelfMushroomBlock(AbstractBlock.Settings.create()
+                    .strength(0.03f, 0.0f)
+                    .sounds(BlockSoundGroup.WOOD)
+            )
+    );
     public static final Block BUSH = registerBlock("bush",
-            new TallDryGrassBlock(AbstractBlock.Settings.copy(Blocks.SHORT_GRASS)));
+            new ShortPlantBlock(AbstractBlock.Settings.copy(Blocks.SHORT_GRASS)));
 
     // Misc
     public static final Block THATCH = registerBlock("thatch",
@@ -152,7 +233,16 @@ public class ModBlocks {
         Terratonic.LOGGER.info("Registering Mod Blocks for " + Terratonic.MOD_ID);
 
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS).register(fabricItemGroupEntries -> {
-            fabricItemGroupEntries.addAfter(Blocks.MOSSY_STONE_BRICK_WALL, ModBlocks.SLATE_BRICK_WALL);
+            fabricItemGroupEntries.addAfter(Blocks.JUNGLE_BUTTON, ModBlocks.PALM_LOG);
+            fabricItemGroupEntries.addAfter(ModBlocks.PALM_LOG, ModBlocks.PALM_WOOD);
+            fabricItemGroupEntries.addAfter(ModBlocks.PALM_WOOD, ModBlocks.PALM_PLANKS);
+            fabricItemGroupEntries.addAfter(ModBlocks.PALM_PLANKS, ModBlocks.PALM_STAIRS);
+            fabricItemGroupEntries.addAfter(ModBlocks.PALM_STAIRS, ModBlocks.PALM_SLAB);
+            fabricItemGroupEntries.addAfter(ModBlocks.PALM_SLAB, ModBlocks.PALM_FENCE);
+            fabricItemGroupEntries.addAfter(ModBlocks.PALM_FENCE, ModBlocks.PALM_FENCE_GATE);
+            fabricItemGroupEntries.addAfter(ModBlocks.PALM_FENCE_GATE, ModBlocks.PALM_PRESSURE_PLATE);
+            fabricItemGroupEntries.addAfter(ModBlocks.PALM_PRESSURE_PLATE, ModBlocks.PALM_BUTTON);
+
             fabricItemGroupEntries.addAfter(Blocks.MOSSY_STONE_BRICK_WALL, ModBlocks.SLATE);
             fabricItemGroupEntries.addAfter(ModBlocks.SLATE, ModBlocks.COBBLED_SLATE);
             fabricItemGroupEntries.addAfter(ModBlocks.COBBLED_SLATE, ModBlocks.COBBLED_SLATE_STAIRS);
@@ -171,6 +261,7 @@ public class ModBlocks {
             fabricItemGroupEntries.addAfter(ModBlocks.MOSSY_SLATE_BRICKS, ModBlocks.MOSSY_SLATE_BRICK_STAIRS);
             fabricItemGroupEntries.addAfter(ModBlocks.MOSSY_SLATE_BRICK_STAIRS, ModBlocks.MOSSY_SLATE_BRICK_SLAB);
             fabricItemGroupEntries.addAfter(ModBlocks.MOSSY_SLATE_BRICK_SLAB, ModBlocks.MOSSY_SLATE_BRICK_WALL);
+
             fabricItemGroupEntries.addAfter(Blocks.PURPUR_SLAB, ModBlocks.THATCH);
             fabricItemGroupEntries.addAfter(ModBlocks.THATCH, ModBlocks.THATCH_STAIRS);
             fabricItemGroupEntries.addAfter(ModBlocks.THATCH_STAIRS, ModBlocks.THATCH_SLAB);
@@ -178,11 +269,18 @@ public class ModBlocks {
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.NATURAL).register(fabricItemGroupEntries -> {
             fabricItemGroupEntries.addAfter(Blocks.STONE, ModBlocks.SHALE);
             fabricItemGroupEntries.addAfter(Blocks.STONE, ModBlocks.SLATE);
+
+            fabricItemGroupEntries.addAfter(Blocks.JUNGLE_LOG, ModBlocks.PALM_LOG);
+
+            fabricItemGroupEntries.addAfter(Blocks.RED_MUSHROOM, ModBlocks.SHELF_MUSHROOM);
+
             fabricItemGroupEntries.addAfter(Blocks.FERN, ModBlocks.SHORT_DRY_GRASS);
             fabricItemGroupEntries.addAfter(ModBlocks.SHORT_DRY_GRASS, ModBlocks.BUSH);
             fabricItemGroupEntries.addAfter(Blocks.LARGE_FERN, ModBlocks.TALL_DRY_GRASS);
             fabricItemGroupEntries.addAfter(Blocks.PINK_PETALS, ModBlocks.WILDFLOWERS);
-            fabricItemGroupEntries.addAfter(ModBlocks.WILDFLOWERS, ModBlocks.LEAF_LITTER);
+            fabricItemGroupEntries.addAfter(ModBlocks.WILDFLOWERS, ModBlocks.PURPLE_WILDFLOWERS);
+            fabricItemGroupEntries.addAfter(ModBlocks.PURPLE_WILDFLOWERS, ModBlocks.CLOVERS);
+            fabricItemGroupEntries.addAfter(ModBlocks.CLOVERS, ModBlocks.LEAF_LITTER);
             fabricItemGroupEntries.addBefore(Blocks.VINE, ModBlocks.HANGING_CAVE_ROOTS);
         });
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.FUNCTIONAL).register(fabricItemGroupEntries -> {

@@ -10,6 +10,8 @@ import net.terratonic.Terratonic;
 public class ModTags {
     public static class Blocks {
 
+        public static final TagKey<Block> PALM_LOGS = createTag("palm_logs");
+
         public static final TagKey<Block> NEEDS_COPPER_TOOL = createTag("needs_copper_tool");
         public static final TagKey<Block> INCORRECT_FOR_COPPER_TOOL = createTag("incorrect_for_copper_tools");
 

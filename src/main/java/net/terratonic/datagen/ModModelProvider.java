@@ -33,6 +33,14 @@ public class ModModelProvider extends FabricModelProvider {
         mossy_slate_brick_pool.slab(ModBlocks.MOSSY_SLATE_BRICK_SLAB);
         mossy_slate_brick_pool.wall(ModBlocks.MOSSY_SLATE_BRICK_WALL);
 
+        BlockStateModelGenerator.BlockTexturePool palm_planks_pool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.PALM_PLANKS);
+        palm_planks_pool.stairs(ModBlocks.PALM_STAIRS);
+        palm_planks_pool.slab(ModBlocks.PALM_SLAB);
+        palm_planks_pool.fence(ModBlocks.PALM_FENCE);
+        palm_planks_pool.fenceGate(ModBlocks.PALM_FENCE_GATE);
+        palm_planks_pool.pressurePlate(ModBlocks.PALM_PRESSURE_PLATE);
+        palm_planks_pool.button(ModBlocks.PALM_BUTTON);
+
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.TANGLED_ROOTS);
 
         blockStateModelGenerator.registerTintableCrossBlockState(ModBlocks.SHORT_DRY_GRASS, BlockStateModelGenerator.TintType.NOT_TINTED);
@@ -54,6 +62,8 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModBlocks.SHORT_DRY_GRASS.asItem(), Models.GENERATED);
         itemModelGenerator.register(ModBlocks.TALL_DRY_GRASS.asItem(), Models.GENERATED);
         itemModelGenerator.register(ModBlocks.WILDFLOWERS.asItem(), Models.GENERATED);
+        itemModelGenerator.register(ModBlocks.PURPLE_WILDFLOWERS.asItem(), Models.GENERATED);
+        itemModelGenerator.register(ModBlocks.CLOVERS.asItem(), Models.GENERATED);
         itemModelGenerator.register(ModBlocks.LEAF_LITTER.asItem(), Models.GENERATED);
         itemModelGenerator.register(ModBlocks.BUSH.asItem(), Models.GENERATED);
 

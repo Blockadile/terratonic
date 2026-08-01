@@ -1,0 +1,15 @@
+{
+  "values": [
+    "terratonic:palm_log",
+    "terratonic:palm_wood",
+    "terratonic:stripped_palm_log",
+    "terratonic:stripped_palm_wood",
+    "terratonic:palm_planks",
+    "terratonic:palm_stairs",
+    "terratonic:palm_slab",
+    "terratonic:palm_fence",
+    "terratonic:palm_fence_gate",
+    "terratonic:palm_pressure_plate",
+    "terratonic:palm_button"
+  ]
+}

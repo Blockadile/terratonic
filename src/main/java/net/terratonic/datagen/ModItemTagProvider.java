@@ -4,6 +4,7 @@ import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagProvider;
 import net.minecraft.item.Items;
 import net.minecraft.registry.RegistryWrapper;
+import net.minecraft.registry.tag.BlockTags;
 import net.minecraft.registry.tag.ItemTags;
 import net.minecraft.registry.tag.ItemTags;
 import net.terratonic.block.ModBlocks;
@@ -18,6 +19,29 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
 
     @Override
     protected void configure(RegistryWrapper.WrapperLookup wrapperLookup) {
+        getOrCreateTagBuilder(ItemTags.LEAVES)
+                .add(ModBlocks.PALM_LEAVES.asItem());
+        getOrCreateTagBuilder(ItemTags.STAIRS)
+                .add(ModBlocks.PALM_STAIRS.asItem());
+        getOrCreateTagBuilder(ItemTags.WOODEN_STAIRS)
+                .add(ModBlocks.PALM_STAIRS.asItem());
+        getOrCreateTagBuilder(ItemTags.SLABS)
+                .add(ModBlocks.PALM_SLAB.asItem());
+        getOrCreateTagBuilder(ItemTags.WOODEN_SLABS)
+                .add(ModBlocks.PALM_SLAB.asItem());
+        getOrCreateTagBuilder(ItemTags.FENCES)
+                .add(ModBlocks.PALM_FENCE.asItem());
+        getOrCreateTagBuilder(ItemTags.WOODEN_FENCES)
+                .add(ModBlocks.PALM_FENCE.asItem());
+        getOrCreateTagBuilder(ItemTags.FENCE_GATES)
+                .add(ModBlocks.PALM_FENCE_GATE.asItem());
+        getOrCreateTagBuilder(ItemTags.WOODEN_PRESSURE_PLATES)
+                .add(ModBlocks.PALM_PRESSURE_PLATE.asItem());
+        getOrCreateTagBuilder(ItemTags.BUTTONS)
+                .add(ModBlocks.PALM_BUTTON.asItem());
+        getOrCreateTagBuilder(ItemTags.WOODEN_BUTTONS)
+                .add(ModBlocks.PALM_BUTTON.asItem());
+
         getOrCreateTagBuilder(ModTags.Items.COPPER_TOOL_MATERIALS)
                 .add(Items.COPPER_INGOT);
         getOrCreateTagBuilder(ItemTags.STONE_CRAFTING_MATERIALS)
