@@ -2,10 +2,11 @@ package net.terratonic;
 
 import net.fabricmc.fabric.api.datagen.v1.DataGeneratorEntrypoint;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataGenerator;
-import net.terratonic.datagen.ModBlockTagProvider;
-import net.terratonic.datagen.ModItemTagProvider;
-import net.terratonic.datagen.ModLootTableProvider;
-import net.terratonic.datagen.ModModelProvider;
+import net.minecraft.registry.RegistryBuilder;
+import net.minecraft.registry.RegistryKeys;
+import net.terratonic.datagen.*;
+import net.terratonic.world.ModConfiguredFeatures;
+import net.terratonic.world.ModPlacedFeatures;
 
 public class TerratonicDataGenerator implements DataGeneratorEntrypoint {
 	@Override
@@ -16,5 +17,12 @@ public class TerratonicDataGenerator implements DataGeneratorEntrypoint {
 		pack.addProvider(ModItemTagProvider::new);
 		pack.addProvider(ModLootTableProvider::new);
 		pack.addProvider(ModModelProvider::new);
+		pack.addProvider(ModRegistryDataGenerator::new);
+	}
+
+	@Override
+	public void buildRegistry(RegistryBuilder registryBuilder) {
+		registryBuilder.addRegistry(RegistryKeys.CONFIGURED_FEATURE, ModConfiguredFeatures::bootstrap);
+		registryBuilder.addRegistry(RegistryKeys.PLACED_FEATURE, ModPlacedFeatures::bootstrap);
 	}
 }

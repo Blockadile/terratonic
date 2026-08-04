@@ -15,6 +15,7 @@ import net.minecraft.util.Identifier;
 import net.terratonic.Terratonic;
 import net.terratonic.block.custom.*;
 import net.terratonic.sounds.ModSoundGroups;
+import net.terratonic.world.tree.ModSaplingGenerator;
 
 public class ModBlocks {
 
@@ -173,6 +174,11 @@ public class ModBlocks {
                     .sounds(BlockSoundGroup.PINK_PETALS)
                     .pistonBehavior(PistonBehavior.DESTROY))
     );
+        // Saplings
+    public static final Block COCONUT_SPROUT = registerUnobtainableBlock("coconut_sprout",
+                new CoconutSproutBlock(AbstractBlock.Settings.copy(Blocks.OAK_SAPLING)));
+    public static final Block PALM_SAPLING = registerBlock("palm_sapling",
+            new SaplingBlock(ModSaplingGenerator.PALM_TREE, FabricBlockSettings.copy(Blocks.OAK_SAPLING)));
         // Misc Plants
     public static final Block CLOVERS = registerBlock("clovers",
             new FlowerbedBlock(AbstractBlock.Settings.create()
@@ -211,6 +217,9 @@ public class ModBlocks {
     public static final Block THATCH_SLAB = registerBlock("thatch_slab",
             new SlabBlock(AbstractBlock.Settings.copy(Blocks.HAY_BLOCK).sounds(ModSoundGroups.THATCH))
     );
+    public static final Block COCONUT = registerBlock("coconut",
+            new CoconutBlock(AbstractBlock.Settings.copy(Blocks.MELON).mapColor(MapColor.BROWN))
+    );
     public static final Block FORGE = registerBlock("forge",
             new ForgeBlock(AbstractBlock.Settings.copy(Blocks.BLAST_FURNACE))
     );
@@ -235,7 +244,9 @@ public class ModBlocks {
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS).register(fabricItemGroupEntries -> {
             fabricItemGroupEntries.addAfter(Blocks.JUNGLE_BUTTON, ModBlocks.PALM_LOG);
             fabricItemGroupEntries.addAfter(ModBlocks.PALM_LOG, ModBlocks.PALM_WOOD);
-            fabricItemGroupEntries.addAfter(ModBlocks.PALM_WOOD, ModBlocks.PALM_PLANKS);
+            fabricItemGroupEntries.addAfter(ModBlocks.PALM_WOOD, ModBlocks.STRIPPED_PALM_LOG);
+            fabricItemGroupEntries.addAfter(ModBlocks.STRIPPED_PALM_LOG, ModBlocks.STRIPPED_PALM_WOOD);
+            fabricItemGroupEntries.addAfter(ModBlocks.STRIPPED_PALM_WOOD, ModBlocks.PALM_PLANKS);
             fabricItemGroupEntries.addAfter(ModBlocks.PALM_PLANKS, ModBlocks.PALM_STAIRS);
             fabricItemGroupEntries.addAfter(ModBlocks.PALM_STAIRS, ModBlocks.PALM_SLAB);
             fabricItemGroupEntries.addAfter(ModBlocks.PALM_SLAB, ModBlocks.PALM_FENCE);
@@ -271,6 +282,8 @@ public class ModBlocks {
             fabricItemGroupEntries.addAfter(Blocks.STONE, ModBlocks.SLATE);
 
             fabricItemGroupEntries.addAfter(Blocks.JUNGLE_LOG, ModBlocks.PALM_LOG);
+            fabricItemGroupEntries.addAfter(Blocks.JUNGLE_LEAVES, ModBlocks.PALM_LEAVES);
+            fabricItemGroupEntries.addAfter(Blocks.JUNGLE_SAPLING, ModBlocks.PALM_SAPLING);
 
             fabricItemGroupEntries.addAfter(Blocks.RED_MUSHROOM, ModBlocks.SHELF_MUSHROOM);
 
@@ -282,6 +295,8 @@ public class ModBlocks {
             fabricItemGroupEntries.addAfter(ModBlocks.PURPLE_WILDFLOWERS, ModBlocks.CLOVERS);
             fabricItemGroupEntries.addAfter(ModBlocks.CLOVERS, ModBlocks.LEAF_LITTER);
             fabricItemGroupEntries.addBefore(Blocks.VINE, ModBlocks.HANGING_CAVE_ROOTS);
+
+            fabricItemGroupEntries.addAfter(Blocks.JACK_O_LANTERN, ModBlocks.COCONUT);
         });
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.FUNCTIONAL).register(fabricItemGroupEntries -> {
             fabricItemGroupEntries.addAfter(Blocks.BLAST_FURNACE, ModBlocks.FORGE);

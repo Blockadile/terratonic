@@ -63,6 +63,7 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModBlocks.TALL_DRY_GRASS.asItem(), Models.GENERATED);
         itemModelGenerator.register(ModBlocks.WILDFLOWERS.asItem(), Models.GENERATED);
         itemModelGenerator.register(ModBlocks.PURPLE_WILDFLOWERS.asItem(), Models.GENERATED);
+        itemModelGenerator.register(ModBlocks.PALM_SAPLING.asItem(), Models.GENERATED);
         itemModelGenerator.register(ModBlocks.CLOVERS.asItem(), Models.GENERATED);
         itemModelGenerator.register(ModBlocks.LEAF_LITTER.asItem(), Models.GENERATED);
         itemModelGenerator.register(ModBlocks.BUSH.asItem(), Models.GENERATED);

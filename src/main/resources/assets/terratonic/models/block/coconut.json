@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "terratonic:block/coconut_top",
+    "side": "terratonic:block/coconut"
+  }
+}

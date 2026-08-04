@@ -1,11 +1,11 @@
-// 1.21.1	2026-07-31T21:16:23.5712531	Terratonic/Tags for minecraft:item
+// 1.21.1	2026-08-02T15:23:14.8855215	Terratonic/Tags for minecraft:item
 4940c258394d379a7c0772348d0c3f6843388562 data\minecraft\tags\item\wooden_buttons.json
 6222fd0d7d2ce08ee1f70be68a61f4e167dda650 data\terratonic\tags\item\copper_tool_materials.json
 74bad980157ba18a87cb3de2ff62f9ac861efff9 data\minecraft\tags\item\wooden_pressure_plates.json
 910b4d1dcdf0d8fbbee236b9968926db7a9cfdfa data\minecraft\tags\item\wooden_stairs.json
 b12911e49064fa60a06061368c27987bdc4d8f40 data\minecraft\tags\item\wooden_fences.json
-4a16a2c32438299d985360a243ca0230908383b5 data\minecraft\tags\item\fence_gates.json
 b12911e49064fa60a06061368c27987bdc4d8f40 data\minecraft\tags\item\fences.json
+4a16a2c32438299d985360a243ca0230908383b5 data\minecraft\tags\item\fence_gates.json
 910b4d1dcdf0d8fbbee236b9968926db7a9cfdfa data\minecraft\tags\item\stairs.json
 4940c258394d379a7c0772348d0c3f6843388562 data\minecraft\tags\item\buttons.json
 e5698d8a1bb99aec5f4dfff893accfc56c60e8d7 data\minecraft\tags\item\leaves.json
