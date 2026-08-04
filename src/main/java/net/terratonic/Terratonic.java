@@ -11,6 +11,7 @@ import net.terratonic.block.ModBlocks;
 import net.terratonic.entity.ModEntities;
 import net.terratonic.item.ModItems;
 import net.terratonic.sounds.ModSounds;
+import net.terratonic.util.ModAttributes;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -27,6 +28,7 @@ public class Terratonic implements ModInitializer {
 		ModEntities.registerModEntities();
 		ModItems.registerModItems();
 		ModSounds.registerModSounds();
+		ModAttributes.registerAttributes();
 	}
 
 	public static Identifier id(String path) {

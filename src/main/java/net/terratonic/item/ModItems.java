@@ -16,6 +16,7 @@ import net.terratonic.block.ModBlocks;
 import net.terratonic.entity.ModEntities;
 import net.terratonic.item.components.ModFoodComponents;
 import net.terratonic.item.custom.*;
+import net.terratonic.util.ModAttributes;
 
 import java.util.List;
 
@@ -53,6 +54,9 @@ public class ModItems {
                     new AttributeModifiersComponent.Entry(EntityAttributes.GENERIC_ATTACK_SPEED, new EntityAttributeModifier(
                             Item.BASE_ATTACK_SPEED_MODIFIER_ID,-2.7F, EntityAttributeModifier.Operation.ADD_VALUE
                     ), AttributeModifierSlot.MAINHAND),
+                    new AttributeModifiersComponent.Entry(ModAttributes.BLOCKING_AMOUNT, new EntityAttributeModifier(
+                            Identifier.of("012750135671"),-0.2F, EntityAttributeModifier.Operation.ADD_VALUE
+                    ), AttributeModifierSlot.MAINHAND),
                     new AttributeModifiersComponent.Entry(EntityAttributes.PLAYER_SWEEPING_DAMAGE_RATIO, new EntityAttributeModifier(
                             Identifier.of("0123581106710"),0.5F, EntityAttributeModifier.Operation.ADD_VALUE
                     ), AttributeModifierSlot.MAINHAND)),true))));
@@ -70,6 +74,9 @@ public class ModItems {
                     ), AttributeModifierSlot.MAINHAND),
                     new AttributeModifiersComponent.Entry(EntityAttributes.PLAYER_BLOCK_INTERACTION_RANGE, new EntityAttributeModifier(
                             Identifier.of("10157301586103"),-0.5F, EntityAttributeModifier.Operation.ADD_VALUE
+                    ), AttributeModifierSlot.MAINHAND),
+                    new AttributeModifiersComponent.Entry(ModAttributes.BLOCKING_AMOUNT, new EntityAttributeModifier(
+                            Identifier.of("012750135671"),0.2F, EntityAttributeModifier.Operation.ADD_VALUE
                     ), AttributeModifierSlot.MAINHAND)),true))));
 
     // Stone Swords
@@ -91,6 +98,9 @@ public class ModItems {
                     new AttributeModifiersComponent.Entry(EntityAttributes.GENERIC_ATTACK_SPEED, new EntityAttributeModifier(
                             Item.BASE_ATTACK_SPEED_MODIFIER_ID,-2.7F, EntityAttributeModifier.Operation.ADD_VALUE
                     ), AttributeModifierSlot.MAINHAND),
+                    new AttributeModifiersComponent.Entry(ModAttributes.BLOCKING_AMOUNT, new EntityAttributeModifier(
+                            Identifier.of("012750135671"),-0.2F, EntityAttributeModifier.Operation.ADD_VALUE
+                    ), AttributeModifierSlot.MAINHAND),
                     new AttributeModifiersComponent.Entry(EntityAttributes.PLAYER_SWEEPING_DAMAGE_RATIO, new EntityAttributeModifier(
                             Identifier.of("0123581106710"),0.5F, EntityAttributeModifier.Operation.ADD_VALUE
                     ), AttributeModifierSlot.MAINHAND)),true))));
@@ -108,13 +118,16 @@ public class ModItems {
                     ), AttributeModifierSlot.MAINHAND),
                     new AttributeModifiersComponent.Entry(EntityAttributes.PLAYER_BLOCK_INTERACTION_RANGE, new EntityAttributeModifier(
                             Identifier.of("10157301586103"),-0.5F, EntityAttributeModifier.Operation.ADD_VALUE
+                    ), AttributeModifierSlot.MAINHAND),
+                    new AttributeModifiersComponent.Entry(ModAttributes.BLOCKING_AMOUNT, new EntityAttributeModifier(
+                            Identifier.of("012750135671"),0.2F, EntityAttributeModifier.Operation.ADD_VALUE
                     ), AttributeModifierSlot.MAINHAND)),true))));
 
     // Copper Swords
     public static final Item COPPER_SWORD = registerItem("copper_sword",
-            new DuelingSwordItem(ModToolMaterials.COPPER, new Item.Settings().attributeModifiers(SwordItem.createAttributeModifiers(ModToolMaterials.COPPER,
+            new SwordItem(ModToolMaterials.COPPER, new Item.Settings().attributeModifiers(SwordItem.createAttributeModifiers(ModToolMaterials.COPPER,
                     3, -2.4F))));
-    public static final Item COPPER_DUELING_SWORD = registerItem("copper_dueling_sword", new SwordItem(ModToolMaterials.COPPER, new Item.Settings()
+    public static final Item COPPER_DUELING_SWORD = registerItem("copper_dueling_sword", new DuelingSwordItem(ModToolMaterials.COPPER, new Item.Settings()
             .maxCount(1)
             .attributeModifiers(new AttributeModifiersComponent(List.of(
                     new AttributeModifiersComponent.Entry(EntityAttributes.GENERIC_ATTACK_DAMAGE, new EntityAttributeModifier(
@@ -131,6 +144,9 @@ public class ModItems {
                     ), AttributeModifierSlot.MAINHAND),
                     new AttributeModifiersComponent.Entry(EntityAttributes.GENERIC_ATTACK_SPEED, new EntityAttributeModifier(
                             Item.BASE_ATTACK_SPEED_MODIFIER_ID,-2.7F, EntityAttributeModifier.Operation.ADD_VALUE
+                    ), AttributeModifierSlot.MAINHAND),
+                    new AttributeModifiersComponent.Entry(ModAttributes.BLOCKING_AMOUNT, new EntityAttributeModifier(
+                            Identifier.of("012750135671"),-0.2F, EntityAttributeModifier.Operation.ADD_VALUE
                     ), AttributeModifierSlot.MAINHAND),
                     new AttributeModifiersComponent.Entry(EntityAttributes.PLAYER_SWEEPING_DAMAGE_RATIO, new EntityAttributeModifier(
                             Identifier.of("0123581106710"),0.5F, EntityAttributeModifier.Operation.ADD_VALUE
@@ -149,6 +165,9 @@ public class ModItems {
                     ), AttributeModifierSlot.MAINHAND),
                     new AttributeModifiersComponent.Entry(EntityAttributes.PLAYER_BLOCK_INTERACTION_RANGE, new EntityAttributeModifier(
                             Identifier.of("10157301586103"),-0.5F, EntityAttributeModifier.Operation.ADD_VALUE
+                    ), AttributeModifierSlot.MAINHAND),
+                    new AttributeModifiersComponent.Entry(ModAttributes.BLOCKING_AMOUNT, new EntityAttributeModifier(
+                            Identifier.of("012750135671"),0.2F, EntityAttributeModifier.Operation.ADD_VALUE
                     ), AttributeModifierSlot.MAINHAND)),true))));
 
     // Iron Swords
@@ -170,6 +189,9 @@ public class ModItems {
                     new AttributeModifiersComponent.Entry(EntityAttributes.GENERIC_ATTACK_SPEED, new EntityAttributeModifier(
                             Item.BASE_ATTACK_SPEED_MODIFIER_ID,-2.7F, EntityAttributeModifier.Operation.ADD_VALUE
                     ), AttributeModifierSlot.MAINHAND),
+                    new AttributeModifiersComponent.Entry(ModAttributes.BLOCKING_AMOUNT, new EntityAttributeModifier(
+                            Identifier.of("012750135671"),-0.2F, EntityAttributeModifier.Operation.ADD_VALUE
+                    ), AttributeModifierSlot.MAINHAND),
                     new AttributeModifiersComponent.Entry(EntityAttributes.PLAYER_SWEEPING_DAMAGE_RATIO, new EntityAttributeModifier(
                             Identifier.of("0123581106710"),0.5F, EntityAttributeModifier.Operation.ADD_VALUE
                     ), AttributeModifierSlot.MAINHAND)),true))));
@@ -187,6 +209,9 @@ public class ModItems {
                     ), AttributeModifierSlot.MAINHAND),
                     new AttributeModifiersComponent.Entry(EntityAttributes.PLAYER_BLOCK_INTERACTION_RANGE, new EntityAttributeModifier(
                             Identifier.of("10157301586103"),-0.5F, EntityAttributeModifier.Operation.ADD_VALUE
+                    ), AttributeModifierSlot.MAINHAND),
+                    new AttributeModifiersComponent.Entry(ModAttributes.BLOCKING_AMOUNT, new EntityAttributeModifier(
+                            Identifier.of("012750135671"),0.2F, EntityAttributeModifier.Operation.ADD_VALUE
                     ), AttributeModifierSlot.MAINHAND)),true))));
 
     // Golden Swords
@@ -208,6 +233,9 @@ public class ModItems {
                     new AttributeModifiersComponent.Entry(EntityAttributes.GENERIC_ATTACK_SPEED, new EntityAttributeModifier(
                             Item.BASE_ATTACK_SPEED_MODIFIER_ID,-2.7F, EntityAttributeModifier.Operation.ADD_VALUE
                     ), AttributeModifierSlot.MAINHAND),
+                    new AttributeModifiersComponent.Entry(ModAttributes.BLOCKING_AMOUNT, new EntityAttributeModifier(
+                            Identifier.of("012750135671"),-0.2F, EntityAttributeModifier.Operation.ADD_VALUE
+                    ), AttributeModifierSlot.MAINHAND),
                     new AttributeModifiersComponent.Entry(EntityAttributes.PLAYER_SWEEPING_DAMAGE_RATIO, new EntityAttributeModifier(
                             Identifier.of("0123581106710"),0.5F, EntityAttributeModifier.Operation.ADD_VALUE
                     ), AttributeModifierSlot.MAINHAND)),true))));
@@ -225,6 +253,9 @@ public class ModItems {
                     ), AttributeModifierSlot.MAINHAND),
                     new AttributeModifiersComponent.Entry(EntityAttributes.PLAYER_BLOCK_INTERACTION_RANGE, new EntityAttributeModifier(
                             Identifier.of("10157301586103"),-0.5F, EntityAttributeModifier.Operation.ADD_VALUE
+                    ), AttributeModifierSlot.MAINHAND),
+                    new AttributeModifiersComponent.Entry(ModAttributes.BLOCKING_AMOUNT, new EntityAttributeModifier(
+                            Identifier.of("012750135671"),0.2F, EntityAttributeModifier.Operation.ADD_VALUE
                     ), AttributeModifierSlot.MAINHAND)),true))));
 
     // Diamond Swords
@@ -246,6 +277,9 @@ public class ModItems {
                     new AttributeModifiersComponent.Entry(EntityAttributes.GENERIC_ATTACK_SPEED, new EntityAttributeModifier(
                             Item.BASE_ATTACK_SPEED_MODIFIER_ID,-2.7F, EntityAttributeModifier.Operation.ADD_VALUE
                     ), AttributeModifierSlot.MAINHAND),
+                    new AttributeModifiersComponent.Entry(ModAttributes.BLOCKING_AMOUNT, new EntityAttributeModifier(
+                            Identifier.of("012750135671"),-0.2F, EntityAttributeModifier.Operation.ADD_VALUE
+                    ), AttributeModifierSlot.MAINHAND),
                     new AttributeModifiersComponent.Entry(EntityAttributes.PLAYER_SWEEPING_DAMAGE_RATIO, new EntityAttributeModifier(
                             Identifier.of("0123581106710"),0.5F, EntityAttributeModifier.Operation.ADD_VALUE
                     ), AttributeModifierSlot.MAINHAND)),true))));
@@ -263,6 +297,9 @@ public class ModItems {
                     ), AttributeModifierSlot.MAINHAND),
                     new AttributeModifiersComponent.Entry(EntityAttributes.PLAYER_BLOCK_INTERACTION_RANGE, new EntityAttributeModifier(
                             Identifier.of("10157301586103"),-0.5F, EntityAttributeModifier.Operation.ADD_VALUE
+                    ), AttributeModifierSlot.MAINHAND),
+                    new AttributeModifiersComponent.Entry(ModAttributes.BLOCKING_AMOUNT, new EntityAttributeModifier(
+                            Identifier.of("012750135671"),0.2F, EntityAttributeModifier.Operation.ADD_VALUE
                     ), AttributeModifierSlot.MAINHAND)),true))));
 
     // Netherite Swords
@@ -284,6 +321,9 @@ public class ModItems {
                     new AttributeModifiersComponent.Entry(EntityAttributes.GENERIC_ATTACK_SPEED, new EntityAttributeModifier(
                             Item.BASE_ATTACK_SPEED_MODIFIER_ID,-2.7F, EntityAttributeModifier.Operation.ADD_VALUE
                     ), AttributeModifierSlot.MAINHAND),
+                    new AttributeModifiersComponent.Entry(ModAttributes.BLOCKING_AMOUNT, new EntityAttributeModifier(
+                            Identifier.of("012750135671"),-0.2F, EntityAttributeModifier.Operation.ADD_VALUE
+                    ), AttributeModifierSlot.MAINHAND),
                     new AttributeModifiersComponent.Entry(EntityAttributes.PLAYER_SWEEPING_DAMAGE_RATIO, new EntityAttributeModifier(
                             Identifier.of("0123581106710"),0.5F, EntityAttributeModifier.Operation.ADD_VALUE
                     ), AttributeModifierSlot.MAINHAND)),true))));
@@ -301,6 +341,9 @@ public class ModItems {
                     ), AttributeModifierSlot.MAINHAND),
                     new AttributeModifiersComponent.Entry(EntityAttributes.PLAYER_BLOCK_INTERACTION_RANGE, new EntityAttributeModifier(
                             Identifier.of("10157301586103"),-0.5F, EntityAttributeModifier.Operation.ADD_VALUE
+                    ), AttributeModifierSlot.MAINHAND),
+                    new AttributeModifiersComponent.Entry(ModAttributes.BLOCKING_AMOUNT, new EntityAttributeModifier(
+                            Identifier.of("012750135671"),0.2F, EntityAttributeModifier.Operation.ADD_VALUE
                     ), AttributeModifierSlot.MAINHAND)),true))));
 
     // Tools
@@ -369,6 +412,9 @@ public class ModItems {
                         new AttributeModifiersComponent.Entry(EntityAttributes.PLAYER_SWEEPING_DAMAGE_RATIO, new EntityAttributeModifier(
                                 Identifier.of("10573015730125"),0.75F, EntityAttributeModifier.Operation.ADD_VALUE
                         ), AttributeModifierSlot.MAINHAND),
+                        new AttributeModifiersComponent.Entry(EntityAttributes.PLAYER_ENTITY_INTERACTION_RANGE, new EntityAttributeModifier(
+                                Identifier.of("09809853487232"),1F, EntityAttributeModifier.Operation.ADD_VALUE
+                        ), AttributeModifierSlot.MAINHAND),
                         new AttributeModifiersComponent.Entry(EntityAttributes.PLAYER_BLOCK_INTERACTION_RANGE, new EntityAttributeModifier(
                                 Identifier.of("55069211904233"),1F, EntityAttributeModifier.Operation.ADD_VALUE
                         ), AttributeModifierSlot.MAINHAND)),true))));
@@ -400,6 +446,9 @@ public class ModItems {
                     ), AttributeModifierSlot.MAINHAND),
                     new AttributeModifiersComponent.Entry(EntityAttributes.PLAYER_SWEEPING_DAMAGE_RATIO, new EntityAttributeModifier(
                             Identifier.of("10573015730125"),0.75F, EntityAttributeModifier.Operation.ADD_VALUE
+                    ), AttributeModifierSlot.MAINHAND),
+                    new AttributeModifiersComponent.Entry(EntityAttributes.PLAYER_ENTITY_INTERACTION_RANGE, new EntityAttributeModifier(
+                            Identifier.of("09809853487232"),1F, EntityAttributeModifier.Operation.ADD_VALUE
                     ), AttributeModifierSlot.MAINHAND),
                     new AttributeModifiersComponent.Entry(EntityAttributes.PLAYER_BLOCK_INTERACTION_RANGE, new EntityAttributeModifier(
                             Identifier.of("55069211904233"),1F, EntityAttributeModifier.Operation.ADD_VALUE
@@ -436,6 +485,9 @@ public class ModItems {
                     new AttributeModifiersComponent.Entry(EntityAttributes.PLAYER_SWEEPING_DAMAGE_RATIO, new EntityAttributeModifier(
                             Identifier.of("10573015730125"),0.75F, EntityAttributeModifier.Operation.ADD_VALUE
                     ), AttributeModifierSlot.MAINHAND),
+                    new AttributeModifiersComponent.Entry(EntityAttributes.PLAYER_ENTITY_INTERACTION_RANGE, new EntityAttributeModifier(
+                            Identifier.of("09809853487232"),1F, EntityAttributeModifier.Operation.ADD_VALUE
+                    ), AttributeModifierSlot.MAINHAND),
                     new AttributeModifiersComponent.Entry(EntityAttributes.PLAYER_BLOCK_INTERACTION_RANGE, new EntityAttributeModifier(
                             Identifier.of("55069211904233"),1F, EntityAttributeModifier.Operation.ADD_VALUE
                     ), AttributeModifierSlot.MAINHAND)),true))));
@@ -467,6 +519,9 @@ public class ModItems {
                     ), AttributeModifierSlot.MAINHAND),
                     new AttributeModifiersComponent.Entry(EntityAttributes.PLAYER_SWEEPING_DAMAGE_RATIO, new EntityAttributeModifier(
                             Identifier.of("10573015730125"),0.75F, EntityAttributeModifier.Operation.ADD_VALUE
+                    ), AttributeModifierSlot.MAINHAND),
+                    new AttributeModifiersComponent.Entry(EntityAttributes.PLAYER_ENTITY_INTERACTION_RANGE, new EntityAttributeModifier(
+                            Identifier.of("09809853487232"),1F, EntityAttributeModifier.Operation.ADD_VALUE
                     ), AttributeModifierSlot.MAINHAND),
                     new AttributeModifiersComponent.Entry(EntityAttributes.PLAYER_BLOCK_INTERACTION_RANGE, new EntityAttributeModifier(
                             Identifier.of("55069211904233"),1F, EntityAttributeModifier.Operation.ADD_VALUE
@@ -500,6 +555,9 @@ public class ModItems {
                     new AttributeModifiersComponent.Entry(EntityAttributes.PLAYER_SWEEPING_DAMAGE_RATIO, new EntityAttributeModifier(
                             Identifier.of("10573015730125"),0.75F, EntityAttributeModifier.Operation.ADD_VALUE
                     ), AttributeModifierSlot.MAINHAND),
+                    new AttributeModifiersComponent.Entry(EntityAttributes.PLAYER_ENTITY_INTERACTION_RANGE, new EntityAttributeModifier(
+                            Identifier.of("09809853487232"),1F, EntityAttributeModifier.Operation.ADD_VALUE
+                    ), AttributeModifierSlot.MAINHAND),
                     new AttributeModifiersComponent.Entry(EntityAttributes.PLAYER_BLOCK_INTERACTION_RANGE, new EntityAttributeModifier(
                             Identifier.of("55069211904233"),1F, EntityAttributeModifier.Operation.ADD_VALUE
                     ), AttributeModifierSlot.MAINHAND)),true))));
@@ -532,6 +590,9 @@ public class ModItems {
                     new AttributeModifiersComponent.Entry(EntityAttributes.PLAYER_SWEEPING_DAMAGE_RATIO, new EntityAttributeModifier(
                             Identifier.of("10573015730125"),0.75F, EntityAttributeModifier.Operation.ADD_VALUE
                     ), AttributeModifierSlot.MAINHAND),
+                    new AttributeModifiersComponent.Entry(EntityAttributes.PLAYER_ENTITY_INTERACTION_RANGE, new EntityAttributeModifier(
+                            Identifier.of("09809853487232"),1F, EntityAttributeModifier.Operation.ADD_VALUE
+                    ), AttributeModifierSlot.MAINHAND),
                     new AttributeModifiersComponent.Entry(EntityAttributes.PLAYER_BLOCK_INTERACTION_RANGE, new EntityAttributeModifier(
                             Identifier.of("55069211904233"),1F, EntityAttributeModifier.Operation.ADD_VALUE
                     ), AttributeModifierSlot.MAINHAND)),true))));
@@ -563,6 +624,9 @@ public class ModItems {
                     ), AttributeModifierSlot.MAINHAND),
                     new AttributeModifiersComponent.Entry(EntityAttributes.PLAYER_SWEEPING_DAMAGE_RATIO, new EntityAttributeModifier(
                             Identifier.of("10573015730125"),0.75F, EntityAttributeModifier.Operation.ADD_VALUE
+                    ), AttributeModifierSlot.MAINHAND),
+                    new AttributeModifiersComponent.Entry(EntityAttributes.PLAYER_ENTITY_INTERACTION_RANGE, new EntityAttributeModifier(
+                            Identifier.of("09809853487232"),1F, EntityAttributeModifier.Operation.ADD_VALUE
                     ), AttributeModifierSlot.MAINHAND),
                     new AttributeModifiersComponent.Entry(EntityAttributes.PLAYER_BLOCK_INTERACTION_RANGE, new EntityAttributeModifier(
                             Identifier.of("55069211904233"),1F, EntityAttributeModifier.Operation.ADD_VALUE

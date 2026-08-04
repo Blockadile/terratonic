@@ -120,5 +120,7 @@
   "item.terratonic.pink_cushion": "Pink Cushion",
 
   "subtitles.entity.cushion.break": "Cushion breaks",
-  "subtitles.block.straw_bed_break_leave": "Straw bed breaks"
+  "subtitles.block.straw_bed_break_leave": "Straw bed breaks",
+
+  "attribute.terratonic.generic.blocking_amount": "Blocking Reduction"
 }

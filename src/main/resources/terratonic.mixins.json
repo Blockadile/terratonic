@@ -5,6 +5,7 @@
   "mixins": [
     "HeldItemRendererMixin",
     "HoeItemMixin",
+    "LivingEntityMixin",
     "PlayerEntityMixin",
     "SwordItemMixin"
   ],
