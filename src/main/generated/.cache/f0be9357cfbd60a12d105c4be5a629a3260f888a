@@ -1,7 +1,7 @@
-// 1.21.1	2026-08-02T15:23:14.8835229	Terratonic/Tags for minecraft:block
+// 1.21.1	2026-08-08T19:25:38.5440688	Terratonic/Tags for minecraft:block
 89d106f6a665858ce6d790e2b959db5ab6864e21 data\minecraft\tags\block\walls.json
-74bad980157ba18a87cb3de2ff62f9ac861efff9 data\minecraft\tags\block\pressure_plates.json
 b12911e49064fa60a06061368c27987bdc4d8f40 data\minecraft\tags\block\wooden_fences.json
+74bad980157ba18a87cb3de2ff62f9ac861efff9 data\minecraft\tags\block\pressure_plates.json
 b859f9f8f95841e336ce4b7c210c612472e1ff01 data\minecraft\tags\block\planks.json
 96858b7d45312779c6a1414347680e16eaa84cf0 data\minecraft\tags\block\mineable\pickaxe.json
 57185dafcd594d1dabde2b078149a358a36de317 data\minecraft\tags\block\wooden_slabs.json

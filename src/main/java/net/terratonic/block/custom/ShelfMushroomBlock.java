@@ -24,9 +24,9 @@ public class ShelfMushroomBlock extends Block implements Fertilizable {
     public static final DirectionProperty FACING = HorizontalFacingBlock.FACING;
     // Shapes
     private static final VoxelShape SHAPE_NORTH_SMALL = Block.createCuboidShape(3, 9, 9, 13, 11, 16);
-    private static final VoxelShape SHAPE_SOUTH_SMALL = Block.createCuboidShape(5, 3, 0, 11, 13, 2);
-    private static final VoxelShape SHAPE_EAST_SMALL = Block.createCuboidShape(0, 3, 5, 2, 13, 11);
-    private static final VoxelShape SHAPE_WEST_SMALL = Block.createCuboidShape(14, 3, 5, 16, 13, 11);
+    private static final VoxelShape SHAPE_SOUTH_SMALL = Block.createCuboidShape(3, 9, 0, 13, 11, 7);
+    private static final VoxelShape SHAPE_EAST_SMALL = Block.createCuboidShape(0, 9, 3, 7, 11, 13);
+    private static final VoxelShape SHAPE_WEST_SMALL = Block.createCuboidShape(9, 9, 3, 16, 11, 13);
 
     private static final VoxelShape SHAPE_NORTH_LARGE = Block.createCuboidShape(5, 3, 14, 11, 13, 16);
     private static final VoxelShape SHAPE_SOUTH_LARGE = Block.createCuboidShape(5, 3, 0, 11, 13, 2);

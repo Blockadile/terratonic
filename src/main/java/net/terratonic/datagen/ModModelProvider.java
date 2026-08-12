@@ -57,13 +57,13 @@ public class ModModelProvider extends FabricModelProvider {
     public void generateItemModels(ItemModelGenerator itemModelGenerator) {
         // Foods
         itemModelGenerator.register(ModItems.GARLIC, Models.GENERATED);
+        itemModelGenerator.register(ModItems.BLUE_BERRIES, Models.GENERATED);
 
         // Plants
         itemModelGenerator.register(ModBlocks.SHORT_DRY_GRASS.asItem(), Models.GENERATED);
         itemModelGenerator.register(ModBlocks.TALL_DRY_GRASS.asItem(), Models.GENERATED);
         itemModelGenerator.register(ModBlocks.WILDFLOWERS.asItem(), Models.GENERATED);
         itemModelGenerator.register(ModBlocks.PURPLE_WILDFLOWERS.asItem(), Models.GENERATED);
-        itemModelGenerator.register(ModBlocks.PALM_SAPLING.asItem(), Models.GENERATED);
         itemModelGenerator.register(ModBlocks.CLOVERS.asItem(), Models.GENERATED);
         itemModelGenerator.register(ModBlocks.LEAF_LITTER.asItem(), Models.GENERATED);
         itemModelGenerator.register(ModBlocks.BUSH.asItem(), Models.GENERATED);

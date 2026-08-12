@@ -24,7 +24,7 @@ public class ModConfiguredFeatures {
         // Palm
         ConfiguredFeatures.register(context, PALM_TREE_KEY, Feature.TREE, new TreeFeatureConfig.Builder(
                         BlockStateProvider.of(ModBlocks.PALM_LOG),
-                        new PalmTrunkPlacer(6, 2, 1),
+                        new PalmTrunkPlacer(6, 3, 2),
                         BlockStateProvider.of(ModBlocks.PALM_LEAVES),
                         new PalmFoliagePlacer(ConstantIntProvider.create(0), ConstantIntProvider.create(0)),
                         new TwoLayersFeatureSize(1, 0, 1)

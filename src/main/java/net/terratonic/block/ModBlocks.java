@@ -21,36 +21,28 @@ public class ModBlocks {
 
     // Wood
         // Palm
+    public static final Block PALM_SAPLING = registerBlock("palm_sapling",
+            new SaplingBlock(ModSaplingGenerator.PALM_TREE, AbstractBlock.Settings.copy(Blocks.OAK_SAPLING)));
     public static final Block PALM_LEAVES = registerBlock("palm_leaves",
             new LeavesBlock(AbstractBlock.Settings.copy(Blocks.OAK_LEAVES)));
-    // Log
     public static final Block PALM_LOG = registerBlock("palm_log",
             new PillarBlock(AbstractBlock.Settings.copy(Blocks.OAK_LOG)));
-    // Wood
     public static final Block PALM_WOOD = registerBlock("palm_wood",
             new PillarBlock(AbstractBlock.Settings.copy(Blocks.OAK_WOOD)));
-    // Stripped Log
     public static final Block STRIPPED_PALM_LOG = registerBlock("stripped_palm_log",
             new PillarBlock(AbstractBlock.Settings.copy(Blocks.STRIPPED_OAK_LOG)));
-    // Stripped Wood
     public static final Block STRIPPED_PALM_WOOD = registerBlock("stripped_palm_wood",
             new PillarBlock(AbstractBlock.Settings.copy(Blocks.STRIPPED_OAK_LOG)));
-    // Planks
     public static final Block PALM_PLANKS = registerBlock("palm_planks",
             new Block(AbstractBlock.Settings.copy(Blocks.OAK_PLANKS)));
-    // Stairs
     public static final Block PALM_STAIRS = registerBlock("palm_stairs",
             new StairsBlock(ModBlocks.PALM_PLANKS.getDefaultState(), AbstractBlock.Settings.copy(Blocks.OAK_STAIRS)));
-    // Slab
     public static final Block PALM_SLAB = registerBlock("palm_slab",
             new SlabBlock(AbstractBlock.Settings.copy(Blocks.OAK_SLAB)));
-    // Fence
     public static final Block PALM_FENCE = registerBlock("palm_fence",
             new FenceBlock(AbstractBlock.Settings.copy(Blocks.OAK_FENCE)));
-    // Fence Gate
     public static final Block PALM_FENCE_GATE = registerBlock("palm_fence_gate",
             new FenceGateBlock(WoodType.OAK, AbstractBlock.Settings.copy(Blocks.OAK_FENCE_GATE)));
-    // Door
     // public static final Block PALM_DOOR = registerBlock("palm_citrus_door",
     //         new DoorBlock(BlockSetType.OAK, AbstractBlock.Settings.create()
     //                 .strength(3f, 3f)
@@ -58,7 +50,6 @@ public class ModBlocks {
     //                 .sounds(BlockSoundGroup.WOOD)
     //                 .nonOpaque()
     //         ));
-    // Trapdoor
     // public static final Block PALM_TRAPDOOR = registerBlock("palm_trapdoor",
     //         new TrapdoorBlock(BlockSetType.OAK, AbstractBlock.Settings.create()
     //                 .strength(3f, 3f)
@@ -66,10 +57,8 @@ public class ModBlocks {
     //                 .sounds(BlockSoundGroup.WOOD)
     //                 .nonOpaque()
     //         ));
-    // Pressure Plate
     public static final Block PALM_PRESSURE_PLATE = registerBlock("palm_pressure_plate",
             new PressurePlateBlock(BlockSetType.OAK, AbstractBlock.Settings.copy(Blocks.OAK_PRESSURE_PLATE)));
-    // Button
     public static final Block PALM_BUTTON = registerBlock("palm_button",
             new ButtonBlock(BlockSetType.OAK, 30, AbstractBlock.Settings.copy(Blocks.OAK_BUTTON).noCollision()));
 
@@ -150,10 +139,6 @@ public class ModBlocks {
     public static final Block TANGLED_ROOTS = registerBlock("tangled_roots",
             new Block(AbstractBlock.Settings.copy(Blocks.DIRT).sounds(ModSoundGroups.TANGLED_ROOTS))
     );
-        // Crops
-    public static final Block GARLICS = registerUnobtainableBlock("garlics",
-            new GarlicsBlock(AbstractBlock.Settings.copy(Blocks.CARROTS))
-    );
         // Dry Grass
     public static final Block SHORT_DRY_GRASS = registerBlock("short_dry_grass",
             new ShortDryGrassBlock(AbstractBlock.Settings.copy(Blocks.SHORT_GRASS)));
@@ -174,11 +159,13 @@ public class ModBlocks {
                     .sounds(BlockSoundGroup.PINK_PETALS)
                     .pistonBehavior(PistonBehavior.DESTROY))
     );
-        // Saplings
-    public static final Block COCONUT_SPROUT = registerUnobtainableBlock("coconut_sprout",
-                new CoconutSproutBlock(AbstractBlock.Settings.copy(Blocks.OAK_SAPLING)));
-    public static final Block PALM_SAPLING = registerBlock("palm_sapling",
-            new SaplingBlock(ModSaplingGenerator.PALM_TREE, FabricBlockSettings.copy(Blocks.OAK_SAPLING)));
+    // Crops
+    public static final Block GARLICS = registerUnobtainableBlock("garlics",
+            new GarlicsBlock(AbstractBlock.Settings.copy(Blocks.CARROTS))
+    );
+    public static final Block BLUE_BERRY_BUSH = registerUnobtainableBlock("blue_berry_bush",
+            new BlueBerryBushBlock(AbstractBlock.Settings.copy(Blocks.SWEET_BERRY_BUSH))
+    );
         // Misc Plants
     public static final Block CLOVERS = registerBlock("clovers",
             new FlowerbedBlock(AbstractBlock.Settings.create()
@@ -218,7 +205,7 @@ public class ModBlocks {
             new SlabBlock(AbstractBlock.Settings.copy(Blocks.HAY_BLOCK).sounds(ModSoundGroups.THATCH))
     );
     public static final Block COCONUT = registerBlock("coconut",
-            new CoconutBlock(AbstractBlock.Settings.copy(Blocks.MELON).mapColor(MapColor.BROWN))
+            new Block(AbstractBlock.Settings.copy(Blocks.MELON).mapColor(MapColor.BROWN))
     );
     public static final Block FORGE = registerBlock("forge",
             new ForgeBlock(AbstractBlock.Settings.copy(Blocks.BLAST_FURNACE))

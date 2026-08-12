@@ -1,4 +1,4 @@
-// 1.21.1	2026-08-02T15:23:14.8775262	Terratonic/Block Loot Tables
+// 1.21.1	2026-08-08T19:25:38.5380723	Terratonic/Block Loot Tables
 f61bdb3c329b02c8e0551ffde2ebe7bce1811857 data\terratonic\loot_table\blocks\palm_log.json
 34fcd00992701eb59acafb5a6a288488a29aa792 data\terratonic\loot_table\blocks\palm_wood.json
 8bfbbd913ecc6e12dcc40294fa91172b1ba8afb1 data\terratonic\loot_table\blocks\mossy_slate_brick_slab.json
@@ -19,6 +19,7 @@ a45e8653c9ae2c80b44c18911b419724e25271c7 data\terratonic\loot_table\blocks\shale
 3abfe80439d7e792a667581b7030760b3cef8a26 data\terratonic\loot_table\blocks\palm_button.json
 219fe379bedce5e82e14acade531b191ea7243a5 data\terratonic\loot_table\blocks\palm_planks.json
 0a18cb3cca87a06b5bac0be64ea2cb952f55b7c2 data\terratonic\loot_table\blocks\cobbled_slate_wall.json
+27976f7968dd8905984c528d914696ba44a1ddbd data\terratonic\loot_table\blocks\palm_leaves.json
 98e87890c1c0ac60212e6fa5a78721556629f81a data\terratonic\loot_table\blocks\palm_stairs.json
 fa40befe4027ed3c00b4c84bf36fe37487b74349 data\terratonic\loot_table\blocks\mossy_cobbled_slate.json
 7ed55f64dc81bac99f991e0d146dc8fa3038ea25 data\terratonic\loot_table\blocks\mossy_slate_brick_wall.json

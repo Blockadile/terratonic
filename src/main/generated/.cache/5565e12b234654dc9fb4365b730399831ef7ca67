@@ -1,4 +1,4 @@
-// 1.21.1	2026-08-02T15:23:14.8885189	Terratonic/Model Definitions
+// 1.21.1	2026-08-08T19:25:38.5480657	Terratonic/Model Definitions
 c5c37d397bd76a5d07c62a3b65b0099fe6c62937 assets\terratonic\blockstates\thatch.json
 4eb05d7526a723ac1608a0e22f7c2717ece02614 assets\terratonic\models\block\palm_button.json
 06167236357efcf1e107ae4ccd669938fecbb7b1 assets\terratonic\models\item\diamond_prospecting_pickaxe.json
@@ -83,6 +83,7 @@ cde2239256d4698357c5d2dc834893447fbd275d assets\terratonic\models\block\palm_pla
 9057b3b25918c5e432497965bf2426327e90e16e assets\terratonic\models\block\short_dry_grass.json
 46d4332ac2c74722c02398321c66b061106ee394 assets\terratonic\models\item\wooden_sickle.json
 10376e292c89ad0115013d22b119c156c7d40cbb assets\terratonic\models\item\short_dry_grass.json
+501119c457833947d77e0f3d05d7a114750f11c8 assets\terratonic\models\item\blue_berries.json
 21fffa4f686ac26b1becea4cdb15d4e193180eed assets\terratonic\models\block\palm_slab_top.json
 49f983538d3dd114939e493521bab8561c44b2d7 assets\terratonic\models\item\wildflowers.json
 248c250a333cd4955cf10b8b5c31f9e83b626ce3 assets\terratonic\models\item\mossy_slate_bricks.json
@@ -100,8 +101,8 @@ d15a5d255c9b52a3a9ea1d1f38bcabcf4794607c assets\terratonic\models\block\tall_dry
 bf222623f7388fc80d4487b4b145a3ba9c1a759d assets\terratonic\models\item\iron_wide_sword.json
 3e58888660fe9ec4ad1642135bf022a8bc675396 assets\terratonic\models\item\wooden_short_sword.json
 86b1a86bab1003028a2bfc5fbaf5f91e9c5bd79f assets\terratonic\models\item\mossy_slate_brick_stairs.json
-be53a63a627dc8120b6c6a2be8530a49b19a71d2 assets\terratonic\models\item\diamond_wide_sword.json
 1aef673a6b5bfc2b47c5b6bc910a0726442c98b9 assets\terratonic\models\block\slate_brick_wall_side_tall.json
+be53a63a627dc8120b6c6a2be8530a49b19a71d2 assets\terratonic\models\item\diamond_wide_sword.json
 df6a67f1559e99168e5407a01c86fa46ace42d4f assets\terratonic\models\block\slate_brick_wall_post.json
 55fb947e4092014eb5ce518ffb47bc7e37594056 assets\terratonic\models\block\mossy_slate_brick_stairs_inner.json
 32dd9ab0ab20f52c544d7fb0472f666491346ac0 assets\terratonic\models\item\copper_boots.json
@@ -117,8 +118,8 @@ f3c81e68fcd1b3e7e3d56634305a4c25f30b5d18 assets\terratonic\models\item\garlic.js
 5712ee78570a1d5e5ee2a424b7b92405e5a8a68d assets\terratonic\models\block\cobbled_slate_stairs.json
 363e5a8db485fbdfb211bd5723f0abba421a4121 assets\terratonic\models\item\mossy_cobbled_slate_wall.json
 2d1dcaa6fb79086e02ab36e94ebc7c207330fda2 assets\terratonic\models\item\leaf_litter.json
-8db6e08417aa93e121373e7830bf7ff53426e9fb assets\terratonic\blockstates\mossy_slate_bricks.json
 accc72ba0d31c0bcdf5ed40811ecb289f85a9039 assets\terratonic\blockstates\tangled_roots.json
+8db6e08417aa93e121373e7830bf7ff53426e9fb assets\terratonic\blockstates\mossy_slate_bricks.json
 a3298669cfc83660f70e5710a85e40d4f224ffd7 assets\terratonic\models\block\mossy_slate_brick_stairs_outer.json
 609b6ea4b5b56e3a9cb8ca89fd3a3e958ca64d6b assets\terratonic\models\item\copper_pickaxe.json
 3e435cdd1d63bc51119e1b74e7811cb60a29c223 assets\terratonic\models\item\copper_leggings.json
@@ -153,7 +154,6 @@ c02647bbb6dd28da73672c08d3a5476aa9e1425d assets\terratonic\models\block\palm_but
 521c97b36b033447239f9e8238248c7fe2154c93 assets\terratonic\models\block\palm_fence_side.json
 1a662fa5694e39278e8edf389d4c23014abc66eb assets\terratonic\models\block\mossy_cobbled_slate_stairs.json
 af69bf7834aab6f1e982fae63292bc6614ffd08b assets\terratonic\models\block\thatch_slab_top.json
-10e1d25166be514c8c26187a8dcf47bbdfc54d37 assets\terratonic\models\item\palm_sapling.json
 c10b4e66c2e51505b81f489e5c7492ebca430959 assets\terratonic\models\block\slate_bricks.json
 95bd4c7d76c7996d27647eb985ddba49153262a1 assets\terratonic\models\block\palm_stairs.json
 f2cbbecebe8c6e7e252e19cdc56e44a7d19ba37f assets\terratonic\models\item\golden_wide_sword.json

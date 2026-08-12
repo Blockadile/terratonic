@@ -684,6 +684,8 @@ public class ModItems {
     // Food
     public static final Item GARLIC = registerItem("garlic", new AliasedBlockItem(ModBlocks.GARLICS, (new Item.Settings()
             .food(ModFoodComponents.GARLIC))));
+    public static final Item BLUE_BERRIES = registerItem("blue_berries", new AliasedBlockItem(ModBlocks.BLUE_BERRY_BUSH, (new Item.Settings()
+            .food(ModFoodComponents.BLUE_BERRIES))));
 
     // Misc
     public static final Item ORNATE_OIL_BOTTLE = registerItem("ornate_oil_bottle", new Item(new Item.Settings()));
@@ -718,6 +720,7 @@ public class ModItems {
         });
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.FOOD_AND_DRINK).register(fabricItemGroupEntries -> {
             fabricItemGroupEntries.addAfter(Items.BEETROOT, ModItems.GARLIC);
+            fabricItemGroupEntries.addAfter(Items.SWEET_BERRIES, ModItems.BLUE_BERRIES);
         });
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.TOOLS).register(fabricItemGroupEntries -> {
             fabricItemGroupEntries.addBefore(Items.IRON_SHOVEL, ModItems.COPPER_SHOVEL);
