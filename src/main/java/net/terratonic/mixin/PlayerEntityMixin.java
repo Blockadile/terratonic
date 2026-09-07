@@ -1,17 +1,21 @@
 package net.terratonic.mixin;
 
+import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.attribute.DefaultAttributeContainer;
 import net.minecraft.entity.damage.DamageSource;
+import net.minecraft.entity.player.ItemCooldownManager;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.SwordItem;
 import net.minecraft.registry.tag.DamageTypeTags;
+import net.minecraft.sound.SoundEvent;
 import net.minecraft.sound.SoundEvents;
 import net.minecraft.util.Hand;
 import net.minecraft.util.math.Vec3d;
 import net.minecraft.world.World;
+import net.terratonic.item.custom.DuelingSwordItem;
 import net.terratonic.item.custom.ScytheItem;
 import net.terratonic.item.custom.SickleItem;
 import net.terratonic.util.ModAttributes;
@@ -23,6 +27,16 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 
 @Mixin(PlayerEntity.class)
 public abstract class PlayerEntityMixin extends LivingEntity{
+    @Shadow
+    public abstract void attack(Entity target);
+
+    @Shadow
+    public abstract void playSound(SoundEvent sound, float volume, float pitch);
+
+    @Shadow
+    @Final
+    private ItemCooldownManager itemCooldownManager;
+
     protected PlayerEntityMixin(EntityType<? extends LivingEntity> entityType, World world) {
         super(entityType, world);
     }
@@ -58,6 +72,14 @@ public abstract class PlayerEntityMixin extends LivingEntity{
         }
 
         if (this.activeItemStack != null && activeItemStack.getItem() instanceof SwordItem && blockable) {
+            if (activeItemStack.getItem() instanceof DuelingSwordItem) {
+                attack(source.getSource());
+                activeItemStack.damage(1, this, getSlotForHand(Hand.MAIN_HAND));
+                playSound(SoundEvents.ENTITY_ARROW_HIT_PLAYER);
+                itemCooldownManager.set(activeItemStack.getItem(), 100);
+                stopUsingItem();
+                return 0;
+            }
             System.out.println(this.getAttributeValue(ModAttributes.BLOCKING_AMOUNT));
             amount *= (float) this.getAttributeValue(ModAttributes.BLOCKING_AMOUNT);
             activeItemStack.damage(3, this, getSlotForHand(Hand.MAIN_HAND));

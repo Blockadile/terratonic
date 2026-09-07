@@ -1,15 +1,15 @@
-// 1.21.1	2026-08-08T19:25:38.546067	Terratonic/Tags for minecraft:item
-4940c258394d379a7c0772348d0c3f6843388562 data\minecraft\tags\item\wooden_buttons.json
-6222fd0d7d2ce08ee1f70be68a61f4e167dda650 data\terratonic\tags\item\copper_tool_materials.json
-74bad980157ba18a87cb3de2ff62f9ac861efff9 data\minecraft\tags\item\wooden_pressure_plates.json
-910b4d1dcdf0d8fbbee236b9968926db7a9cfdfa data\minecraft\tags\item\wooden_stairs.json
+// 1.21.1	2026-09-07T14:36:19.4323117	Terratonic/Tags for minecraft:item
 b12911e49064fa60a06061368c27987bdc4d8f40 data\minecraft\tags\item\wooden_fences.json
-b12911e49064fa60a06061368c27987bdc4d8f40 data\minecraft\tags\item\fences.json
-4a16a2c32438299d985360a243ca0230908383b5 data\minecraft\tags\item\fence_gates.json
+e5698d8a1bb99aec5f4dfff893accfc56c60e8d7 data\minecraft\tags\item\leaves.json
 910b4d1dcdf0d8fbbee236b9968926db7a9cfdfa data\minecraft\tags\item\stairs.json
 4940c258394d379a7c0772348d0c3f6843388562 data\minecraft\tags\item\buttons.json
-e5698d8a1bb99aec5f4dfff893accfc56c60e8d7 data\minecraft\tags\item\leaves.json
-f6e1abb2a523379a389fb364dd8a4fd2ae0bdbdf data\minecraft\tags\item\stone_tool_materials.json
+b12911e49064fa60a06061368c27987bdc4d8f40 data\minecraft\tags\item\fences.json
+57185dafcd594d1dabde2b078149a358a36de317 data\minecraft\tags\item\slabs.json
+74bad980157ba18a87cb3de2ff62f9ac861efff9 data\minecraft\tags\item\wooden_pressure_plates.json
+4940c258394d379a7c0772348d0c3f6843388562 data\minecraft\tags\item\wooden_buttons.json
 f6e1abb2a523379a389fb364dd8a4fd2ae0bdbdf data\minecraft\tags\item\stone_crafting_materials.json
 57185dafcd594d1dabde2b078149a358a36de317 data\minecraft\tags\item\wooden_slabs.json
-57185dafcd594d1dabde2b078149a358a36de317 data\minecraft\tags\item\slabs.json
+910b4d1dcdf0d8fbbee236b9968926db7a9cfdfa data\minecraft\tags\item\wooden_stairs.json
+4a16a2c32438299d985360a243ca0230908383b5 data\minecraft\tags\item\fence_gates.json
+6222fd0d7d2ce08ee1f70be68a61f4e167dda650 data\terratonic\tags\item\copper_tool_materials.json
+f6e1abb2a523379a389fb364dd8a4fd2ae0bdbdf data\minecraft\tags\item\stone_tool_materials.json
