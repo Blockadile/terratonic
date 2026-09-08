@@ -46,6 +46,8 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerTintableCrossBlockState(ModBlocks.SHORT_DRY_GRASS, BlockStateModelGenerator.TintType.NOT_TINTED);
         blockStateModelGenerator.registerTintableCrossBlockState(ModBlocks.TALL_DRY_GRASS, BlockStateModelGenerator.TintType.NOT_TINTED);
 
+        blockStateModelGenerator.registerTintableCrossBlockState(ModBlocks.WHITE_MUSHROOM, BlockStateModelGenerator.TintType.NOT_TINTED);
+
         blockStateModelGenerator.registerTintableCrossBlockState(ModBlocks.BUSH, BlockStateModelGenerator.TintType.TINTED);
 
         BlockStateModelGenerator.BlockTexturePool thatch_pool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.THATCH);
@@ -66,6 +68,7 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModBlocks.PURPLE_WILDFLOWERS.asItem(), Models.GENERATED);
         itemModelGenerator.register(ModBlocks.CLOVERS.asItem(), Models.GENERATED);
         itemModelGenerator.register(ModBlocks.LEAF_LITTER.asItem(), Models.GENERATED);
+        itemModelGenerator.register(ModBlocks.WHITE_MUSHROOM.asItem(), Models.GENERATED);
         itemModelGenerator.register(ModBlocks.BUSH.asItem(), Models.GENERATED);
 
         // Misc

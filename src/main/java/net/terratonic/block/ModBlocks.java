@@ -15,6 +15,7 @@ import net.minecraft.util.Identifier;
 import net.terratonic.Terratonic;
 import net.terratonic.block.custom.*;
 import net.terratonic.sounds.ModSoundGroups;
+import net.terratonic.world.ModConfiguredFeatures;
 import net.terratonic.world.tree.ModSaplingGenerator;
 
 public class ModBlocks {
@@ -159,7 +160,7 @@ public class ModBlocks {
                     .sounds(BlockSoundGroup.PINK_PETALS)
                     .pistonBehavior(PistonBehavior.DESTROY))
     );
-    // Crops
+        // Crops
     public static final Block GARLICS = registerUnobtainableBlock("garlics",
             new GarlicsBlock(AbstractBlock.Settings.copy(Blocks.CARROTS))
     );
@@ -190,6 +191,22 @@ public class ModBlocks {
                     .strength(0.03f, 0.0f)
                     .sounds(BlockSoundGroup.WOOD)
             )
+    );
+    public static final Block WHITE_MUSHROOM = registerBlock("white_mushroom",
+            new MushroomPlantBlock(
+                    ModConfiguredFeatures.HUGE_WHITE_MUSHROOM,
+                    AbstractBlock.Settings.create()
+                            .mapColor(MapColor.WHITE)
+                            .noCollision()
+                            .ticksRandomly()
+                            .breakInstantly()
+                            .sounds(BlockSoundGroup.GRASS)
+                            .postProcess(Blocks::always)
+                            .pistonBehavior(PistonBehavior.DESTROY)
+            )
+    );
+    public static final Block WHITE_MUSHROOM_BLOCK = registerBlock("white_mushroom_block",
+            new MushroomBlock(AbstractBlock.Settings.copy(Blocks.RED_MUSHROOM_BLOCK))
     );
     public static final Block BUSH = registerBlock("bush",
             new ShortPlantBlock(AbstractBlock.Settings.copy(Blocks.SHORT_GRASS)));
@@ -270,9 +287,11 @@ public class ModBlocks {
 
             fabricItemGroupEntries.addAfter(Blocks.JUNGLE_LOG, ModBlocks.PALM_LOG);
             fabricItemGroupEntries.addAfter(Blocks.JUNGLE_LEAVES, ModBlocks.PALM_LEAVES);
+            fabricItemGroupEntries.addAfter(Blocks.RED_MUSHROOM_BLOCK, ModBlocks.WHITE_MUSHROOM_BLOCK);
             fabricItemGroupEntries.addAfter(Blocks.JUNGLE_SAPLING, ModBlocks.PALM_SAPLING);
 
-            fabricItemGroupEntries.addAfter(Blocks.RED_MUSHROOM, ModBlocks.SHELF_MUSHROOM);
+            fabricItemGroupEntries.addAfter(Blocks.RED_MUSHROOM, ModBlocks.WHITE_MUSHROOM);
+            fabricItemGroupEntries.addAfter(ModBlocks.WHITE_MUSHROOM, ModBlocks.SHELF_MUSHROOM);
 
             fabricItemGroupEntries.addAfter(Blocks.FERN, ModBlocks.SHORT_DRY_GRASS);
             fabricItemGroupEntries.addAfter(ModBlocks.SHORT_DRY_GRASS, ModBlocks.BUSH);

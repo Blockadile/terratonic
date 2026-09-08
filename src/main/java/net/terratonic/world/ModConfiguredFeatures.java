@@ -1,5 +1,8 @@
 package net.terratonic.world;
 
+import net.minecraft.block.Blocks;
+import net.minecraft.block.MushroomBlock;
+import net.minecraft.world.gen.trunk.StraightTrunkPlacer;
 import net.terratonic.block.ModBlocks;
 import net.minecraft.registry.Registerable;
 import net.minecraft.registry.RegistryKey;
@@ -11,6 +14,7 @@ import net.minecraft.world.gen.feature.size.TwoLayersFeatureSize;
 import net.minecraft.world.gen.stateprovider.BlockStateProvider;
 import net.terratonic.Terratonic;
 import net.terratonic.world.tree.custom.FruitTreeDecorator;
+import net.terratonic.world.tree.custom.HugeWhiteMushroomFoliagePlacer;
 import net.terratonic.world.tree.custom.PalmFoliagePlacer;
 import net.terratonic.world.tree.custom.PalmTrunkPlacer;
 
@@ -19,6 +23,7 @@ import java.util.List;
 public class ModConfiguredFeatures {
 
     public static final RegistryKey<ConfiguredFeature<?, ?>> PALM_TREE_KEY = registerKey("palm_tree");
+    public static final RegistryKey<ConfiguredFeature<?, ?>> HUGE_WHITE_MUSHROOM = registerKey("huge_white_mushroom");
 
     public static void bootstrap(Registerable<ConfiguredFeature<?, ?>> context) {
         // Palm
@@ -36,6 +41,17 @@ public class ModConfiguredFeatures {
                                 BlockStateProvider.of(ModBlocks.COCONUT)))
                 ).build()
         );
+
+        // White Mushroom
+        ConfiguredFeatures.register(context, HUGE_WHITE_MUSHROOM, Feature.TREE, (new TreeFeatureConfig.Builder(
+                BlockStateProvider.of(Blocks.MUSHROOM_STEM.getDefaultState()
+                        .with(MushroomBlock.UP, true)
+                        .with(MushroomBlock.DOWN, true)),
+                new StraightTrunkPlacer(4, 2, 1),
+                BlockStateProvider.of(ModBlocks.WHITE_MUSHROOM_BLOCK.getDefaultState()
+                        .with(MushroomBlock.DOWN, true)),
+                new HugeWhiteMushroomFoliagePlacer(ConstantIntProvider.create(2), ConstantIntProvider.create(1), 2),
+                new TwoLayersFeatureSize(1, 0, 2))).build());
     }
 
     public static RegistryKey<ConfiguredFeature<?, ?>> registerKey(String name) {
