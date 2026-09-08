@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "terratonic:block/workbench",
+      "y": 90
+    },
+    "facing=north": {
+      "model": "terratonic:block/workbench"
+    },
+    "facing=south": {
+      "model": "terratonic:block/workbench",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "terratonic:block/workbench",
+      "y": 270
+    }
+  }
+}

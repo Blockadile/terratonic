@@ -10,7 +10,6 @@ import net.minecraft.item.ItemGroups;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.sound.BlockSoundGroup;
-import net.minecraft.sound.SoundEvents;
 import net.minecraft.util.Identifier;
 import net.terratonic.Terratonic;
 import net.terratonic.block.custom.*;
@@ -224,8 +223,8 @@ public class ModBlocks {
     public static final Block COCONUT = registerBlock("coconut",
             new Block(AbstractBlock.Settings.copy(Blocks.MELON).mapColor(MapColor.BROWN))
     );
-    public static final Block FORGE = registerBlock("forge",
-            new ForgeBlock(AbstractBlock.Settings.copy(Blocks.BLAST_FURNACE))
+    public static final Block WORKBENCH = registerBlock("workbench",
+            new Workbench(AbstractBlock.Settings.copy(Blocks.LOOM))
     );
 
     // Methods
@@ -305,7 +304,7 @@ public class ModBlocks {
             fabricItemGroupEntries.addAfter(Blocks.JACK_O_LANTERN, ModBlocks.COCONUT);
         });
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.FUNCTIONAL).register(fabricItemGroupEntries -> {
-            fabricItemGroupEntries.addAfter(Blocks.BLAST_FURNACE, ModBlocks.FORGE);
+            fabricItemGroupEntries.addAfter(Blocks.SMITHING_TABLE, ModBlocks.WORKBENCH);
         });
     }
 }
