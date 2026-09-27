@@ -9,6 +9,7 @@ import net.minecraft.util.Identifier;
 import net.terratonic.block.ModBlocks;
 import net.terratonic.entity.ModEntities;
 import net.terratonic.item.ModItems;
+import net.terratonic.screen.ModScreenHandlers;
 import net.terratonic.sounds.ModSounds;
 import net.terratonic.util.ModAttributes;
 import net.terratonic.world.tree.ModFoliagePlacerTypes;
@@ -34,6 +35,7 @@ public class Terratonic implements ModInitializer {
 		ModFoliagePlacerTypes.registerModFoliage();
 		ModTrunkPlacerTypes.registerModTrunks();
 		ModTreeDecorators.registerModTreeDecorators();
+		ModScreenHandlers.registerScreenHandlers();
 
 		StrippableBlockRegistry.register(ModBlocks.PALM_LOG, ModBlocks.STRIPPED_PALM_LOG);
 		StrippableBlockRegistry.register(ModBlocks.PALM_WOOD, ModBlocks.STRIPPED_PALM_WOOD);

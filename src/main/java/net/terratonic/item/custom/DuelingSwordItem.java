@@ -16,13 +16,13 @@ public class DuelingSwordItem extends SwordItem {
 
     @Override
     public int getMaxUseTime(ItemStack stack, LivingEntity user) {
-        return 50;
+        return 25;
     }
 
     @Override
     public void onStoppedUsing(ItemStack stack, World world, LivingEntity user, int remainingUseTicks) {
         PlayerEntity player = (PlayerEntity) user;
-        player.getItemCooldownManager().set(user.getActiveItem().getItem(), 50);
+        player.getItemCooldownManager().set(user.getActiveItem().getItem(), 100);
         super.onStoppedUsing(stack, world, user, remainingUseTicks);
     }
 
@@ -36,7 +36,7 @@ public class DuelingSwordItem extends SwordItem {
     @Override
     public ItemStack finishUsing(ItemStack stack, World world, LivingEntity user) {
         PlayerEntity player = (PlayerEntity) user;
-        player.getItemCooldownManager().set(user.getActiveItem().getItem(), 300);
+        player.getItemCooldownManager().set(user.getActiveItem().getItem(), 100);
         return super.finishUsing(stack, world, user);
     }
 }

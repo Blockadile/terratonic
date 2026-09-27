@@ -129,5 +129,6 @@
   "subtitles.entity.cushion.break": "Cushion breaks",
   "subtitles.block.straw_bed_break_leave": "Straw bed breaks",
 
-  "attribute.terratonic.generic.blocking_amount": "Blocking Reduction"
+  "attribute.terratonic.generic.blocking_amount": "Blocking Reduction",
+  "container.workbench": "Workbench"
 }

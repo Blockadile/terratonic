@@ -130,10 +130,10 @@ public class ModBlocks {
     // Plants
         // Hanging Cave Roots
     public static final Block HANGING_CAVE_ROOTS = registerBlock("hanging_cave_roots",
-            new HangingCaveRootsBlock(FabricBlockSettings.copy(Blocks.WEEPING_VINES).sounds(BlockSoundGroup.CROP))
+            new HangingCaveRootsBlock(AbstractBlock.Settings.copy(Blocks.WEEPING_VINES).sounds(BlockSoundGroup.CROP))
     );
     public static final Block HANGING_CAVE_ROOTS_PLANT = registerUnobtainableBlock("hanging_cave_roots_plant",
-            new HangingCaveRootsPlantBlock(FabricBlockSettings.copy(Blocks.WEEPING_VINES_PLANT).sounds(BlockSoundGroup.CROP))
+            new HangingCaveRootsPlantBlock(AbstractBlock.Settings.copy(Blocks.WEEPING_VINES_PLANT).sounds(BlockSoundGroup.CROP))
     );
         // Tangled Roots
     public static final Block TANGLED_ROOTS = registerBlock("tangled_roots",

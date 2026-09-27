@@ -7,6 +7,8 @@ import net.fabricmc.fabric.api.client.rendering.v1.EntityModelLayerRegistry;
 import net.fabricmc.fabric.api.client.rendering.v1.EntityRendererRegistry;
 import net.minecraft.block.Blocks;
 import net.minecraft.client.color.world.BiomeColors;
+import net.minecraft.client.gui.screen.ingame.HandledScreen;
+import net.minecraft.client.gui.screen.ingame.HandledScreens;
 import net.minecraft.client.render.RenderLayer;
 import net.minecraft.registry.entry.RegistryEntry;
 import net.minecraft.registry.tag.BiomeTags;
@@ -19,6 +21,9 @@ import net.terratonic.client.model.ModModelLayers;
 import net.terratonic.client.model.entity.CushionModel;
 import net.terratonic.client.render.entity.CushionRenderer;
 import net.terratonic.entity.ModEntities;
+import net.terratonic.screen.ModScreenHandlers;
+import net.terratonic.screen.custom.WorkbenchScreen;
+import net.terratonic.screen.custom.WorkbenchScreenHandler;
 
 public class TerratonicClient implements ClientModInitializer {
 
@@ -123,5 +128,8 @@ public class TerratonicClient implements ClientModInitializer {
         // Entities
         EntityRendererRegistry.register(ModEntities.CUSHION, CushionRenderer::new);
         EntityModelLayerRegistry.registerModelLayer(ModModelLayers.CUSHION, CushionModel::getTexturedModelData);
+
+        // Misc. Registries
+        HandledScreens.register(ModScreenHandlers.WORKBENCH_SCREEN_HANDLER, WorkbenchScreen::new);
     }
 }
