@@ -77,8 +77,6 @@ public class Workbench extends CraftingTableBlock {
                 return new WorkbenchScreenHandler(syncId, playerInventory, ScreenHandlerContext.create(world, pos));
             }
         };
-
-
 //        return new SimpleNamedScreenHandlerFactory((syncId, inventory, player) -> new WorkbenchScreenHandler(syncId, inventory, ScreenHandlerContext.create(world, pos)), TITLE);
     }
 }

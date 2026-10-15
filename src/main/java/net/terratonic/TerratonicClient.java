@@ -2,6 +2,7 @@ package net.terratonic;
 
 import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.fabric.api.blockrenderlayer.v1.BlockRenderLayerMap;
+import net.fabricmc.fabric.api.client.particle.v1.ParticleFactoryRegistry;
 import net.fabricmc.fabric.api.client.rendering.v1.ColorProviderRegistry;
 import net.fabricmc.fabric.api.client.rendering.v1.EntityModelLayerRegistry;
 import net.fabricmc.fabric.api.client.rendering.v1.EntityRendererRegistry;
@@ -21,9 +22,13 @@ import net.terratonic.client.model.ModModelLayers;
 import net.terratonic.client.model.entity.CushionModel;
 import net.terratonic.client.render.entity.CushionRenderer;
 import net.terratonic.entity.ModEntities;
+import net.terratonic.particle.CoinSpin;
+import net.terratonic.particle.ModParticles;
 import net.terratonic.screen.ModScreenHandlers;
 import net.terratonic.screen.custom.WorkbenchScreen;
 import net.terratonic.screen.custom.WorkbenchScreenHandler;
+
+import static net.terratonic.particle.ModParticles.COIN_SPIN;
 
 public class TerratonicClient implements ClientModInitializer {
 
@@ -131,5 +136,8 @@ public class TerratonicClient implements ClientModInitializer {
 
         // Misc. Registries
         HandledScreens.register(ModScreenHandlers.WORKBENCH_SCREEN_HANDLER, WorkbenchScreen::new);
+
+        // Particles
+        ParticleFactoryRegistry.getInstance().register(COIN_SPIN, CoinSpin.Factory::new);
     }
 }
