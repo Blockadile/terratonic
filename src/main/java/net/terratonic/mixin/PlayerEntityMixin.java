@@ -9,15 +9,19 @@ import net.minecraft.entity.player.ItemCooldownManager;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.SwordItem;
+import net.minecraft.particle.ParticleTypes;
 import net.minecraft.registry.tag.DamageTypeTags;
+import net.minecraft.server.world.ServerWorld;
 import net.minecraft.sound.SoundEvent;
 import net.minecraft.sound.SoundEvents;
 import net.minecraft.util.Hand;
+import net.minecraft.util.math.MathHelper;
 import net.minecraft.util.math.Vec3d;
 import net.minecraft.world.World;
 import net.terratonic.item.custom.DuelingSwordItem;
 import net.terratonic.item.custom.ScytheItem;
 import net.terratonic.item.custom.SickleItem;
+import net.terratonic.particle.ModParticles;
 import net.terratonic.util.ModAttributes;
 import org.spongepowered.asm.mixin.*;
 import org.spongepowered.asm.mixin.injection.At;
@@ -73,6 +77,11 @@ public abstract class PlayerEntityMixin extends LivingEntity{
 
         if (this.activeItemStack != null && activeItemStack.getItem() instanceof SwordItem && blockable) {
             if (activeItemStack.getItem() instanceof DuelingSwordItem) {
+                double d = -MathHelper.sin(this.getYaw() * (float) (Math.PI / 180.0));
+                double e = MathHelper.cos(this.getYaw() * (float) (Math.PI / 180.0));
+                if (this.getWorld() instanceof ServerWorld) {
+                    ((ServerWorld)this.getWorld()).spawnParticles(ModParticles.SPARK_PARTICLE, this.getX() + d, this.getBodyY(0.5) + 0.5, this.getZ() + e, 0, d, 0.0, e, 0.0);
+                }
                 attack(source.getSource());
                 activeItemStack.damage(1, this, getSlotForHand(Hand.MAIN_HAND));
                 playSound(SoundEvents.ENTITY_ARROW_HIT_PLAYER);

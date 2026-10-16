@@ -24,11 +24,13 @@ import net.terratonic.client.render.entity.CushionRenderer;
 import net.terratonic.entity.ModEntities;
 import net.terratonic.particle.CoinSpin;
 import net.terratonic.particle.ModParticles;
+import net.terratonic.particle.SparkParticle;
 import net.terratonic.screen.ModScreenHandlers;
 import net.terratonic.screen.custom.WorkbenchScreen;
 import net.terratonic.screen.custom.WorkbenchScreenHandler;
 
 import static net.terratonic.particle.ModParticles.COIN_SPIN;
+import static net.terratonic.particle.ModParticles.SPARK_PARTICLE;
 
 public class TerratonicClient implements ClientModInitializer {
 
@@ -139,5 +141,6 @@ public class TerratonicClient implements ClientModInitializer {
 
         // Particles
         ParticleFactoryRegistry.getInstance().register(COIN_SPIN, CoinSpin.Factory::new);
+        ParticleFactoryRegistry.getInstance().register(SPARK_PARTICLE, SparkParticle.Factory::new);
     }
 }
