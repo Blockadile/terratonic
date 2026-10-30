@@ -4,6 +4,7 @@ import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.attribute.DefaultAttributeContainer;
+import net.minecraft.entity.attribute.EntityAttributes;
 import net.minecraft.entity.damage.DamageSource;
 import net.minecraft.entity.player.ItemCooldownManager;
 import net.minecraft.entity.player.PlayerEntity;
@@ -77,15 +78,32 @@ public abstract class PlayerEntityMixin extends LivingEntity{
 
         if (this.activeItemStack != null && activeItemStack.getItem() instanceof SwordItem && blockable) {
             if (activeItemStack.getItem() instanceof DuelingSwordItem) {
+                Vec3d startingVec3d = this.getVelocity();
+
                 double d = -MathHelper.sin(this.getYaw() * (float) (Math.PI / 180.0));
                 double e = MathHelper.cos(this.getYaw() * (float) (Math.PI / 180.0));
                 if (this.getWorld() instanceof ServerWorld) {
+                    if (source.getPosition() != null) {
+                        d = source.getPosition().getX() - this.getX();
+                        e = source.getPosition().getZ() - this.getZ();
+                    }
+
+                    this.takeKnockback(0.4, d, e);
+                    this.scheduleVelocityUpdate();
+
+                    this.playSound(SoundEvents.BLOCK_ANVIL_FALL);
+
                     ((ServerWorld)this.getWorld()).spawnParticles(ModParticles.SPARK_PARTICLE, this.getX() + d, this.getBodyY(0.5) + 0.5, this.getZ() + e, 0, d, 0.0, e, 0.0);
+                    for (int i=0; i<10; i++) {
+                        ((ServerWorld)this.getWorld()).spawnParticles(ModParticles.SMALL_SPARK_PARTICLE, this.getX() + d, this.getBodyY(0.5) + 0.5, this.getZ() + e, 0, d + startingVec3d.x, 0.0, e + startingVec3d.z, 0.0);
+                    }
                 }
-                attack(source.getSource());
+                System.out.println(this.getVelocity());
+                if (source.getSource() != null) {
+                    attack(source.getSource());
+                    source.getSource().addVelocity((d / 3) + (startingVec3d.x/2), 0f, (e / 3) + (startingVec3d.z/2));
+                }
                 activeItemStack.damage(1, this, getSlotForHand(Hand.MAIN_HAND));
-                playSound(SoundEvents.ENTITY_ARROW_HIT_PLAYER);
-                itemCooldownManager.set(activeItemStack.getItem(), 100);
                 stopUsingItem();
                 return 0;
             }

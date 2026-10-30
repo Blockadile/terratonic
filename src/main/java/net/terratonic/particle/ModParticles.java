@@ -15,6 +15,8 @@ public class ModParticles {
             registerParticle("coin_spin", FabricParticleTypes.simple(true));
     public static final SimpleParticleType SPARK_PARTICLE =
             registerParticle("spark_particle", FabricParticleTypes.simple(true));
+    public static final SimpleParticleType SMALL_SPARK_PARTICLE =
+            registerParticle("small_spark_particle", FabricParticleTypes.simple(true));
 
     private static SimpleParticleType registerParticle(String name, SimpleParticleType particleType) {
         return Registry.register(Registries.PARTICLE_TYPE, Identifier.of(Terratonic.MOD_ID, name), particleType);

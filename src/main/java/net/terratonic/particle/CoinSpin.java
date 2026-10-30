@@ -34,6 +34,7 @@ public class CoinSpin extends SpriteBillboardParticle {
         this.setSpriteForAge(this.spriteProvider);
         super.tick();
         if (this.onGround) {
+            this.gravityStrength = 0;
             this.setVelocity(0,0,0);
             this.setPos(prevPosX,prevPosY, prevPosZ);
         }
@@ -42,12 +43,7 @@ public class CoinSpin extends SpriteBillboardParticle {
 
     @Override
     public ParticleTextureSheet getType() {
-        return ParticleTextureSheet.PARTICLE_SHEET_LIT;
-    }
-
-    @Override
-    public int getBrightness(float tint) {
-        return 15728880;
+        return ParticleTextureSheet.PARTICLE_SHEET_TRANSLUCENT;
     }
 
     public static class Factory implements ParticleFactory<SimpleParticleType> {

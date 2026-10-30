@@ -19,7 +19,7 @@ public class SparkParticle extends SpriteBillboardParticle {
 
         this.spriteProvider = spriteProvider;
         this.setSpriteForAge(spriteProvider);
-        this.scale(6);
+        this.scale(8);
 
         this.collidesWithWorld = false;
     }
@@ -32,7 +32,7 @@ public class SparkParticle extends SpriteBillboardParticle {
 
     @Override
     public ParticleTextureSheet getType() {
-        return ParticleTextureSheet.PARTICLE_SHEET_LIT;
+        return ParticleTextureSheet.PARTICLE_SHEET_TRANSLUCENT;
     }
 
     @Override

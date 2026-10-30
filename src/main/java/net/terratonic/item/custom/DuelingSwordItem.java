@@ -22,7 +22,7 @@ public class DuelingSwordItem extends SwordItem {
     @Override
     public void onStoppedUsing(ItemStack stack, World world, LivingEntity user, int remainingUseTicks) {
         PlayerEntity player = (PlayerEntity) user;
-        player.getItemCooldownManager().set(user.getActiveItem().getItem(), 100);
+        player.getItemCooldownManager().set(user.getActiveItem().getItem(), 50);
         super.onStoppedUsing(stack, world, user, remainingUseTicks);
     }
 
