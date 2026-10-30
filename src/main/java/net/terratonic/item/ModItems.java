@@ -60,7 +60,7 @@ public class ModItems {
                     new AttributeModifiersComponent.Entry(EntityAttributes.PLAYER_SWEEPING_DAMAGE_RATIO, new EntityAttributeModifier(
                             Identifier.of("0123581106710"),0.5F, EntityAttributeModifier.Operation.ADD_VALUE
                     ), AttributeModifierSlot.MAINHAND)),true))));
-    public static final Item WOODEN_SHORT_SWORD = registerItem("wooden_short_sword", new SwordItem(ToolMaterials.WOOD, new Item.Settings()
+    public static final Item WOODEN_SHORT_SWORD = registerItem("wooden_short_sword", new ShortSwordItem(ToolMaterials.WOOD, new Item.Settings()
             .maxCount(1)
             .attributeModifiers(new AttributeModifiersComponent(List.of(
                     new AttributeModifiersComponent.Entry(EntityAttributes.GENERIC_ATTACK_DAMAGE, new EntityAttributeModifier(
@@ -104,7 +104,7 @@ public class ModItems {
                     new AttributeModifiersComponent.Entry(EntityAttributes.PLAYER_SWEEPING_DAMAGE_RATIO, new EntityAttributeModifier(
                             Identifier.of("0123581106710"),0.5F, EntityAttributeModifier.Operation.ADD_VALUE
                     ), AttributeModifierSlot.MAINHAND)),true))));
-    public static final Item STONE_SHORT_SWORD = registerItem("stone_short_sword", new SwordItem(ToolMaterials.STONE, new Item.Settings()
+    public static final Item STONE_SHORT_SWORD = registerItem("stone_short_sword", new ShortSwordItem(ToolMaterials.STONE, new Item.Settings()
             .maxCount(1)
             .attributeModifiers(new AttributeModifiersComponent(List.of(
                     new AttributeModifiersComponent.Entry(EntityAttributes.GENERIC_ATTACK_DAMAGE, new EntityAttributeModifier(
@@ -151,7 +151,7 @@ public class ModItems {
                     new AttributeModifiersComponent.Entry(EntityAttributes.PLAYER_SWEEPING_DAMAGE_RATIO, new EntityAttributeModifier(
                             Identifier.of("0123581106710"),0.5F, EntityAttributeModifier.Operation.ADD_VALUE
                     ), AttributeModifierSlot.MAINHAND)),true))));
-    public static final Item COPPER_SHORT_SWORD = registerItem("copper_short_sword", new SwordItem(ModToolMaterials.COPPER, new Item.Settings()
+    public static final Item COPPER_SHORT_SWORD = registerItem("copper_short_sword", new ShortSwordItem(ModToolMaterials.COPPER, new Item.Settings()
             .maxCount(1)
             .attributeModifiers(new AttributeModifiersComponent(List.of(
                     new AttributeModifiersComponent.Entry(EntityAttributes.GENERIC_ATTACK_DAMAGE, new EntityAttributeModifier(
@@ -195,7 +195,7 @@ public class ModItems {
                     new AttributeModifiersComponent.Entry(EntityAttributes.PLAYER_SWEEPING_DAMAGE_RATIO, new EntityAttributeModifier(
                             Identifier.of("0123581106710"),0.5F, EntityAttributeModifier.Operation.ADD_VALUE
                     ), AttributeModifierSlot.MAINHAND)),true))));
-    public static final Item IRON_SHORT_SWORD = registerItem("iron_short_sword", new SwordItem(ToolMaterials.IRON, new Item.Settings()
+    public static final Item IRON_SHORT_SWORD = registerItem("iron_short_sword", new ShortSwordItem(ToolMaterials.IRON, new Item.Settings()
             .maxCount(1)
             .attributeModifiers(new AttributeModifiersComponent(List.of(
                     new AttributeModifiersComponent.Entry(EntityAttributes.GENERIC_ATTACK_DAMAGE, new EntityAttributeModifier(
@@ -239,7 +239,7 @@ public class ModItems {
                     new AttributeModifiersComponent.Entry(EntityAttributes.PLAYER_SWEEPING_DAMAGE_RATIO, new EntityAttributeModifier(
                             Identifier.of("0123581106710"),0.5F, EntityAttributeModifier.Operation.ADD_VALUE
                     ), AttributeModifierSlot.MAINHAND)),true))));
-    public static final Item GOLDEN_SHORT_SWORD = registerItem("golden_short_sword", new SwordItem(ToolMaterials.GOLD, new Item.Settings()
+    public static final Item GOLDEN_SHORT_SWORD = registerItem("golden_short_sword", new ShortSwordItem(ToolMaterials.GOLD, new Item.Settings()
             .maxCount(1)
             .attributeModifiers(new AttributeModifiersComponent(List.of(
                     new AttributeModifiersComponent.Entry(EntityAttributes.GENERIC_ATTACK_DAMAGE, new EntityAttributeModifier(
@@ -283,7 +283,7 @@ public class ModItems {
                     new AttributeModifiersComponent.Entry(EntityAttributes.PLAYER_SWEEPING_DAMAGE_RATIO, new EntityAttributeModifier(
                             Identifier.of("0123581106710"),0.5F, EntityAttributeModifier.Operation.ADD_VALUE
                     ), AttributeModifierSlot.MAINHAND)),true))));
-    public static final Item DIAMOND_SHORT_SWORD = registerItem("diamond_short_sword", new SwordItem(ToolMaterials.DIAMOND, new Item.Settings()
+    public static final Item DIAMOND_SHORT_SWORD = registerItem("diamond_short_sword", new ShortSwordItem(ToolMaterials.DIAMOND, new Item.Settings()
             .maxCount(1)
             .attributeModifiers(new AttributeModifiersComponent(List.of(
                     new AttributeModifiersComponent.Entry(EntityAttributes.GENERIC_ATTACK_DAMAGE, new EntityAttributeModifier(
@@ -327,7 +327,7 @@ public class ModItems {
                     new AttributeModifiersComponent.Entry(EntityAttributes.PLAYER_SWEEPING_DAMAGE_RATIO, new EntityAttributeModifier(
                             Identifier.of("0123581106710"),0.5F, EntityAttributeModifier.Operation.ADD_VALUE
                     ), AttributeModifierSlot.MAINHAND)),true))));
-    public static final Item NETHERITE_SHORT_SWORD = registerItem("netherite_short_sword", new SwordItem(ToolMaterials.NETHERITE, new Item.Settings()
+    public static final Item NETHERITE_SHORT_SWORD = registerItem("netherite_short_sword", new ShortSwordItem(ToolMaterials.NETHERITE, new Item.Settings()
             .maxCount(1)
             .attributeModifiers(new AttributeModifiersComponent(List.of(
                     new AttributeModifiersComponent.Entry(EntityAttributes.GENERIC_ATTACK_DAMAGE, new EntityAttributeModifier(
